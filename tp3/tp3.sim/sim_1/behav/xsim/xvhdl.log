@@ -1,0 +1,8 @@
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/Ricardo Filipe/Desktop/tp3/tp3.srcs/sources_1/imports/new/PulseGenerator.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity PulseGenerator
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/Ricardo Filipe/Desktop/tp3/tp3.srcs/sources_1/new/Timer.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity Timer
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/Ricardo Filipe/Desktop/tp3/tp3.srcs/sources_1/imports/new/dispModule.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity dispModule
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/Ricardo Filipe/Desktop/tp3/tp3.srcs/sources_1/new/main.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity main
