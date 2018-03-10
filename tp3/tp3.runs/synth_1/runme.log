@@ -14,13 +14,13 @@ Starting synth_design
 Attempting to get a license for feature 'Synthesis' and/or device 'xc7a100t'
 INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7a100t'
 INFO: Launching helper process for spawning children vivado processes
-INFO: Helper process launched with PID 10772 
+INFO: Helper process launched with PID 12152 
 ---------------------------------------------------------------------------------
-Starting RTL Elaboration : Time (s): cpu = 00:00:07 ; elapsed = 00:00:07 . Memory (MB): peak = 338.059 ; gain = 100.031
+Starting RTL Elaboration : Time (s): cpu = 00:00:08 ; elapsed = 00:00:08 . Memory (MB): peak = 338.254 ; gain = 100.582
 ---------------------------------------------------------------------------------
 INFO: [Synth 8-638] synthesizing module 'main' [C:/Users/Ricardo Filipe/Desktop/tp3/tp3.srcs/sources_1/new/main.vhd:47]
 INFO: [Synth 8-638] synthesizing module 'DebounceUnit' [C:/Users/Ricardo Filipe/Desktop/tp3/tp3.srcs/sources_1/new/DebounceUnit.vhd:3]
-	Parameter kHzClkFreq bound to: 100000000 - type: integer 
+	Parameter kHzClkFreq bound to: 100000 - type: integer 
 	Parameter mSecMinInWidth bound to: 100 - type: integer 
 	Parameter inPolarity bound to: 1'b1 
 	Parameter outPolarity bound to: 1'b1 
@@ -44,10 +44,6 @@ WARNING: [Synth 8-3331] design main has unconnected port led[8]
 WARNING: [Synth 8-3331] design main has unconnected port led[7]
 WARNING: [Synth 8-3331] design main has unconnected port led[6]
 WARNING: [Synth 8-3331] design main has unconnected port led[5]
-WARNING: [Synth 8-3331] design main has unconnected port led[4]
-WARNING: [Synth 8-3331] design main has unconnected port led[3]
-WARNING: [Synth 8-3331] design main has unconnected port led[2]
-WARNING: [Synth 8-3331] design main has unconnected port led[1]
 WARNING: [Synth 8-3331] design main has unconnected port sw[15]
 WARNING: [Synth 8-3331] design main has unconnected port sw[14]
 WARNING: [Synth 8-3331] design main has unconnected port sw[13]
@@ -65,7 +61,7 @@ WARNING: [Synth 8-3331] design main has unconnected port sw[2]
 WARNING: [Synth 8-3331] design main has unconnected port sw[1]
 WARNING: [Synth 8-3331] design main has unconnected port sw[0]
 ---------------------------------------------------------------------------------
-Finished RTL Elaboration : Time (s): cpu = 00:00:08 ; elapsed = 00:00:09 . Memory (MB): peak = 390.359 ; gain = 152.332
+Finished RTL Elaboration : Time (s): cpu = 00:00:09 ; elapsed = 00:00:09 . Memory (MB): peak = 390.203 ; gain = 152.531
 ---------------------------------------------------------------------------------
 
 Report Check Netlist: 
@@ -75,7 +71,7 @@ Report Check Netlist:
 |1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
 +------+------------------+-------+---------+-------+------------------+
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:08 ; elapsed = 00:00:09 . Memory (MB): peak = 390.359 ; gain = 152.332
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:09 ; elapsed = 00:00:09 . Memory (MB): peak = 390.203 ; gain = 152.531
 ---------------------------------------------------------------------------------
 INFO: [Device 21-403] Loading part xc7a100tcsg324-1
 INFO: [Project 1-570] Preparing netlist for logic optimization
@@ -91,35 +87,46 @@ Completed Processing XDC Constraints
 INFO: [Project 1-111] Unisim Transformation Summary:
 No Unisim elements were transformed.
 
-Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.008 . Memory (MB): peak = 742.438 ; gain = 0.000
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.008 . Memory (MB): peak = 744.227 ; gain = 0.000
 ---------------------------------------------------------------------------------
-Finished Constraint Validation : Time (s): cpu = 00:00:23 ; elapsed = 00:00:25 . Memory (MB): peak = 742.438 ; gain = 504.410
+Finished Constraint Validation : Time (s): cpu = 00:00:25 ; elapsed = 00:00:26 . Memory (MB): peak = 744.227 ; gain = 506.555
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Loading Part and Timing Information
 ---------------------------------------------------------------------------------
 Loading part: xc7a100tcsg324-1
 ---------------------------------------------------------------------------------
-Finished Loading Part and Timing Information : Time (s): cpu = 00:00:23 ; elapsed = 00:00:25 . Memory (MB): peak = 742.438 ; gain = 504.410
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:25 ; elapsed = 00:00:26 . Memory (MB): peak = 744.227 ; gain = 506.555
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Applying 'set_property' XDC Constraints
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:23 ; elapsed = 00:00:25 . Memory (MB): peak = 742.438 ; gain = 504.410
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:25 ; elapsed = 00:00:26 . Memory (MB): peak = 744.227 ; gain = 506.555
 ---------------------------------------------------------------------------------
 INFO: [Synth 8-5545] ROM "s_pulseOut" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
 INFO: [Synth 8-5545] ROM "s_pulseOut" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
 INFO: [Synth 8-5545] ROM "s_counter0" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
 INFO: [Synth 8-5545] ROM "s_counter1" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
-INFO: [Synth 8-5544] ROM "s_nextState" won't be mapped to Block RAM because address size (2) smaller than threshold (5)
-INFO: [Synth 8-5544] ROM "s_d0" won't be mapped to Block RAM because address size (2) smaller than threshold (5)
+INFO: [Synth 8-802] inferred FSM for state register 's_currentState_reg' in module 'Timer'
+WARNING: [Synth 8-6014] Unused sequential element s_nextState_reg was removed.  [C:/Users/Ricardo Filipe/Desktop/tp3/tp3.srcs/sources_1/new/Timer.vhd:84]
 INFO: [Synth 8-5544] ROM "s_d1" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
 INFO: [Synth 8-5544] ROM "s_d2" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
 INFO: [Synth 8-5544] ROM "s_d3" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "s_d0" won't be mapped to Block RAM because address size (2) smaller than threshold (5)
 INFO: [Synth 8-5544] ROM "s_nextState" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                  iSTATE |                               00 |                               00
+                 iSTATE0 |                               01 |                               01
+                 iSTATE1 |                               10 |                               10
+                 iSTATE2 |                               11 |                               11
+*
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 's_currentState_reg' using encoding 'sequential' in module 'Timer'
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:24 ; elapsed = 00:00:26 . Memory (MB): peak = 742.438 ; gain = 504.410
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:25 ; elapsed = 00:00:27 . Memory (MB): peak = 744.227 ; gain = 506.555
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -133,30 +140,29 @@ Start RTL Component Statistics
 Detailed RTL Component Info : 
 +---Adders : 
 	   2 Input     32 Bit       Adders := 2     
-	   2 Input     31 Bit       Adders := 2     
+	   2 Input     24 Bit       Adders := 2     
 	   2 Input      4 Bit       Adders := 2     
 	   2 Input      3 Bit       Adders := 3     
 +---XORs : 
 	   2 Input      1 Bit         XORs := 1     
 +---Registers : 
 	               32 Bit    Registers := 2     
-	               31 Bit    Registers := 2     
+	               24 Bit    Registers := 2     
 	                8 Bit    Registers := 2     
 	                7 Bit    Registers := 1     
 	                4 Bit    Registers := 4     
 	                3 Bit    Registers := 5     
-	                2 Bit    Registers := 1     
 	                1 Bit    Registers := 10    
 +---Muxes : 
 	   2 Input     32 Bit        Muxes := 2     
-	   2 Input     31 Bit        Muxes := 2     
-	   2 Input     30 Bit        Muxes := 2     
+	   2 Input     24 Bit        Muxes := 2     
+	   2 Input     23 Bit        Muxes := 2     
 	   2 Input      4 Bit        Muxes := 2     
 	   2 Input      3 Bit        Muxes := 1     
-	   2 Input      2 Bit        Muxes := 1     
-	   2 Input      1 Bit        Muxes := 14    
+	   8 Input      2 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 21    
 	   3 Input      1 Bit        Muxes := 1     
-	   5 Input      1 Bit        Muxes := 1     
+	   5 Input      1 Bit        Muxes := 2     
 ---------------------------------------------------------------------------------
 Finished RTL Component Statistics 
 ---------------------------------------------------------------------------------
@@ -167,13 +173,13 @@ Hierarchical RTL Component report
 Module DebounceUnit 
 Detailed RTL Component Info : 
 +---Adders : 
-	   2 Input     31 Bit       Adders := 1     
+	   2 Input     24 Bit       Adders := 1     
 +---Registers : 
-	               31 Bit    Registers := 1     
+	               24 Bit    Registers := 1     
 	                1 Bit    Registers := 3     
 +---Muxes : 
-	   2 Input     31 Bit        Muxes := 1     
-	   2 Input     30 Bit        Muxes := 1     
+	   2 Input     24 Bit        Muxes := 1     
+	   2 Input     23 Bit        Muxes := 1     
 Module PulseGenerator 
 Detailed RTL Component Info : 
 +---Adders : 
@@ -192,15 +198,14 @@ Detailed RTL Component Info :
 +---Registers : 
 	                4 Bit    Registers := 4     
 	                3 Bit    Registers := 4     
-	                2 Bit    Registers := 1     
 	                1 Bit    Registers := 3     
 +---Muxes : 
 	   2 Input      4 Bit        Muxes := 2     
 	   2 Input      3 Bit        Muxes := 1     
-	   2 Input      2 Bit        Muxes := 1     
-	   2 Input      1 Bit        Muxes := 12    
+	   8 Input      2 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 19    
 	   3 Input      1 Bit        Muxes := 1     
-	   5 Input      1 Bit        Muxes := 1     
+	   5 Input      1 Bit        Muxes := 2     
 Module dispModule 
 Detailed RTL Component Info : 
 +---Adders : 
@@ -227,12 +232,6 @@ Finished Part Resource Summary
 ---------------------------------------------------------------------------------
 Start Cross Boundary and Area Optimization
 ---------------------------------------------------------------------------------
-INFO: [Synth 8-4471] merging register 'timer/s_reset_reg' into 'db1/s_dirtyIn_reg' [C:/Users/Ricardo Filipe/Desktop/tp3/tp3.srcs/sources_1/new/Timer.vhd:71]
-INFO: [Synth 8-4471] merging register 'timer/s_play_reg' into 'db2/s_dirtyIn_reg' [C:/Users/Ricardo Filipe/Desktop/tp3/tp3.srcs/sources_1/new/Timer.vhd:72]
-WARNING: [Synth 8-6014] Unused sequential element db1/s_pulsedOut_reg was removed.  [C:/Users/Ricardo Filipe/Desktop/tp3/tp3.srcs/sources_1/new/DebounceUnit.vhd:13]
-WARNING: [Synth 8-6014] Unused sequential element db2/s_pulsedOut_reg was removed.  [C:/Users/Ricardo Filipe/Desktop/tp3/tp3.srcs/sources_1/new/DebounceUnit.vhd:13]
-WARNING: [Synth 8-6014] Unused sequential element timer/s_reset_reg was removed.  [C:/Users/Ricardo Filipe/Desktop/tp3/tp3.srcs/sources_1/new/Timer.vhd:71]
-WARNING: [Synth 8-6014] Unused sequential element timer/s_play_reg was removed.  [C:/Users/Ricardo Filipe/Desktop/tp3/tp3.srcs/sources_1/new/Timer.vhd:72]
 INFO: [Synth 8-5545] ROM "pulseGen/s_counter1" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
 INFO: [Synth 8-5545] ROM "pulseGen/s_pulseOut" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
 INFO: [Synth 8-5545] ROM "pulseGen/s_counter0" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
@@ -248,10 +247,6 @@ WARNING: [Synth 8-3331] design main has unconnected port led[8]
 WARNING: [Synth 8-3331] design main has unconnected port led[7]
 WARNING: [Synth 8-3331] design main has unconnected port led[6]
 WARNING: [Synth 8-3331] design main has unconnected port led[5]
-WARNING: [Synth 8-3331] design main has unconnected port led[4]
-WARNING: [Synth 8-3331] design main has unconnected port led[3]
-WARNING: [Synth 8-3331] design main has unconnected port led[2]
-WARNING: [Synth 8-3331] design main has unconnected port led[1]
 WARNING: [Synth 8-3331] design main has unconnected port sw[15]
 WARNING: [Synth 8-3331] design main has unconnected port sw[14]
 WARNING: [Synth 8-3331] design main has unconnected port sw[13]
@@ -268,70 +263,6 @@ WARNING: [Synth 8-3331] design main has unconnected port sw[3]
 WARNING: [Synth 8-3331] design main has unconnected port sw[2]
 WARNING: [Synth 8-3331] design main has unconnected port sw[1]
 WARNING: [Synth 8-3331] design main has unconnected port sw[0]
-WARNING: [Synth 8-3332] Sequential element (db1/s_previousIn_reg) is unused and will be removed from module main.
-WARNING: [Synth 8-3332] Sequential element (db1/s_debounceCnt_reg[30]) is unused and will be removed from module main.
-WARNING: [Synth 8-3332] Sequential element (db1/s_debounceCnt_reg[29]) is unused and will be removed from module main.
-WARNING: [Synth 8-3332] Sequential element (db1/s_debounceCnt_reg[28]) is unused and will be removed from module main.
-WARNING: [Synth 8-3332] Sequential element (db1/s_debounceCnt_reg[27]) is unused and will be removed from module main.
-WARNING: [Synth 8-3332] Sequential element (db1/s_debounceCnt_reg[26]) is unused and will be removed from module main.
-WARNING: [Synth 8-3332] Sequential element (db1/s_debounceCnt_reg[25]) is unused and will be removed from module main.
-WARNING: [Synth 8-3332] Sequential element (db1/s_debounceCnt_reg[24]) is unused and will be removed from module main.
-WARNING: [Synth 8-3332] Sequential element (db1/s_debounceCnt_reg[23]) is unused and will be removed from module main.
-WARNING: [Synth 8-3332] Sequential element (db1/s_debounceCnt_reg[22]) is unused and will be removed from module main.
-WARNING: [Synth 8-3332] Sequential element (db1/s_debounceCnt_reg[21]) is unused and will be removed from module main.
-WARNING: [Synth 8-3332] Sequential element (db1/s_debounceCnt_reg[20]) is unused and will be removed from module main.
-WARNING: [Synth 8-3332] Sequential element (db1/s_debounceCnt_reg[19]) is unused and will be removed from module main.
-WARNING: [Synth 8-3332] Sequential element (db1/s_debounceCnt_reg[18]) is unused and will be removed from module main.
-WARNING: [Synth 8-3332] Sequential element (db1/s_debounceCnt_reg[17]) is unused and will be removed from module main.
-WARNING: [Synth 8-3332] Sequential element (db1/s_debounceCnt_reg[16]) is unused and will be removed from module main.
-WARNING: [Synth 8-3332] Sequential element (db1/s_debounceCnt_reg[15]) is unused and will be removed from module main.
-WARNING: [Synth 8-3332] Sequential element (db1/s_debounceCnt_reg[14]) is unused and will be removed from module main.
-WARNING: [Synth 8-3332] Sequential element (db1/s_debounceCnt_reg[13]) is unused and will be removed from module main.
-WARNING: [Synth 8-3332] Sequential element (db1/s_debounceCnt_reg[12]) is unused and will be removed from module main.
-WARNING: [Synth 8-3332] Sequential element (db1/s_debounceCnt_reg[11]) is unused and will be removed from module main.
-WARNING: [Synth 8-3332] Sequential element (db1/s_debounceCnt_reg[10]) is unused and will be removed from module main.
-WARNING: [Synth 8-3332] Sequential element (db1/s_debounceCnt_reg[9]) is unused and will be removed from module main.
-WARNING: [Synth 8-3332] Sequential element (db1/s_debounceCnt_reg[8]) is unused and will be removed from module main.
-WARNING: [Synth 8-3332] Sequential element (db1/s_debounceCnt_reg[7]) is unused and will be removed from module main.
-WARNING: [Synth 8-3332] Sequential element (db1/s_debounceCnt_reg[6]) is unused and will be removed from module main.
-WARNING: [Synth 8-3332] Sequential element (db1/s_debounceCnt_reg[5]) is unused and will be removed from module main.
-WARNING: [Synth 8-3332] Sequential element (db1/s_debounceCnt_reg[4]) is unused and will be removed from module main.
-WARNING: [Synth 8-3332] Sequential element (db1/s_debounceCnt_reg[3]) is unused and will be removed from module main.
-WARNING: [Synth 8-3332] Sequential element (db1/s_debounceCnt_reg[2]) is unused and will be removed from module main.
-WARNING: [Synth 8-3332] Sequential element (db1/s_debounceCnt_reg[1]) is unused and will be removed from module main.
-WARNING: [Synth 8-3332] Sequential element (db1/s_debounceCnt_reg[0]) is unused and will be removed from module main.
-WARNING: [Synth 8-3332] Sequential element (db2/s_previousIn_reg) is unused and will be removed from module main.
-WARNING: [Synth 8-3332] Sequential element (db2/s_debounceCnt_reg[30]) is unused and will be removed from module main.
-WARNING: [Synth 8-3332] Sequential element (db2/s_debounceCnt_reg[29]) is unused and will be removed from module main.
-WARNING: [Synth 8-3332] Sequential element (db2/s_debounceCnt_reg[28]) is unused and will be removed from module main.
-WARNING: [Synth 8-3332] Sequential element (db2/s_debounceCnt_reg[27]) is unused and will be removed from module main.
-WARNING: [Synth 8-3332] Sequential element (db2/s_debounceCnt_reg[26]) is unused and will be removed from module main.
-WARNING: [Synth 8-3332] Sequential element (db2/s_debounceCnt_reg[25]) is unused and will be removed from module main.
-WARNING: [Synth 8-3332] Sequential element (db2/s_debounceCnt_reg[24]) is unused and will be removed from module main.
-WARNING: [Synth 8-3332] Sequential element (db2/s_debounceCnt_reg[23]) is unused and will be removed from module main.
-WARNING: [Synth 8-3332] Sequential element (db2/s_debounceCnt_reg[22]) is unused and will be removed from module main.
-WARNING: [Synth 8-3332] Sequential element (db2/s_debounceCnt_reg[21]) is unused and will be removed from module main.
-WARNING: [Synth 8-3332] Sequential element (db2/s_debounceCnt_reg[20]) is unused and will be removed from module main.
-WARNING: [Synth 8-3332] Sequential element (db2/s_debounceCnt_reg[19]) is unused and will be removed from module main.
-WARNING: [Synth 8-3332] Sequential element (db2/s_debounceCnt_reg[18]) is unused and will be removed from module main.
-WARNING: [Synth 8-3332] Sequential element (db2/s_debounceCnt_reg[17]) is unused and will be removed from module main.
-WARNING: [Synth 8-3332] Sequential element (db2/s_debounceCnt_reg[16]) is unused and will be removed from module main.
-WARNING: [Synth 8-3332] Sequential element (db2/s_debounceCnt_reg[15]) is unused and will be removed from module main.
-WARNING: [Synth 8-3332] Sequential element (db2/s_debounceCnt_reg[14]) is unused and will be removed from module main.
-WARNING: [Synth 8-3332] Sequential element (db2/s_debounceCnt_reg[13]) is unused and will be removed from module main.
-WARNING: [Synth 8-3332] Sequential element (db2/s_debounceCnt_reg[12]) is unused and will be removed from module main.
-WARNING: [Synth 8-3332] Sequential element (db2/s_debounceCnt_reg[11]) is unused and will be removed from module main.
-WARNING: [Synth 8-3332] Sequential element (db2/s_debounceCnt_reg[10]) is unused and will be removed from module main.
-WARNING: [Synth 8-3332] Sequential element (db2/s_debounceCnt_reg[9]) is unused and will be removed from module main.
-WARNING: [Synth 8-3332] Sequential element (db2/s_debounceCnt_reg[8]) is unused and will be removed from module main.
-WARNING: [Synth 8-3332] Sequential element (db2/s_debounceCnt_reg[7]) is unused and will be removed from module main.
-WARNING: [Synth 8-3332] Sequential element (db2/s_debounceCnt_reg[6]) is unused and will be removed from module main.
-WARNING: [Synth 8-3332] Sequential element (db2/s_debounceCnt_reg[5]) is unused and will be removed from module main.
-WARNING: [Synth 8-3332] Sequential element (db2/s_debounceCnt_reg[4]) is unused and will be removed from module main.
-WARNING: [Synth 8-3332] Sequential element (db2/s_debounceCnt_reg[3]) is unused and will be removed from module main.
-WARNING: [Synth 8-3332] Sequential element (db2/s_debounceCnt_reg[2]) is unused and will be removed from module main.
-WARNING: [Synth 8-3332] Sequential element (db2/s_debounceCnt_reg[1]) is unused and will be removed from module main.
-WARNING: [Synth 8-3332] Sequential element (db2/s_debounceCnt_reg[0]) is unused and will be removed from module main.
 WARNING: [Synth 8-3332] Sequential element (pulseGen/pulseOut_reg[7]) is unused and will be removed from module main.
 WARNING: [Synth 8-3332] Sequential element (pulseGen/pulseOut_reg[6]) is unused and will be removed from module main.
 WARNING: [Synth 8-3332] Sequential element (pulseGen/pulseOut_reg[5]) is unused and will be removed from module main.
@@ -345,7 +276,7 @@ INFO: [Synth 8-3886] merging instance 'dispDriver/an_reg[6]' (FDE) to 'dispDrive
 INFO: [Synth 8-3333] propagating constant 1 across sequential element (\dispDriver/an_reg[7] )
 WARNING: [Synth 8-3332] Sequential element (dispDriver/an_reg[7]) is unused and will be removed from module main.
 ---------------------------------------------------------------------------------
-Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:25 ; elapsed = 00:00:27 . Memory (MB): peak = 742.438 ; gain = 504.410
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:27 ; elapsed = 00:00:29 . Memory (MB): peak = 744.227 ; gain = 506.555
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -357,13 +288,13 @@ Report RTL Partitions:
 Start Applying XDC Timing Constraints
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:38 ; elapsed = 00:00:40 . Memory (MB): peak = 742.438 ; gain = 504.410
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:40 ; elapsed = 00:00:42 . Memory (MB): peak = 744.227 ; gain = 506.555
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Timing Optimization
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Timing Optimization : Time (s): cpu = 00:00:38 ; elapsed = 00:00:40 . Memory (MB): peak = 758.648 ; gain = 520.621
+Finished Timing Optimization : Time (s): cpu = 00:00:41 ; elapsed = 00:00:42 . Memory (MB): peak = 755.340 ; gain = 517.668
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -375,7 +306,7 @@ Report RTL Partitions:
 Start Technology Mapping
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Technology Mapping : Time (s): cpu = 00:00:38 ; elapsed = 00:00:40 . Memory (MB): peak = 759.414 ; gain = 521.387
+Finished Technology Mapping : Time (s): cpu = 00:00:41 ; elapsed = 00:00:42 . Memory (MB): peak = 756.105 ; gain = 518.434
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -399,24 +330,20 @@ Start Final Netlist Cleanup
 Finished Final Netlist Cleanup
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished IO Insertion : Time (s): cpu = 00:00:39 ; elapsed = 00:00:41 . Memory (MB): peak = 759.414 ; gain = 521.387
+Finished IO Insertion : Time (s): cpu = 00:00:42 ; elapsed = 00:00:44 . Memory (MB): peak = 756.105 ; gain = 518.434
 ---------------------------------------------------------------------------------
-CRITICAL WARNING: [Synth 8-3352] multi-driven net timer/s_nextState[1] with 1st driver pin 'timer/s_nextState_reg[1]__0/Q' [C:/Users/Ricardo Filipe/Desktop/tp3/tp3.srcs/sources_1/new/Timer.vhd:79]
-CRITICAL WARNING: [Synth 8-3352] multi-driven net timer/s_nextState[1] with 2nd driver pin 'timer/s_nextState_reg[1]/Q' [C:/Users/Ricardo Filipe/Desktop/tp3/tp3.srcs/sources_1/new/Timer.vhd:128]
-CRITICAL WARNING: [Synth 8-3352] multi-driven net timer/s_nextState[0] with 1st driver pin 'timer/s_nextState_reg[0]__0/Q' [C:/Users/Ricardo Filipe/Desktop/tp3/tp3.srcs/sources_1/new/Timer.vhd:79]
-CRITICAL WARNING: [Synth 8-3352] multi-driven net timer/s_nextState[0] with 2nd driver pin 'timer/s_nextState_reg[0]/Q' [C:/Users/Ricardo Filipe/Desktop/tp3/tp3.srcs/sources_1/new/Timer.vhd:128]
 
 Report Check Netlist: 
 +------+------------------+-------+---------+-------+------------------+
 |      |Item              |Errors |Warnings |Status |Description       |
 +------+------------------+-------+---------+-------+------------------+
-|1     |multi_driven_nets |      0|        2|Failed |Multi driven nets |
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
 +------+------------------+-------+---------+-------+------------------+
 ---------------------------------------------------------------------------------
 Start Renaming Generated Instances
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Instances : Time (s): cpu = 00:00:39 ; elapsed = 00:00:41 . Memory (MB): peak = 759.414 ; gain = 521.387
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:42 ; elapsed = 00:00:44 . Memory (MB): peak = 756.105 ; gain = 518.434
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -428,25 +355,25 @@ Report RTL Partitions:
 Start Rebuilding User Hierarchy
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:39 ; elapsed = 00:00:41 . Memory (MB): peak = 759.414 ; gain = 521.387
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:42 ; elapsed = 00:00:44 . Memory (MB): peak = 756.105 ; gain = 518.434
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Ports
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Ports : Time (s): cpu = 00:00:39 ; elapsed = 00:00:41 . Memory (MB): peak = 759.414 ; gain = 521.387
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:42 ; elapsed = 00:00:44 . Memory (MB): peak = 756.105 ; gain = 518.434
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Handling Custom Attributes
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Handling Custom Attributes : Time (s): cpu = 00:00:39 ; elapsed = 00:00:41 . Memory (MB): peak = 759.414 ; gain = 521.387
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:42 ; elapsed = 00:00:44 . Memory (MB): peak = 756.105 ; gain = 518.434
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Nets
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Nets : Time (s): cpu = 00:00:39 ; elapsed = 00:00:41 . Memory (MB): peak = 759.414 ; gain = 521.387
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:42 ; elapsed = 00:00:44 . Memory (MB): peak = 756.105 ; gain = 518.434
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Writing Synthesis Report
@@ -463,39 +390,39 @@ Report Cell Usage:
 |      |Cell   |Count |
 +------+-------+------+
 |1     |BUFG   |     1|
-|2     |CARRY4 |    16|
-|3     |LUT1   |     4|
-|4     |LUT2   |     3|
-|5     |LUT3   |     7|
-|6     |LUT4   |    27|
-|7     |LUT5   |    18|
-|8     |LUT6   |     9|
-|9     |FDRE   |   109|
+|2     |CARRY4 |    28|
+|3     |LUT1   |    54|
+|4     |LUT2   |    27|
+|5     |LUT3   |    10|
+|6     |LUT4   |    36|
+|7     |LUT5   |    17|
+|8     |LUT6   |    16|
+|9     |FDRE   |   161|
 |10    |FDSE   |     8|
 |11    |IBUF   |     3|
-|12    |OBUF   |    17|
-|13    |OBUFT  |    15|
+|12    |OBUF   |    21|
+|13    |OBUFT  |    11|
 +------+-------+------+
 
 Report Instance Areas: 
 +------+-------------+---------------+------+
 |      |Instance     |Module         |Cells |
 +------+-------------+---------------+------+
-|1     |top          |               |   237|
-|2     |  db1        |DebounceUnit   |     1|
-|3     |  db2        |DebounceUnit_0 |     1|
+|1     |top          |               |   393|
+|2     |  db1        |DebounceUnit   |    77|
+|3     |  db2        |DebounceUnit_0 |    77|
 |4     |  dispDriver |dispModule     |    22|
 |5     |  pulseGen   |PulseGenerator |   104|
-|6     |  timer      |Timer          |    73|
+|6     |  timer      |Timer          |    77|
 +------+-------------+---------------+------+
 ---------------------------------------------------------------------------------
-Finished Writing Synthesis Report : Time (s): cpu = 00:00:39 ; elapsed = 00:00:41 . Memory (MB): peak = 759.414 ; gain = 521.387
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:42 ; elapsed = 00:00:44 . Memory (MB): peak = 756.105 ; gain = 518.434
 ---------------------------------------------------------------------------------
-Synthesis finished with 0 errors, 4 critical warnings and 106 warnings.
-Synthesis Optimization Runtime : Time (s): cpu = 00:00:23 ; elapsed = 00:00:33 . Memory (MB): peak = 759.414 ; gain = 169.309
-Synthesis Optimization Complete : Time (s): cpu = 00:00:39 ; elapsed = 00:00:41 . Memory (MB): peak = 759.414 ; gain = 521.387
+Synthesis finished with 0 errors, 0 critical warnings and 35 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:25 ; elapsed = 00:00:35 . Memory (MB): peak = 756.105 ; gain = 164.410
+Synthesis Optimization Complete : Time (s): cpu = 00:00:42 ; elapsed = 00:00:44 . Memory (MB): peak = 756.105 ; gain = 518.434
 INFO: [Project 1-571] Translating synthesized netlist
-INFO: [Netlist 29-17] Analyzing 19 Unisim elements for replacement
+INFO: [Netlist 29-17] Analyzing 31 Unisim elements for replacement
 INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
 INFO: [Project 1-570] Preparing netlist for logic optimization
 INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
@@ -503,10 +430,10 @@ INFO: [Project 1-111] Unisim Transformation Summary:
 No Unisim elements were transformed.
 
 INFO: [Common 17-83] Releasing license: Synthesis
-43 Infos, 138 Warnings, 4 Critical Warnings and 0 Errors encountered.
+42 Infos, 63 Warnings, 0 Critical Warnings and 0 Errors encountered.
 synth_design completed successfully
-synth_design: Time (s): cpu = 00:00:41 ; elapsed = 00:00:45 . Memory (MB): peak = 759.414 ; gain = 533.320
+synth_design: Time (s): cpu = 00:00:45 ; elapsed = 00:00:47 . Memory (MB): peak = 756.105 ; gain = 529.512
 INFO: [Common 17-1381] The checkpoint 'C:/Users/Ricardo Filipe/Desktop/tp3/tp3.runs/synth_1/main.dcp' has been generated.
 INFO: [runtcl-4] Executing : report_utilization -file main_utilization_synth.rpt -pb main_utilization_synth.pb
-report_utilization: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.051 . Memory (MB): peak = 759.414 ; gain = 0.000
-INFO: [Common 17-206] Exiting Vivado at Sat Mar 10 18:03:34 2018...
+report_utilization: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.062 . Memory (MB): peak = 756.105 ; gain = 0.000
+INFO: [Common 17-206] Exiting Vivado at Sat Mar 10 19:41:00 2018...

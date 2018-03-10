@@ -74,14 +74,12 @@ begin
                             if(s_reset = '1') then
                                 s_currentState <= ST_INIT;
                                 
-                            elsif(s_play = '1') then
-                                if(s_currentState = ST_COUNTING) then
-                                    s_nextState <= ST_PAUSE;
-                                   -- s_currentState <= ST_PAUSE;
-                                else
-                                    s_nextState <= ST_COUNTING;
-                                    -- s_currentState <= ST_COUNTING;
-                                end if;
+--                            elsif(s_play = '1') then
+--                                if(s_currentState = ST_COUNTING) then
+--                                    s_currentState <= ST_PAUSE;
+--                                else
+--                                    s_currentState <= ST_COUNTING;
+--                                end if;
                             else
                                 s_currentState <= s_nextState;
                             end if;
@@ -106,7 +104,12 @@ begin
                         s_d2 <= 9;
                         s_d3 <= 5;
                         finish <= '0';
+                        s_nextState <= ST_PAUSE;
                     elsif (s_currentState = ST_COUNTING) then
+                    
+                        if(s_play = '1') then
+                            s_nextState <= ST_PAUSE;
+                        end if;
                     
                         if(enable = '1') then
                     
@@ -133,6 +136,11 @@ begin
                         end if;
                     elsif (s_currentState = ST_END) then
                         finish <= '1';
+                        
+                    elsif (s_currentState = ST_PAUSE) then
+                        if(s_play = '1') then
+                            s_nextState <= ST_COUNTING;
+                        end if;
                     end if;
                 end if;
             end process;

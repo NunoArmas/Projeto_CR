@@ -53,15 +53,15 @@ architecture Behavioral of main is
     signal s_d3 : std_logic_vector(3 downto 0);
     signal s_dOthers : std_logic_vector(3 downto 0) := "0000";
     
-    signal s_reset : std_logic;
-    signal s_play_pause : std_logic;
+    signal s_reset : std_logic := '0';
+    signal s_play_pause : std_logic := '0';
     
     signal s_diveded_clk : std_logic;
 begin
 
 db1 : entity work.DebounceUnit
             generic map (
-                kHzClkFreq => 100000000,
+                kHzClkFreq => 100000,
                 inPolarity => '1'
             )
             port map (
@@ -72,7 +72,7 @@ db1 : entity work.DebounceUnit
             
 db2 : entity work.DebounceUnit
             generic map (
-                kHzClkFreq => 100000000,
+                kHzClkFreq => 100000,
                 inPolarity => '1'
             )
             port map (
@@ -88,20 +88,13 @@ pulseGen : entity work.PulseGenerator
                     pulseOut => s_pulseOut
                 );
                 
---freq1 : entity work.clk_divider
---            port map(
---                clk => clk,
---                reset => '0',
---                freq => 10000,
---                clk_div => s_diveded_clk
---            );
                 
 timer: entity work.Timer
             port map(
                 clk => clk,
                 enable => s_pulseOut(0),
-                play_pause => btnR,
-                reset => btnL,
+                play_pause => s_play_pause,
+                reset => s_reset,
                 d0 => s_d0,
                 d1 => s_d1,
                 d2 => s_d2,
@@ -127,5 +120,11 @@ dispDriver : entity work.dispModule
                     an => an,
                     dp => dp
                 );
+                
+                
+ led(1) <= s_play_pause;
+ led(2) <= s_reset;
+ led(3) <= btnL;
+ led(4) <= btnR;
 
 end Behavioral;
