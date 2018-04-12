@@ -18,7 +18,9 @@ architecture Behavioral of RAM is
     constant NUM_WORDS : positive := (2 ** ADDR_BUS_SIZE );
     subtype TData is std_logic_vector(DATA_BUS_SIZE-1 downto 0);
     type TMemory is array(0 to NUM_WORDS - 1) of TData;
-    signal s_memory : TMemory;
+    signal s_memory : TMemory := (X"23180001",
+                                  X"08000000",
+                                    others => X"00000000");
     
     begin
         process(clk)

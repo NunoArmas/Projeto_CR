@@ -27,6 +27,7 @@ begin
                 end case;
             when "11" => -- User defined
                 ALUcontrol <= "---";
+            when others => ALUcontrol <= "---";
         end case;
     end process;
 end Behavioral;

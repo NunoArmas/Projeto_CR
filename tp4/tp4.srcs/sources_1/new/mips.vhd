@@ -34,7 +34,8 @@ use IEEE.NUMERIC_STD.ALL;
 
 entity mips is
   Port ( clk : in std_logic;
-        led : out std_logic_vector(15 downto 0)
+         pc_counter : out std_logic_vector(31 downto 0);
+         reset : in std_logic
         );
 end mips;
 
@@ -48,6 +49,7 @@ architecture Behavioral of mips is
     signal s_address :std_logic_vector(31 downto 0);
     signal s_memDataRead : std_logic_vector(31 downto 0);
     
+    signal s_instriction_register : std_logic_vector(31 downto 0);
     signal s_DATA_REGISTER :std_logic_vector(31 downto 0);
     signal s_REG_A :std_logic_vector(31 downto 0);
     signal s_REG_B :std_logic_vector(31 downto 0);
@@ -61,8 +63,8 @@ architecture Behavioral of mips is
     signal s_funct :  std_logic_vector(5 downto 0);
     signal s_imm :  std_logic_vector(15 downto 0);
     
-    signal s_imm_extended : std_logic_vector(32 downto 0);
-    signal s_imm_shifted : std_logic_vector(32 downto 0);
+    signal s_imm_extended : std_logic_vector(31 downto 0);
+    signal s_imm_shifted : std_logic_vector(31 downto 0);
     
     signal s_reg1 : std_logic_vector(4 downto 0);
     signal s_reg2 : std_logic_vector(4 downto 0);
@@ -96,6 +98,9 @@ architecture Behavioral of mips is
     signal s_ALUop :  std_logic_vector(1 downto 0);
 begin
 
+    s_reset <= reset;
+    pc_counter <= s_pc;
+    
     controlUnit:    entity work.ControlUnit
                     port map(
                         Clock => clk,
@@ -124,8 +129,8 @@ begin
                     PCSource => s_PCSource,
                     PCWrite => s_PCWrite,
                     PCWriteCond => s_PCWriteCond,
-                    PC4 => s_pc4,
-                    BTA => s_bta,
+                    PC4 => s_aluRes,
+                    BTA => s_ALU_OUT,
                     jAddr => s_jAddr,
                     pc => s_pc
                 );
@@ -137,20 +142,32 @@ begin
                 clk => clk,
                 readEn => s_MemRead,
                 writeEn => s_MemWrite,
-                address => s_address,
+                address => s_address(7 downto 2),
                 writeData => s_regb,
                 readData => s_memDataRead
             );
             
+    proc_instruciton_register: 
+        process(clk)
+        begin
+            if(rising_edge(clk)) then
+                if(s_IRWrite = '1') then
+                    s_instriction_register <= s_memDataRead;
+                end if;
+            end if;
+        end process;
+            
     proc_data_reg: 
     process(clk)
     begin
-        s_DATA_REGISTER <= s_memDataRead;
+        if(rising_edge(clk)) then
+            s_DATA_REGISTER <= s_memDataRead;
+        end if;
     end process;
             
     instrSplitter:  entity work.InstrSplitter
                     port map(
-                        instruction => s_memDataRead,
+                        instruction => s_instriction_register,
                         opcode => s_opcode,
                         rs => s_rs,
                         rt => s_rt,
