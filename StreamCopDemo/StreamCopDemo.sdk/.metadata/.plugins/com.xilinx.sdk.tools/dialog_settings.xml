@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<section name="Workbench">
+	<item value="false" key="ZC702_hw_platform-verifyFlash"/>
+	<item value="ZC702_hw_platform" key="programflash.hwplatform"/>
+	<item value="qspi_single" key="ZC702_hw_platform-flashType"/>
+	<item value="Auto Detect" key="ZC702_hw_platform-device"/>
+	<item value="" key="ZC702_hw_platform-imgFile"/>
+	<item value="false" key="ZC702_hw_platform-blankCheck"/>
+	<item value="Local" key="ZC702_hw_platform-target"/>
+	<item value="" key="ZC702_hw_platform-fsblFile"/>
+	<item value="" key="ZC702_hw_platform-offSet"/>
+</section>

@@ -1,0 +1,1544 @@
+14:42:23 **** Build of project CountDownTimer_bsp ****
+make -k all 
+"Running Make include in microblaze_0/libsrc/bram_v4_2/src"
+make -C microblaze_0/libsrc/bram_v4_2/src -s include  "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS= -O2 -c -mcpu=v10.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-ffunction-sections -fdata-sections -Wall -Wextra"
+"Running Make include in microblaze_0/libsrc/cpu_v2_6/src"
+make -C microblaze_0/libsrc/cpu_v2_6/src -s include  "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS= -O2 -c -mcpu=v10.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-ffunction-sections -fdata-sections -Wall -Wextra"
+"Running Make include in microblaze_0/libsrc/gpio_v4_3/src"
+make -C microblaze_0/libsrc/gpio_v4_3/src -s include  "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS= -O2 -c -mcpu=v10.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-ffunction-sections -fdata-sections -Wall -Wextra"
+"Running Make include in microblaze_0/libsrc/intc_v3_7/src"
+make -C microblaze_0/libsrc/intc_v3_7/src -s include  "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS= -O2 -c -mcpu=v10.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-ffunction-sections -fdata-sections -Wall -Wextra"
+"Running Make include in microblaze_0/libsrc/standalone_v6_5/src"
+make -C microblaze_0/libsrc/standalone_v6_5/src -s include  "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS= -O2 -c -mcpu=v10.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-ffunction-sections -fdata-sections -Wall -Wextra"
+"Running Make include in microblaze_0/libsrc/uartlite_v3_2/src"
+make -C microblaze_0/libsrc/uartlite_v3_2/src -s include  "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS= -O2 -c -mcpu=v10.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-ffunction-sections -fdata-sections -Wall -Wextra"
+"Running Make libs in microblaze_0/libsrc/bram_v4_2/src"
+make -C microblaze_0/libsrc/bram_v4_2/src -s libs  "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS= -O2 -c -mcpu=v10.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-ffunction-sections -fdata-sections -Wall -Wextra"
+"Compiling bram"
+mb-ar: creating ../../../lib/libxil.a
+"Running Make libs in microblaze_0/libsrc/cpu_v2_6/src"
+make -C microblaze_0/libsrc/cpu_v2_6/src -s libs  "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS= -O2 -c -mcpu=v10.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-ffunction-sections -fdata-sections -Wall -Wextra"
+"Compiling cpu"
+"Running Make libs in microblaze_0/libsrc/gpio_v4_3/src"
+make -C microblaze_0/libsrc/gpio_v4_3/src -s libs  "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS= -O2 -c -mcpu=v10.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-ffunction-sections -fdata-sections -Wall -Wextra"
+"Compiling gpio"
+"Running Make libs in microblaze_0/libsrc/intc_v3_7/src"
+make -C microblaze_0/libsrc/intc_v3_7/src -s libs  "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS= -O2 -c -mcpu=v10.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-ffunction-sections -fdata-sections -Wall -Wextra"
+"Compiling intc"
+"Running Make libs in microblaze_0/libsrc/standalone_v6_5/src"
+make -C microblaze_0/libsrc/standalone_v6_5/src -s libs  "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS= -O2 -c -mcpu=v10.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-ffunction-sections -fdata-sections -Wall -Wextra"
+"Compiling standalone";
+"Running Make libs in microblaze_0/libsrc/uartlite_v3_2/src"
+make -C microblaze_0/libsrc/uartlite_v3_2/src -s libs  "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS= -O2 -c -mcpu=v10.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-ffunction-sections -fdata-sections -Wall -Wextra"
+"Compiling uartlite"
+'Finished building libraries'
+14:43:11 **** Build of configuration Debug for project CountDownTimer ****
+make all 
+'Building file: ../src/helloworld.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -I../../CountDownTimer_bsp/microblaze_0/include -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+'Finished building: ../src/helloworld.c'
+' '
+'Building file: ../src/platform.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/platform.o" -I../../CountDownTimer_bsp/microblaze_0/include -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/platform.d" -MT"src/platform.o" -o "src/platform.o" "../src/platform.c"
+'Finished building: ../src/platform.c'
+' '
+'Building target: CountDownTimer.elf'
+'Invoking: MicroBlaze gcc linker'
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../CountDownTimer_bsp/microblaze_0/lib -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "CountDownTimer.elf"  ./src/helloworld.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: CountDownTimer.elf'
+' '
+'Invoking: MicroBlaze Print Size'
+mb-size CountDownTimer.elf  |tee "CountDownTimer.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+   3152	    316	   3108	   6576	   19b0	CountDownTimer.elf
+'Finished building: CountDownTimer.elf.size'
+' '
+14:43:15 **** Auto Build of configuration Debug for project CountDownTimer ****
+make all 
+make: Nada a ser feito para `all'.
+14:43:26 **** Incremental Build of configuration Debug for project CountDownTimer ****
+make all 
+make: Nada a ser feito para `all'.
+14:44:32 **** Incremental Build of configuration Debug for project CountDownTimer ****
+make all 
+make: Nada a ser feito para `all'.
+14:47:17 **** Incremental Build of configuration Debug for project CountDownTimer ****
+make all 
+make: Nada a ser feito para `all'.
+14:47:32 **** Incremental Build of configuration Debug for project CountDownTimer ****
+make all 
+make: Nada a ser feito para `all'.
+14:48:29 **** Incremental Build of configuration Debug for project CountDownTimer ****
+make all 
+make: Nada a ser feito para `all'.
+14:50:22 **** Incremental Build of configuration Debug for project CountDownTimer ****
+make all 
+make: Nada a ser feito para `all'.
+14:57:01 **** Incremental Build of configuration Debug for project CountDownTimer ****
+make all 
+make: Nada a ser feito para `all'.
+15:00:16 **** Incremental Build of configuration Debug for project CountDownTimer ****
+make all 
+make: Nada a ser feito para `all'.
+16:28:43 **** Auto Build of configuration Debug for project CountDownTimer ****
+make all 
+'Building file: ../src/helloworld.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -I../../CountDownTimer_bsp/microblaze_0/include -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+'Finished building: ../src/helloworld.c'
+' '
+'Building target: CountDownTimer.elf'
+'Invoking: MicroBlaze gcc linker'
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../CountDownTimer_bsp/microblaze_0/lib -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "CountDownTimer.elf"  ./src/helloworld.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: CountDownTimer.elf'
+' '
+'Invoking: MicroBlaze Print Size'
+mb-size CountDownTimer.elf  |tee "CountDownTimer.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+   3152	    316	   3108	   6576	   19b0	CountDownTimer.elf
+'Finished building: CountDownTimer.elf.size'
+' '
+16:29:44 **** Auto Build of configuration Debug for project CountDownTimer ****
+make all 
+'Building file: ../src/helloworld.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -I../../CountDownTimer_bsp/microblaze_0/include -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+../src/helloworld.c: In function 'TimerIntCallbackHandler':
+../src/helloworld.c:68:3: error: 'userCount' undeclared (first use in this function)
+   userCount = (userCount + 1) % 100; // Incremented once every 500 interrupts
+   ^~~~~~~~~
+../src/helloworld.c:68:3: note: each undeclared identifier is reported only once for each function it appears in
+../src/helloworld.c:93:2: warning: implicit declaration of function 'XGpio_WriteReg' [-Wimplicit-function-declaration]
+  XGpio_WriteReg(XPAR_AXI_GPIO_DISP_AN_BASEADDR, XGPIO_DATA_OFFSET, enableMask);
+  ^~~~~~~~~~~~~~
+../src/helloworld.c:93:17: error: 'XPAR_AXI_GPIO_DISP_AN_BASEADDR' undeclared (first use in this function)
+  XGpio_WriteReg(XPAR_AXI_GPIO_DISP_AN_BASEADDR, XGPIO_DATA_OFFSET, enableMask);
+                 ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+../src/helloworld.c:93:49: error: 'XGPIO_DATA_OFFSET' undeclared (first use in this function)
+  XGpio_WriteReg(XPAR_AXI_GPIO_DISP_AN_BASEADDR, XGPIO_DATA_OFFSET, enableMask);
+                                                 ^~~~~~~~~~~~~~~~~
+../src/helloworld.c:94:17: error: 'XPAR_AXI_GPIO_DISP_SEG_BASEADDR' undeclared (first use in this function)
+  XGpio_WriteReg(XPAR_AXI_GPIO_DISP_SEG_BASEADDR, XGPIO_DATA_OFFSET, disp7SegMapTable[digit]);
+                 ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+make: ** [src/helloworld.o] Erro 1
+16:30:10 **** Auto Build of configuration Debug for project CountDownTimer ****
+make all 
+'Building file: ../src/helloworld.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -I../../CountDownTimer_bsp/microblaze_0/include -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+../src/helloworld.c: In function 'TimerIntCallbackHandler':
+../src/helloworld.c:95:2: warning: implicit declaration of function 'XGpio_WriteReg' [-Wimplicit-function-declaration]
+  XGpio_WriteReg(XPAR_AXI_GPIO_DISP_AN_BASEADDR, XGPIO_DATA_OFFSET, enableMask);
+  ^~~~~~~~~~~~~~
+../src/helloworld.c:95:17: error: 'XPAR_AXI_GPIO_DISP_AN_BASEADDR' undeclared (first use in this function)
+  XGpio_WriteReg(XPAR_AXI_GPIO_DISP_AN_BASEADDR, XGPIO_DATA_OFFSET, enableMask);
+                 ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+../src/helloworld.c:95:17: note: each undeclared identifier is reported only once for each function it appears in
+../src/helloworld.c:95:49: error: 'XGPIO_DATA_OFFSET' undeclared (first use in this function)
+  XGpio_WriteReg(XPAR_AXI_GPIO_DISP_AN_BASEADDR, XGPIO_DATA_OFFSET, enableMask);
+                                                 ^~~~~~~~~~~~~~~~~
+../src/helloworld.c:96:17: error: 'XPAR_AXI_GPIO_DISP_SEG_BASEADDR' undeclared (first use in this function)
+  XGpio_WriteReg(XPAR_AXI_GPIO_DISP_SEG_BASEADDR, XGPIO_DATA_OFFSET, disp7SegMapTable[digit]);
+                 ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+make: ** [src/helloworld.o] Erro 1
+16:31:06 **** Auto Build of configuration Debug for project CountDownTimer ****
+make all 
+'Building file: ../src/helloworld.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -I../../CountDownTimer_bsp/microblaze_0/include -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+../src/helloworld.c: In function 'TimerIntCallbackHandler':
+../src/helloworld.c:101:2: warning: implicit declaration of function 'XGpio_WriteReg' [-Wimplicit-function-declaration]
+  XGpio_WriteReg(XPAR_AXI_GPIO_DISP_AN_BASEADDR, XGPIO_DATA_OFFSET, enableMask);
+  ^~~~~~~~~~~~~~
+../src/helloworld.c:101:17: error: 'XPAR_AXI_GPIO_DISP_AN_BASEADDR' undeclared (first use in this function)
+  XGpio_WriteReg(XPAR_AXI_GPIO_DISP_AN_BASEADDR, XGPIO_DATA_OFFSET, enableMask);
+                 ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+../src/helloworld.c:101:17: note: each undeclared identifier is reported only once for each function it appears in
+../src/helloworld.c:101:49: error: 'XGPIO_DATA_OFFSET' undeclared (first use in this function)
+  XGpio_WriteReg(XPAR_AXI_GPIO_DISP_AN_BASEADDR, XGPIO_DATA_OFFSET, enableMask);
+                                                 ^~~~~~~~~~~~~~~~~
+../src/helloworld.c:102:17: error: 'XPAR_AXI_GPIO_DISP_SEG_BASEADDR' undeclared (first use in this function)
+  XGpio_WriteReg(XPAR_AXI_GPIO_DISP_SEG_BASEADDR, XGPIO_DATA_OFFSET, disp7SegMapTable[digit]);
+                 ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+make: ** [src/helloworld.o] Erro 1
+16:31:33 **** Auto Build of configuration Debug for project CountDownTimer ****
+make all 
+'Building file: ../src/helloworld.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -I../../CountDownTimer_bsp/microblaze_0/include -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+../src/helloworld.c: In function 'TimerIntCallbackHandler':
+../src/helloworld.c:101:2: warning: implicit declaration of function 'XGpio_WriteReg' [-Wimplicit-function-declaration]
+  XGpio_WriteReg(XPAR_AXI_GPIO_7seg_disp_BASEADDR, XGPIO_DATA_OFFSET, enableMask);
+  ^~~~~~~~~~~~~~
+../src/helloworld.c:101:17: error: 'XPAR_AXI_GPIO_7seg_disp_BASEADDR' undeclared (first use in this function)
+  XGpio_WriteReg(XPAR_AXI_GPIO_7seg_disp_BASEADDR, XGPIO_DATA_OFFSET, enableMask);
+                 ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+../src/helloworld.c:101:17: note: each undeclared identifier is reported only once for each function it appears in
+../src/helloworld.c:101:51: error: 'XGPIO_DATA_OFFSET' undeclared (first use in this function)
+  XGpio_WriteReg(XPAR_AXI_GPIO_7seg_disp_BASEADDR, XGPIO_DATA_OFFSET, enableMask);
+                                                   ^~~~~~~~~~~~~~~~~
+../src/helloworld.c:102:17: error: 'XPAR_AXI_GPIO_DISP_SEG_BASEADDR' undeclared (first use in this function)
+  XGpio_WriteReg(XPAR_AXI_GPIO_DISP_SEG_BASEADDR, XGPIO_DATA_OFFSET, disp7SegMapTable[digit]);
+                 ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+make: ** [src/helloworld.o] Erro 1
+16:32:33 **** Auto Build of configuration Debug for project CountDownTimer ****
+make all 
+'Building file: ../src/helloworld.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -I../../CountDownTimer_bsp/microblaze_0/include -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+../src/helloworld.c: In function 'TimerIntCallbackHandler':
+../src/helloworld.c:101:2: warning: implicit declaration of function 'XGpio_WriteReg' [-Wimplicit-function-declaration]
+  XGpio_WriteReg(XPAR_AXI_GPIO_7seg_disp_BASEADDR, XGPIO_DATA_OFFSET, enableMask);
+  ^~~~~~~~~~~~~~
+../src/helloworld.c:101:17: error: 'XPAR_AXI_GPIO_7seg_disp_BASEADDR' undeclared (first use in this function)
+  XGpio_WriteReg(XPAR_AXI_GPIO_7seg_disp_BASEADDR, XGPIO_DATA_OFFSET, enableMask);
+                 ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+../src/helloworld.c:101:17: note: each undeclared identifier is reported only once for each function it appears in
+../src/helloworld.c:101:51: error: 'XGPIO_DATA_OFFSET' undeclared (first use in this function)
+  XGpio_WriteReg(XPAR_AXI_GPIO_7seg_disp_BASEADDR, XGPIO_DATA_OFFSET, enableMask);
+                                                   ^~~~~~~~~~~~~~~~~
+../src/helloworld.c:102:17: error: 'XPAR_AXI_GPIO_DISP_SEG_BASEADDR' undeclared (first use in this function)
+  XGpio_WriteReg(XPAR_AXI_GPIO_DISP_SEG_BASEADDR, XGPIO_DATA_OFFSET, disp7SegMapTable[digit]);
+                 ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+../src/helloworld.c: In function 'PushButIntCallbackHandler':
+../src/helloworld.c:111:17: error: 'XPAR_AXI_GPIO_PUSH_BUT_BASEADDR' undeclared (first use in this function)
+  XGpio_WriteReg(XPAR_AXI_GPIO_PUSH_BUT_BASEADDR, XGPIO_ISR_OFFSET, XGPIO_IR_CH1_MASK);
+                 ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+../src/helloworld.c:111:50: error: 'XGPIO_ISR_OFFSET' undeclared (first use in this function)
+  XGpio_WriteReg(XPAR_AXI_GPIO_PUSH_BUT_BASEADDR, XGPIO_ISR_OFFSET, XGPIO_IR_CH1_MASK);
+                                                  ^~~~~~~~~~~~~~~~
+../src/helloworld.c:111:68: error: 'XGPIO_IR_CH1_MASK' undeclared (first use in this function)
+  XGpio_WriteReg(XPAR_AXI_GPIO_PUSH_BUT_BASEADDR, XGPIO_ISR_OFFSET, XGPIO_IR_CH1_MASK);
+                                                                    ^~~~~~~~~~~~~~~~~
+make: ** [src/helloworld.o] Erro 1
+16:32:44 **** Auto Build of configuration Debug for project CountDownTimer ****
+make all 
+'Building file: ../src/helloworld.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -I../../CountDownTimer_bsp/microblaze_0/include -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+../src/helloworld.c: In function 'TimerIntCallbackHandler':
+../src/helloworld.c:101:2: warning: implicit declaration of function 'XGpio_WriteReg' [-Wimplicit-function-declaration]
+  XGpio_WriteReg(XPAR_AXI_GPIO_7seg_disp_BASEADDR, XGPIO_DATA_OFFSET, enableMask);
+  ^~~~~~~~~~~~~~
+../src/helloworld.c:101:17: error: 'XPAR_AXI_GPIO_7seg_disp_BASEADDR' undeclared (first use in this function)
+  XGpio_WriteReg(XPAR_AXI_GPIO_7seg_disp_BASEADDR, XGPIO_DATA_OFFSET, enableMask);
+                 ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+../src/helloworld.c:101:17: note: each undeclared identifier is reported only once for each function it appears in
+../src/helloworld.c:101:51: error: 'XGPIO_DATA_OFFSET' undeclared (first use in this function)
+  XGpio_WriteReg(XPAR_AXI_GPIO_7seg_disp_BASEADDR, XGPIO_DATA_OFFSET, enableMask);
+                                                   ^~~~~~~~~~~~~~~~~
+../src/helloworld.c:102:17: error: 'XPAR_AXI_GPIO_DISP_SEG_BASEADDR' undeclared (first use in this function)
+  XGpio_WriteReg(XPAR_AXI_GPIO_DISP_SEG_BASEADDR, XGPIO_DATA_OFFSET, disp7SegMapTable[digit]);
+                 ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+../src/helloworld.c: In function 'PushButIntCallbackHandler':
+../src/helloworld.c:111:45: error: 'XGPIO_ISR_OFFSET' undeclared (first use in this function)
+  XGpio_WriteReg(XPAR_AXI_GPIO_BTN_BASEADDR, XGPIO_ISR_OFFSET, XGPIO_IR_CH1_MASK);
+                                             ^~~~~~~~~~~~~~~~
+../src/helloworld.c:111:63: error: 'XGPIO_IR_CH1_MASK' undeclared (first use in this function)
+  XGpio_WriteReg(XPAR_AXI_GPIO_BTN_BASEADDR, XGPIO_ISR_OFFSET, XGPIO_IR_CH1_MASK);
+                                                               ^~~~~~~~~~~~~~~~~
+make: ** [src/helloworld.o] Erro 1
+16:33:36 **** Auto Build of configuration Debug for project CountDownTimer ****
+make all 
+'Building file: ../src/helloworld.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -I../../CountDownTimer_bsp/microblaze_0/include -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+In file included from ../src/helloworld.c:51:0:
+../src/helloworld.c: In function 'TimerIntCallbackHandler':
+../src/helloworld.c:104:17: error: 'XPAR_AXI_GPIO_7seg_disp_BASEADDR' undeclared (first use in this function)
+  XGpio_WriteReg(XPAR_AXI_GPIO_7seg_disp_BASEADDR, XGPIO_DATA_OFFSET, enableMask);
+                 ^
+../../CountDownTimer_bsp/microblaze_0/include/xgpio_l.h:162:15: note: in definition of macro 'XGpio_WriteReg'
+  XGpio_Out32((BaseAddress) + (RegOffset), (u32)(Data))
+               ^~~~~~~~~~~
+../src/helloworld.c:104:17: note: each undeclared identifier is reported only once for each function it appears in
+  XGpio_WriteReg(XPAR_AXI_GPIO_7seg_disp_BASEADDR, XGPIO_DATA_OFFSET, enableMask);
+                 ^
+../../CountDownTimer_bsp/microblaze_0/include/xgpio_l.h:162:15: note: in definition of macro 'XGpio_WriteReg'
+  XGpio_Out32((BaseAddress) + (RegOffset), (u32)(Data))
+               ^~~~~~~~~~~
+../src/helloworld.c:105:17: error: 'XPAR_AXI_GPIO_DISP_SEG_BASEADDR' undeclared (first use in this function)
+  XGpio_WriteReg(XPAR_AXI_GPIO_DISP_SEG_BASEADDR, XGPIO_DATA_OFFSET, disp7SegMapTable[digit]);
+                 ^
+../../CountDownTimer_bsp/microblaze_0/include/xgpio_l.h:162:15: note: in definition of macro 'XGpio_WriteReg'
+  XGpio_Out32((BaseAddress) + (RegOffset), (u32)(Data))
+               ^~~~~~~~~~~
+make: ** [src/helloworld.o] Erro 1
+16:34:33 **** Auto Build of configuration Debug for project CountDownTimer ****
+make all 
+'Building file: ../src/helloworld.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -I../../CountDownTimer_bsp/microblaze_0/include -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+In file included from ../src/helloworld.c:51:0:
+../src/helloworld.c: In function 'TimerIntCallbackHandler':
+../src/helloworld.c:105:17: error: 'XPAR_AXI_GPIO_DISP_SEG_BASEADDR' undeclared (first use in this function)
+  XGpio_WriteReg(XPAR_AXI_GPIO_DISP_SEG_BASEADDR, XGPIO_DATA_OFFSET, disp7SegMapTable[digit]);
+                 ^
+../../CountDownTimer_bsp/microblaze_0/include/xgpio_l.h:162:15: note: in definition of macro 'XGpio_WriteReg'
+  XGpio_Out32((BaseAddress) + (RegOffset), (u32)(Data))
+               ^~~~~~~~~~~
+../src/helloworld.c:105:17: note: each undeclared identifier is reported only once for each function it appears in
+  XGpio_WriteReg(XPAR_AXI_GPIO_DISP_SEG_BASEADDR, XGPIO_DATA_OFFSET, disp7SegMapTable[digit]);
+                 ^
+../../CountDownTimer_bsp/microblaze_0/include/xgpio_l.h:162:15: note: in definition of macro 'XGpio_WriteReg'
+  XGpio_Out32((BaseAddress) + (RegOffset), (u32)(Data))
+               ^~~~~~~~~~~
+make: ** [src/helloworld.o] Erro 1
+16:35:02 **** Auto Build of configuration Debug for project CountDownTimer ****
+make all 
+'Building file: ../src/helloworld.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -I../../CountDownTimer_bsp/microblaze_0/include -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+'Finished building: ../src/helloworld.c'
+' '
+'Building target: CountDownTimer.elf'
+'Invoking: MicroBlaze gcc linker'
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../CountDownTimer_bsp/microblaze_0/lib -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "CountDownTimer.elf"  ./src/helloworld.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: CountDownTimer.elf'
+' '
+'Invoking: MicroBlaze Print Size'
+mb-size CountDownTimer.elf  |tee "CountDownTimer.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+   3152	    316	   3108	   6576	   19b0	CountDownTimer.elf
+'Finished building: CountDownTimer.elf.size'
+' '
+16:35:26 **** Auto Build of configuration Debug for project CountDownTimer ****
+make all 
+'Building file: ../src/helloworld.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -I../../CountDownTimer_bsp/microblaze_0/include -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+In file included from ../src/helloworld.c:4:0:
+../src/helloworld.c: In function 'TimerIntCallbackHandler':
+../src/helloworld.c:60:17: error: 'XPAR_AXI_GPIO_DISP_AN_BASEADDR' undeclared (first use in this function)
+  XGpio_WriteReg(XPAR_AXI_GPIO_DISP_AN_BASEADDR, XGPIO_DATA_OFFSET, enableMask);
+                 ^
+../../CountDownTimer_bsp/microblaze_0/include/xgpio_l.h:162:15: note: in definition of macro 'XGpio_WriteReg'
+  XGpio_Out32((BaseAddress) + (RegOffset), (u32)(Data))
+               ^~~~~~~~~~~
+../src/helloworld.c:60:17: note: each undeclared identifier is reported only once for each function it appears in
+  XGpio_WriteReg(XPAR_AXI_GPIO_DISP_AN_BASEADDR, XGPIO_DATA_OFFSET, enableMask);
+                 ^
+../../CountDownTimer_bsp/microblaze_0/include/xgpio_l.h:162:15: note: in definition of macro 'XGpio_WriteReg'
+  XGpio_Out32((BaseAddress) + (RegOffset), (u32)(Data))
+               ^~~~~~~~~~~
+../src/helloworld.c:61:17: error: 'XPAR_AXI_GPIO_DISP_SEG_BASEADDR' undeclared (first use in this function)
+  XGpio_WriteReg(XPAR_AXI_GPIO_DISP_SEG_BASEADDR, XGPIO_DATA_OFFSET, disp7SegMapTable[digit]);
+                 ^
+../../CountDownTimer_bsp/microblaze_0/include/xgpio_l.h:162:15: note: in definition of macro 'XGpio_WriteReg'
+  XGpio_Out32((BaseAddress) + (RegOffset), (u32)(Data))
+               ^~~~~~~~~~~
+../src/helloworld.c: In function 'PushButIntCallbackHandler':
+../src/helloworld.c:70:17: error: 'XPAR_AXI_GPIO_PUSH_BUT_BASEADDR' undeclared (first use in this function)
+  XGpio_WriteReg(XPAR_AXI_GPIO_PUSH_BUT_BASEADDR, XGPIO_ISR_OFFSET, XGPIO_IR_CH1_MASK);
+                 ^
+../../CountDownTimer_bsp/microblaze_0/include/xgpio_l.h:162:15: note: in definition of macro 'XGpio_WriteReg'
+  XGpio_Out32((BaseAddress) + (RegOffset), (u32)(Data))
+               ^~~~~~~~~~~
+../src/helloworld.c: In function 'SetupInterrupts':
+../src/helloworld.c:11:29: error: 'XPAR_AXI_INTC_0_FIT_TIMER_0_INTERRUPT_INTR' undeclared (first use in this function)
+ #define FIT_TIMER_0_INT_ID  XPAR_AXI_INTC_0_FIT_TIMER_0_INTERRUPT_INTR
+                             ^
+../src/helloworld.c:11:29: note: in definition of macro 'FIT_TIMER_0_INT_ID'
+ #define FIT_TIMER_0_INT_ID  XPAR_AXI_INTC_0_FIT_TIMER_0_INTERRUPT_INTR
+                             ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+In file included from ../src/helloworld.c:4:0:
+../src/helloworld.c:85:17: error: 'XPAR_AXI_GPIO_PUSH_BUT_BASEADDR' undeclared (first use in this function)
+  XGpio_WriteReg(XPAR_AXI_GPIO_PUSH_BUT_BASEADDR, XGPIO_IER_OFFSET, XGPIO_IR_CH1_MASK);
+                 ^
+../../CountDownTimer_bsp/microblaze_0/include/xgpio_l.h:162:15: note: in definition of macro 'XGpio_WriteReg'
+  XGpio_Out32((BaseAddress) + (RegOffset), (u32)(Data))
+               ^~~~~~~~~~~
+../src/helloworld.c:13:27: error: 'XPAR_AXI_INTC_0_AXI_GPIO_PUSH_BUT_IP2INTC_IRPT_INTR' undeclared (first use in this function)
+ #define PUSH_BUT_INT_ID   XPAR_AXI_INTC_0_AXI_GPIO_PUSH_BUT_IP2INTC_IRPT_INTR
+                           ^
+../src/helloworld.c:13:27: note: in definition of macro 'PUSH_BUT_INT_ID'
+ #define PUSH_BUT_INT_ID   XPAR_AXI_INTC_0_AXI_GPIO_PUSH_BUT_IP2INTC_IRPT_INTR
+                           ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+In file included from ../src/helloworld.c:5:0:
+../src/helloworld.c:12:30: error: 'XPAR_FIT_TIMER_0_INTERRUPT_MASK' undeclared (first use in this function)
+ #define FIT_TIMER_0_INT_MASK XPAR_FIT_TIMER_0_INTERRUPT_MASK
+                              ^
+../../CountDownTimer_bsp/microblaze_0/include/xintc_l.h:243:47: note: in definition of macro 'XIntc_EnableIntr'
+  XIntc_Out32((BaseAddress) + XIN_IER_OFFSET, (EnableMask))
+                                               ^~~~~~~~~~
+../src/helloworld.c:99:36: note: in expansion of macro 'FIT_TIMER_0_INT_MASK'
+  XIntc_EnableIntr(IntcBaseAddress, FIT_TIMER_0_INT_MASK | PUSH_BUT_INT_MASK);
+                                    ^~~~~~~~~~~~~~~~~~~~
+../src/helloworld.c:14:28: error: 'XPAR_AXI_GPIO_PUSH_BUT_IP2INTC_IRPT_MASK' undeclared (first use in this function)
+ #define PUSH_BUT_INT_MASK  XPAR_AXI_GPIO_PUSH_BUT_IP2INTC_IRPT_MASK
+                            ^
+../../CountDownTimer_bsp/microblaze_0/include/xintc_l.h:243:47: note: in definition of macro 'XIntc_EnableIntr'
+  XIntc_Out32((BaseAddress) + XIN_IER_OFFSET, (EnableMask))
+                                               ^~~~~~~~~~
+../src/helloworld.c:99:59: note: in expansion of macro 'PUSH_BUT_INT_MASK'
+  XIntc_EnableIntr(IntcBaseAddress, FIT_TIMER_0_INT_MASK | PUSH_BUT_INT_MASK);
+                                                           ^~~~~~~~~~~~~~~~~
+In file included from ../src/helloworld.c:4:0:
+../src/helloworld.c: In function 'main':
+../src/helloworld.c:140:20: error: 'XPAR_AXI_GPIO_LED_BASEADDR' undeclared (first use in this function)
+     XGpio_WriteReg(XPAR_AXI_GPIO_LED_BASEADDR, XGPIO_TRI_OFFSET, 0);
+                    ^
+../../CountDownTimer_bsp/microblaze_0/include/xgpio_l.h:162:15: note: in definition of macro 'XGpio_WriteReg'
+  XGpio_Out32((BaseAddress) + (RegOffset), (u32)(Data))
+               ^~~~~~~~~~~
+../src/helloworld.c:141:20: error: 'XPAR_AXI_GPIO_DISP_SEG_BASEADDR' undeclared (first use in this function)
+     XGpio_WriteReg(XPAR_AXI_GPIO_DISP_SEG_BASEADDR, XGPIO_TRI_OFFSET, 0);
+                    ^
+../../CountDownTimer_bsp/microblaze_0/include/xgpio_l.h:162:15: note: in definition of macro 'XGpio_WriteReg'
+  XGpio_Out32((BaseAddress) + (RegOffset), (u32)(Data))
+               ^~~~~~~~~~~
+../src/helloworld.c:142:20: error: 'XPAR_AXI_GPIO_DISP_AN_BASEADDR' undeclared (first use in this function)
+     XGpio_WriteReg(XPAR_AXI_GPIO_DISP_AN_BASEADDR, XGPIO_TRI_OFFSET, 0);
+                    ^
+../../CountDownTimer_bsp/microblaze_0/include/xgpio_l.h:162:15: note: in definition of macro 'XGpio_WriteReg'
+  XGpio_Out32((BaseAddress) + (RegOffset), (u32)(Data))
+               ^~~~~~~~~~~
+make: ** [src/helloworld.o] Erro 1
+16:35:51 **** Auto Build of configuration Debug for project CountDownTimer ****
+make all 
+'Building file: ../src/helloworld.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -I../../CountDownTimer_bsp/microblaze_0/include -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+In file included from ../src/helloworld.c:4:0:
+../src/helloworld.c: In function 'PushButIntCallbackHandler':
+../src/helloworld.c:70:17: error: 'XPAR_AXI_GPIO_PUSH_BUT_BASEADDR' undeclared (first use in this function)
+  XGpio_WriteReg(XPAR_AXI_GPIO_PUSH_BUT_BASEADDR, XGPIO_ISR_OFFSET, XGPIO_IR_CH1_MASK);
+                 ^
+../../CountDownTimer_bsp/microblaze_0/include/xgpio_l.h:162:15: note: in definition of macro 'XGpio_WriteReg'
+  XGpio_Out32((BaseAddress) + (RegOffset), (u32)(Data))
+               ^~~~~~~~~~~
+../src/helloworld.c:70:17: note: each undeclared identifier is reported only once for each function it appears in
+  XGpio_WriteReg(XPAR_AXI_GPIO_PUSH_BUT_BASEADDR, XGPIO_ISR_OFFSET, XGPIO_IR_CH1_MASK);
+                 ^
+../../CountDownTimer_bsp/microblaze_0/include/xgpio_l.h:162:15: note: in definition of macro 'XGpio_WriteReg'
+  XGpio_Out32((BaseAddress) + (RegOffset), (u32)(Data))
+               ^~~~~~~~~~~
+../src/helloworld.c: In function 'SetupInterrupts':
+../src/helloworld.c:11:29: error: 'XPAR_AXI_INTC_0_FIT_TIMER_0_INTERRUPT_INTR' undeclared (first use in this function)
+ #define FIT_TIMER_0_INT_ID  XPAR_AXI_INTC_0_FIT_TIMER_0_INTERRUPT_INTR
+                             ^
+../src/helloworld.c:11:29: note: in definition of macro 'FIT_TIMER_0_INT_ID'
+ #define FIT_TIMER_0_INT_ID  XPAR_AXI_INTC_0_FIT_TIMER_0_INTERRUPT_INTR
+                             ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+In file included from ../src/helloworld.c:4:0:
+../src/helloworld.c:85:17: error: 'XPAR_AXI_GPIO_PUSH_BUT_BASEADDR' undeclared (first use in this function)
+  XGpio_WriteReg(XPAR_AXI_GPIO_PUSH_BUT_BASEADDR, XGPIO_IER_OFFSET, XGPIO_IR_CH1_MASK);
+                 ^
+../../CountDownTimer_bsp/microblaze_0/include/xgpio_l.h:162:15: note: in definition of macro 'XGpio_WriteReg'
+  XGpio_Out32((BaseAddress) + (RegOffset), (u32)(Data))
+               ^~~~~~~~~~~
+../src/helloworld.c:13:27: error: 'XPAR_AXI_INTC_0_AXI_GPIO_PUSH_BUT_IP2INTC_IRPT_INTR' undeclared (first use in this function)
+ #define PUSH_BUT_INT_ID   XPAR_AXI_INTC_0_AXI_GPIO_PUSH_BUT_IP2INTC_IRPT_INTR
+                           ^
+../src/helloworld.c:13:27: note: in definition of macro 'PUSH_BUT_INT_ID'
+ #define PUSH_BUT_INT_ID   XPAR_AXI_INTC_0_AXI_GPIO_PUSH_BUT_IP2INTC_IRPT_INTR
+                           ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+In file included from ../src/helloworld.c:5:0:
+../src/helloworld.c:12:30: error: 'XPAR_FIT_TIMER_0_INTERRUPT_MASK' undeclared (first use in this function)
+ #define FIT_TIMER_0_INT_MASK XPAR_FIT_TIMER_0_INTERRUPT_MASK
+                              ^
+../../CountDownTimer_bsp/microblaze_0/include/xintc_l.h:243:47: note: in definition of macro 'XIntc_EnableIntr'
+  XIntc_Out32((BaseAddress) + XIN_IER_OFFSET, (EnableMask))
+                                               ^~~~~~~~~~
+../src/helloworld.c:99:36: note: in expansion of macro 'FIT_TIMER_0_INT_MASK'
+  XIntc_EnableIntr(IntcBaseAddress, FIT_TIMER_0_INT_MASK | PUSH_BUT_INT_MASK);
+                                    ^~~~~~~~~~~~~~~~~~~~
+../src/helloworld.c:14:28: error: 'XPAR_AXI_GPIO_PUSH_BUT_IP2INTC_IRPT_MASK' undeclared (first use in this function)
+ #define PUSH_BUT_INT_MASK  XPAR_AXI_GPIO_PUSH_BUT_IP2INTC_IRPT_MASK
+                            ^
+../../CountDownTimer_bsp/microblaze_0/include/xintc_l.h:243:47: note: in definition of macro 'XIntc_EnableIntr'
+  XIntc_Out32((BaseAddress) + XIN_IER_OFFSET, (EnableMask))
+                                               ^~~~~~~~~~
+../src/helloworld.c:99:59: note: in expansion of macro 'PUSH_BUT_INT_MASK'
+  XIntc_EnableIntr(IntcBaseAddress, FIT_TIMER_0_INT_MASK | PUSH_BUT_INT_MASK);
+                                                           ^~~~~~~~~~~~~~~~~
+In file included from ../src/helloworld.c:4:0:
+../src/helloworld.c: In function 'main':
+../src/helloworld.c:140:20: error: 'XPAR_AXI_GPIO_LED_BASEADDR' undeclared (first use in this function)
+     XGpio_WriteReg(XPAR_AXI_GPIO_LED_BASEADDR, XGPIO_TRI_OFFSET, 0);
+                    ^
+../../CountDownTimer_bsp/microblaze_0/include/xgpio_l.h:162:15: note: in definition of macro 'XGpio_WriteReg'
+  XGpio_Out32((BaseAddress) + (RegOffset), (u32)(Data))
+               ^~~~~~~~~~~
+../src/helloworld.c:141:20: error: 'XPAR_AXI_GPIO_DISP_SEG_BASEADDR' undeclared (first use in this function)
+     XGpio_WriteReg(XPAR_AXI_GPIO_DISP_SEG_BASEADDR, XGPIO_TRI_OFFSET, 0);
+                    ^
+../../CountDownTimer_bsp/microblaze_0/include/xgpio_l.h:162:15: note: in definition of macro 'XGpio_WriteReg'
+  XGpio_Out32((BaseAddress) + (RegOffset), (u32)(Data))
+               ^~~~~~~~~~~
+../src/helloworld.c:142:20: error: 'XPAR_AXI_GPIO_DISP_AN_BASEADDR' undeclared (first use in this function)
+     XGpio_WriteReg(XPAR_AXI_GPIO_DISP_AN_BASEADDR, XGPIO_TRI_OFFSET, 0);
+                    ^
+../../CountDownTimer_bsp/microblaze_0/include/xgpio_l.h:162:15: note: in definition of macro 'XGpio_WriteReg'
+  XGpio_Out32((BaseAddress) + (RegOffset), (u32)(Data))
+               ^~~~~~~~~~~
+make: ** [src/helloworld.o] Erro 1
+16:36:00 **** Auto Build of configuration Debug for project CountDownTimer ****
+make all 
+'Building file: ../src/helloworld.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -I../../CountDownTimer_bsp/microblaze_0/include -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+../src/helloworld.c: In function 'SetupInterrupts':
+../src/helloworld.c:11:29: error: 'XPAR_AXI_INTC_0_FIT_TIMER_0_INTERRUPT_INTR' undeclared (first use in this function)
+ #define FIT_TIMER_0_INT_ID  XPAR_AXI_INTC_0_FIT_TIMER_0_INTERRUPT_INTR
+                             ^
+../src/helloworld.c:11:29: note: in definition of macro 'FIT_TIMER_0_INT_ID'
+ #define FIT_TIMER_0_INT_ID  XPAR_AXI_INTC_0_FIT_TIMER_0_INTERRUPT_INTR
+                             ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+../src/helloworld.c:11:29: note: each undeclared identifier is reported only once for each function it appears in
+ #define FIT_TIMER_0_INT_ID  XPAR_AXI_INTC_0_FIT_TIMER_0_INTERRUPT_INTR
+                             ^
+../src/helloworld.c:11:29: note: in definition of macro 'FIT_TIMER_0_INT_ID'
+ #define FIT_TIMER_0_INT_ID  XPAR_AXI_INTC_0_FIT_TIMER_0_INTERRUPT_INTR
+                             ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+In file included from ../src/helloworld.c:4:0:
+../src/helloworld.c:85:17: error: 'XPAR_AXI_GPIO_PUSH_BUT_BASEADDR' undeclared (first use in this function)
+  XGpio_WriteReg(XPAR_AXI_GPIO_PUSH_BUT_BASEADDR, XGPIO_IER_OFFSET, XGPIO_IR_CH1_MASK);
+                 ^
+../../CountDownTimer_bsp/microblaze_0/include/xgpio_l.h:162:15: note: in definition of macro 'XGpio_WriteReg'
+  XGpio_Out32((BaseAddress) + (RegOffset), (u32)(Data))
+               ^~~~~~~~~~~
+../src/helloworld.c:13:27: error: 'XPAR_AXI_INTC_0_AXI_GPIO_PUSH_BUT_IP2INTC_IRPT_INTR' undeclared (first use in this function)
+ #define PUSH_BUT_INT_ID   XPAR_AXI_INTC_0_AXI_GPIO_PUSH_BUT_IP2INTC_IRPT_INTR
+                           ^
+../src/helloworld.c:13:27: note: in definition of macro 'PUSH_BUT_INT_ID'
+ #define PUSH_BUT_INT_ID   XPAR_AXI_INTC_0_AXI_GPIO_PUSH_BUT_IP2INTC_IRPT_INTR
+                           ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+In file included from ../src/helloworld.c:5:0:
+../src/helloworld.c:12:30: error: 'XPAR_FIT_TIMER_0_INTERRUPT_MASK' undeclared (first use in this function)
+ #define FIT_TIMER_0_INT_MASK XPAR_FIT_TIMER_0_INTERRUPT_MASK
+                              ^
+../../CountDownTimer_bsp/microblaze_0/include/xintc_l.h:243:47: note: in definition of macro 'XIntc_EnableIntr'
+  XIntc_Out32((BaseAddress) + XIN_IER_OFFSET, (EnableMask))
+                                               ^~~~~~~~~~
+../src/helloworld.c:99:36: note: in expansion of macro 'FIT_TIMER_0_INT_MASK'
+  XIntc_EnableIntr(IntcBaseAddress, FIT_TIMER_0_INT_MASK | PUSH_BUT_INT_MASK);
+                                    ^~~~~~~~~~~~~~~~~~~~
+../src/helloworld.c:14:28: error: 'XPAR_AXI_GPIO_PUSH_BUT_IP2INTC_IRPT_MASK' undeclared (first use in this function)
+ #define PUSH_BUT_INT_MASK  XPAR_AXI_GPIO_PUSH_BUT_IP2INTC_IRPT_MASK
+                            ^
+../../CountDownTimer_bsp/microblaze_0/include/xintc_l.h:243:47: note: in definition of macro 'XIntc_EnableIntr'
+  XIntc_Out32((BaseAddress) + XIN_IER_OFFSET, (EnableMask))
+                                               ^~~~~~~~~~
+../src/helloworld.c:99:59: note: in expansion of macro 'PUSH_BUT_INT_MASK'
+  XIntc_EnableIntr(IntcBaseAddress, FIT_TIMER_0_INT_MASK | PUSH_BUT_INT_MASK);
+                                                           ^~~~~~~~~~~~~~~~~
+In file included from ../src/helloworld.c:4:0:
+../src/helloworld.c: In function 'main':
+../src/helloworld.c:140:20: error: 'XPAR_AXI_GPIO_LED_BASEADDR' undeclared (first use in this function)
+     XGpio_WriteReg(XPAR_AXI_GPIO_LED_BASEADDR, XGPIO_TRI_OFFSET, 0);
+                    ^
+../../CountDownTimer_bsp/microblaze_0/include/xgpio_l.h:162:15: note: in definition of macro 'XGpio_WriteReg'
+  XGpio_Out32((BaseAddress) + (RegOffset), (u32)(Data))
+               ^~~~~~~~~~~
+../src/helloworld.c:141:20: error: 'XPAR_AXI_GPIO_DISP_SEG_BASEADDR' undeclared (first use in this function)
+     XGpio_WriteReg(XPAR_AXI_GPIO_DISP_SEG_BASEADDR, XGPIO_TRI_OFFSET, 0);
+                    ^
+../../CountDownTimer_bsp/microblaze_0/include/xgpio_l.h:162:15: note: in definition of macro 'XGpio_WriteReg'
+  XGpio_Out32((BaseAddress) + (RegOffset), (u32)(Data))
+               ^~~~~~~~~~~
+../src/helloworld.c:142:20: error: 'XPAR_AXI_GPIO_DISP_AN_BASEADDR' undeclared (first use in this function)
+     XGpio_WriteReg(XPAR_AXI_GPIO_DISP_AN_BASEADDR, XGPIO_TRI_OFFSET, 0);
+                    ^
+../../CountDownTimer_bsp/microblaze_0/include/xgpio_l.h:162:15: note: in definition of macro 'XGpio_WriteReg'
+  XGpio_Out32((BaseAddress) + (RegOffset), (u32)(Data))
+               ^~~~~~~~~~~
+make: ** [src/helloworld.o] Erro 1
+16:36:15 **** Auto Build of configuration Debug for project CountDownTimer ****
+make all 
+'Building file: ../src/helloworld.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -I../../CountDownTimer_bsp/microblaze_0/include -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+../src/helloworld.c: In function 'SetupInterrupts':
+../src/helloworld.c:11:29: error: 'XPAR_AXI_INTC_0_FIT_TIMER_0_INTERRUPT_INTR' undeclared (first use in this function)
+ #define FIT_TIMER_0_INT_ID  XPAR_AXI_INTC_0_FIT_TIMER_0_INTERRUPT_INTR
+                             ^
+../src/helloworld.c:11:29: note: in definition of macro 'FIT_TIMER_0_INT_ID'
+ #define FIT_TIMER_0_INT_ID  XPAR_AXI_INTC_0_FIT_TIMER_0_INTERRUPT_INTR
+                             ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+../src/helloworld.c:11:29: note: each undeclared identifier is reported only once for each function it appears in
+ #define FIT_TIMER_0_INT_ID  XPAR_AXI_INTC_0_FIT_TIMER_0_INTERRUPT_INTR
+                             ^
+../src/helloworld.c:11:29: note: in definition of macro 'FIT_TIMER_0_INT_ID'
+ #define FIT_TIMER_0_INT_ID  XPAR_AXI_INTC_0_FIT_TIMER_0_INTERRUPT_INTR
+                             ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+../src/helloworld.c:13:27: error: 'XPAR_AXI_INTC_0_AXI_GPIO_PUSH_BUT_IP2INTC_IRPT_INTR' undeclared (first use in this function)
+ #define PUSH_BUT_INT_ID   XPAR_AXI_INTC_0_AXI_GPIO_PUSH_BUT_IP2INTC_IRPT_INTR
+                           ^
+../src/helloworld.c:13:27: note: in definition of macro 'PUSH_BUT_INT_ID'
+ #define PUSH_BUT_INT_ID   XPAR_AXI_INTC_0_AXI_GPIO_PUSH_BUT_IP2INTC_IRPT_INTR
+                           ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+In file included from ../src/helloworld.c:5:0:
+../src/helloworld.c:12:30: error: 'XPAR_FIT_TIMER_0_INTERRUPT_MASK' undeclared (first use in this function)
+ #define FIT_TIMER_0_INT_MASK XPAR_FIT_TIMER_0_INTERRUPT_MASK
+                              ^
+../../CountDownTimer_bsp/microblaze_0/include/xintc_l.h:243:47: note: in definition of macro 'XIntc_EnableIntr'
+  XIntc_Out32((BaseAddress) + XIN_IER_OFFSET, (EnableMask))
+                                               ^~~~~~~~~~
+../src/helloworld.c:99:36: note: in expansion of macro 'FIT_TIMER_0_INT_MASK'
+  XIntc_EnableIntr(IntcBaseAddress, FIT_TIMER_0_INT_MASK | PUSH_BUT_INT_MASK);
+                                    ^~~~~~~~~~~~~~~~~~~~
+../src/helloworld.c:14:28: error: 'XPAR_AXI_GPIO_PUSH_BUT_IP2INTC_IRPT_MASK' undeclared (first use in this function)
+ #define PUSH_BUT_INT_MASK  XPAR_AXI_GPIO_PUSH_BUT_IP2INTC_IRPT_MASK
+                            ^
+../../CountDownTimer_bsp/microblaze_0/include/xintc_l.h:243:47: note: in definition of macro 'XIntc_EnableIntr'
+  XIntc_Out32((BaseAddress) + XIN_IER_OFFSET, (EnableMask))
+                                               ^~~~~~~~~~
+../src/helloworld.c:99:59: note: in expansion of macro 'PUSH_BUT_INT_MASK'
+  XIntc_EnableIntr(IntcBaseAddress, FIT_TIMER_0_INT_MASK | PUSH_BUT_INT_MASK);
+                                                           ^~~~~~~~~~~~~~~~~
+In file included from ../src/helloworld.c:4:0:
+../src/helloworld.c: In function 'main':
+../src/helloworld.c:140:20: error: 'XPAR_AXI_GPIO_LED_BASEADDR' undeclared (first use in this function)
+     XGpio_WriteReg(XPAR_AXI_GPIO_LED_BASEADDR, XGPIO_TRI_OFFSET, 0);
+                    ^
+../../CountDownTimer_bsp/microblaze_0/include/xgpio_l.h:162:15: note: in definition of macro 'XGpio_WriteReg'
+  XGpio_Out32((BaseAddress) + (RegOffset), (u32)(Data))
+               ^~~~~~~~~~~
+../src/helloworld.c:141:20: error: 'XPAR_AXI_GPIO_DISP_SEG_BASEADDR' undeclared (first use in this function)
+     XGpio_WriteReg(XPAR_AXI_GPIO_DISP_SEG_BASEADDR, XGPIO_TRI_OFFSET, 0);
+                    ^
+../../CountDownTimer_bsp/microblaze_0/include/xgpio_l.h:162:15: note: in definition of macro 'XGpio_WriteReg'
+  XGpio_Out32((BaseAddress) + (RegOffset), (u32)(Data))
+               ^~~~~~~~~~~
+../src/helloworld.c:142:20: error: 'XPAR_AXI_GPIO_DISP_AN_BASEADDR' undeclared (first use in this function)
+     XGpio_WriteReg(XPAR_AXI_GPIO_DISP_AN_BASEADDR, XGPIO_TRI_OFFSET, 0);
+                    ^
+../../CountDownTimer_bsp/microblaze_0/include/xgpio_l.h:162:15: note: in definition of macro 'XGpio_WriteReg'
+  XGpio_Out32((BaseAddress) + (RegOffset), (u32)(Data))
+               ^~~~~~~~~~~
+make: ** [src/helloworld.o] Erro 1
+16:36:25 **** Auto Build of configuration Debug for project CountDownTimer ****
+make all 
+'Building file: ../src/helloworld.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -I../../CountDownTimer_bsp/microblaze_0/include -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+../src/helloworld.c: In function 'SetupInterrupts':
+../src/helloworld.c:11:29: error: 'XPAR_AXI_INTC_0_FIT_TIMER_0_INTERRUPT_INTR' undeclared (first use in this function)
+ #define FIT_TIMER_0_INT_ID  XPAR_AXI_INTC_0_FIT_TIMER_0_INTERRUPT_INTR
+                             ^
+../src/helloworld.c:11:29: note: in definition of macro 'FIT_TIMER_0_INT_ID'
+ #define FIT_TIMER_0_INT_ID  XPAR_AXI_INTC_0_FIT_TIMER_0_INTERRUPT_INTR
+                             ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+../src/helloworld.c:11:29: note: each undeclared identifier is reported only once for each function it appears in
+ #define FIT_TIMER_0_INT_ID  XPAR_AXI_INTC_0_FIT_TIMER_0_INTERRUPT_INTR
+                             ^
+../src/helloworld.c:11:29: note: in definition of macro 'FIT_TIMER_0_INT_ID'
+ #define FIT_TIMER_0_INT_ID  XPAR_AXI_INTC_0_FIT_TIMER_0_INTERRUPT_INTR
+                             ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+In file included from ../src/helloworld.c:4:0:
+../src/helloworld.c:85:17: error: 'XPAR_AXI_GPIO_PUSH_BUT_BASEADDR' undeclared (first use in this function)
+  XGpio_WriteReg(XPAR_AXI_GPIO_PUSH_BUT_BASEADDR, XGPIO_IER_OFFSET, XGPIO_IR_CH1_MASK);
+                 ^
+../../CountDownTimer_bsp/microblaze_0/include/xgpio_l.h:162:15: note: in definition of macro 'XGpio_WriteReg'
+  XGpio_Out32((BaseAddress) + (RegOffset), (u32)(Data))
+               ^~~~~~~~~~~
+../src/helloworld.c:13:27: error: 'XPAR_AXI_INTC_0_AXI_GPIO_PUSH_BUT_IP2INTC_IRPT_INTR' undeclared (first use in this function)
+ #define PUSH_BUT_INT_ID   XPAR_AXI_INTC_0_AXI_GPIO_PUSH_BUT_IP2INTC_IRPT_INTR
+                           ^
+../src/helloworld.c:13:27: note: in definition of macro 'PUSH_BUT_INT_ID'
+ #define PUSH_BUT_INT_ID   XPAR_AXI_INTC_0_AXI_GPIO_PUSH_BUT_IP2INTC_IRPT_INTR
+                           ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+In file included from ../src/helloworld.c:5:0:
+../src/helloworld.c:12:30: error: 'XPAR_FIT_TIMER_0_INTERRUPT_MASK' undeclared (first use in this function)
+ #define FIT_TIMER_0_INT_MASK XPAR_FIT_TIMER_0_INTERRUPT_MASK
+                              ^
+../../CountDownTimer_bsp/microblaze_0/include/xintc_l.h:243:47: note: in definition of macro 'XIntc_EnableIntr'
+  XIntc_Out32((BaseAddress) + XIN_IER_OFFSET, (EnableMask))
+                                               ^~~~~~~~~~
+../src/helloworld.c:99:36: note: in expansion of macro 'FIT_TIMER_0_INT_MASK'
+  XIntc_EnableIntr(IntcBaseAddress, FIT_TIMER_0_INT_MASK | PUSH_BUT_INT_MASK);
+                                    ^~~~~~~~~~~~~~~~~~~~
+../src/helloworld.c:14:28: error: 'XPAR_AXI_GPIO_PUSH_BUT_IP2INTC_IRPT_MASK' undeclared (first use in this function)
+ #define PUSH_BUT_INT_MASK  XPAR_AXI_GPIO_PUSH_BUT_IP2INTC_IRPT_MASK
+                            ^
+../../CountDownTimer_bsp/microblaze_0/include/xintc_l.h:243:47: note: in definition of macro 'XIntc_EnableIntr'
+  XIntc_Out32((BaseAddress) + XIN_IER_OFFSET, (EnableMask))
+                                               ^~~~~~~~~~
+../src/helloworld.c:99:59: note: in expansion of macro 'PUSH_BUT_INT_MASK'
+  XIntc_EnableIntr(IntcBaseAddress, FIT_TIMER_0_INT_MASK | PUSH_BUT_INT_MASK);
+                                                           ^~~~~~~~~~~~~~~~~
+In file included from ../src/helloworld.c:4:0:
+../src/helloworld.c: In function 'main':
+../src/helloworld.c:140:20: error: 'XPAR_AXI_GPIO_LED_BASEADDR' undeclared (first use in this function)
+     XGpio_WriteReg(XPAR_AXI_GPIO_LED_BASEADDR, XGPIO_TRI_OFFSET, 0);
+                    ^
+../../CountDownTimer_bsp/microblaze_0/include/xgpio_l.h:162:15: note: in definition of macro 'XGpio_WriteReg'
+  XGpio_Out32((BaseAddress) + (RegOffset), (u32)(Data))
+               ^~~~~~~~~~~
+../src/helloworld.c:141:20: error: 'XPAR_AXI_GPIO_DISP_SEG_BASEADDR' undeclared (first use in this function)
+     XGpio_WriteReg(XPAR_AXI_GPIO_DISP_SEG_BASEADDR, XGPIO_TRI_OFFSET, 0);
+                    ^
+../../CountDownTimer_bsp/microblaze_0/include/xgpio_l.h:162:15: note: in definition of macro 'XGpio_WriteReg'
+  XGpio_Out32((BaseAddress) + (RegOffset), (u32)(Data))
+               ^~~~~~~~~~~
+../src/helloworld.c:142:20: error: 'XPAR_AXI_GPIO_DISP_AN_BASEADDR' undeclared (first use in this function)
+     XGpio_WriteReg(XPAR_AXI_GPIO_DISP_AN_BASEADDR, XGPIO_TRI_OFFSET, 0);
+                    ^
+../../CountDownTimer_bsp/microblaze_0/include/xgpio_l.h:162:15: note: in definition of macro 'XGpio_WriteReg'
+  XGpio_Out32((BaseAddress) + (RegOffset), (u32)(Data))
+               ^~~~~~~~~~~
+make: ** [src/helloworld.o] Erro 1
+16:36:31 **** Auto Build of configuration Debug for project CountDownTimer ****
+make all 
+'Building file: ../src/helloworld.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -I../../CountDownTimer_bsp/microblaze_0/include -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+../src/helloworld.c: In function 'SetupInterrupts':
+../src/helloworld.c:11:29: error: 'XPAR_AXI_INTC_0_FIT_TIMER_0_INTERRUPT_INTR' undeclared (first use in this function)
+ #define FIT_TIMER_0_INT_ID  XPAR_AXI_INTC_0_FIT_TIMER_0_INTERRUPT_INTR
+                             ^
+../src/helloworld.c:11:29: note: in definition of macro 'FIT_TIMER_0_INT_ID'
+ #define FIT_TIMER_0_INT_ID  XPAR_AXI_INTC_0_FIT_TIMER_0_INTERRUPT_INTR
+                             ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+../src/helloworld.c:11:29: note: each undeclared identifier is reported only once for each function it appears in
+ #define FIT_TIMER_0_INT_ID  XPAR_AXI_INTC_0_FIT_TIMER_0_INTERRUPT_INTR
+                             ^
+../src/helloworld.c:11:29: note: in definition of macro 'FIT_TIMER_0_INT_ID'
+ #define FIT_TIMER_0_INT_ID  XPAR_AXI_INTC_0_FIT_TIMER_0_INTERRUPT_INTR
+                             ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+In file included from ../src/helloworld.c:4:0:
+../src/helloworld.c:86:17: error: 'XPAR_AXI_GPIO_PUSH_BUT_BASEADDR' undeclared (first use in this function)
+  XGpio_WriteReg(XPAR_AXI_GPIO_PUSH_BUT_BASEADDR, XGPIO_GIE_OFFSET, XGPIO_GIE_GINTR_ENABLE_MASK);
+                 ^
+../../CountDownTimer_bsp/microblaze_0/include/xgpio_l.h:162:15: note: in definition of macro 'XGpio_WriteReg'
+  XGpio_Out32((BaseAddress) + (RegOffset), (u32)(Data))
+               ^~~~~~~~~~~
+../src/helloworld.c:13:27: error: 'XPAR_AXI_INTC_0_AXI_GPIO_PUSH_BUT_IP2INTC_IRPT_INTR' undeclared (first use in this function)
+ #define PUSH_BUT_INT_ID   XPAR_AXI_INTC_0_AXI_GPIO_PUSH_BUT_IP2INTC_IRPT_INTR
+                           ^
+../src/helloworld.c:13:27: note: in definition of macro 'PUSH_BUT_INT_ID'
+ #define PUSH_BUT_INT_ID   XPAR_AXI_INTC_0_AXI_GPIO_PUSH_BUT_IP2INTC_IRPT_INTR
+                           ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+In file included from ../src/helloworld.c:5:0:
+../src/helloworld.c:12:30: error: 'XPAR_FIT_TIMER_0_INTERRUPT_MASK' undeclared (first use in this function)
+ #define FIT_TIMER_0_INT_MASK XPAR_FIT_TIMER_0_INTERRUPT_MASK
+                              ^
+../../CountDownTimer_bsp/microblaze_0/include/xintc_l.h:243:47: note: in definition of macro 'XIntc_EnableIntr'
+  XIntc_Out32((BaseAddress) + XIN_IER_OFFSET, (EnableMask))
+                                               ^~~~~~~~~~
+../src/helloworld.c:99:36: note: in expansion of macro 'FIT_TIMER_0_INT_MASK'
+  XIntc_EnableIntr(IntcBaseAddress, FIT_TIMER_0_INT_MASK | PUSH_BUT_INT_MASK);
+                                    ^~~~~~~~~~~~~~~~~~~~
+../src/helloworld.c:14:28: error: 'XPAR_AXI_GPIO_PUSH_BUT_IP2INTC_IRPT_MASK' undeclared (first use in this function)
+ #define PUSH_BUT_INT_MASK  XPAR_AXI_GPIO_PUSH_BUT_IP2INTC_IRPT_MASK
+                            ^
+../../CountDownTimer_bsp/microblaze_0/include/xintc_l.h:243:47: note: in definition of macro 'XIntc_EnableIntr'
+  XIntc_Out32((BaseAddress) + XIN_IER_OFFSET, (EnableMask))
+                                               ^~~~~~~~~~
+../src/helloworld.c:99:59: note: in expansion of macro 'PUSH_BUT_INT_MASK'
+  XIntc_EnableIntr(IntcBaseAddress, FIT_TIMER_0_INT_MASK | PUSH_BUT_INT_MASK);
+                                                           ^~~~~~~~~~~~~~~~~
+In file included from ../src/helloworld.c:4:0:
+../src/helloworld.c: In function 'main':
+../src/helloworld.c:140:20: error: 'XPAR_AXI_GPIO_LED_BASEADDR' undeclared (first use in this function)
+     XGpio_WriteReg(XPAR_AXI_GPIO_LED_BASEADDR, XGPIO_TRI_OFFSET, 0);
+                    ^
+../../CountDownTimer_bsp/microblaze_0/include/xgpio_l.h:162:15: note: in definition of macro 'XGpio_WriteReg'
+  XGpio_Out32((BaseAddress) + (RegOffset), (u32)(Data))
+               ^~~~~~~~~~~
+../src/helloworld.c:141:20: error: 'XPAR_AXI_GPIO_DISP_SEG_BASEADDR' undeclared (first use in this function)
+     XGpio_WriteReg(XPAR_AXI_GPIO_DISP_SEG_BASEADDR, XGPIO_TRI_OFFSET, 0);
+                    ^
+../../CountDownTimer_bsp/microblaze_0/include/xgpio_l.h:162:15: note: in definition of macro 'XGpio_WriteReg'
+  XGpio_Out32((BaseAddress) + (RegOffset), (u32)(Data))
+               ^~~~~~~~~~~
+../src/helloworld.c:142:20: error: 'XPAR_AXI_GPIO_DISP_AN_BASEADDR' undeclared (first use in this function)
+     XGpio_WriteReg(XPAR_AXI_GPIO_DISP_AN_BASEADDR, XGPIO_TRI_OFFSET, 0);
+                    ^
+../../CountDownTimer_bsp/microblaze_0/include/xgpio_l.h:162:15: note: in definition of macro 'XGpio_WriteReg'
+  XGpio_Out32((BaseAddress) + (RegOffset), (u32)(Data))
+               ^~~~~~~~~~~
+make: ** [src/helloworld.o] Erro 1
+16:36:43 **** Auto Build of configuration Debug for project CountDownTimer ****
+make all 
+'Building file: ../src/helloworld.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -I../../CountDownTimer_bsp/microblaze_0/include -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+../src/helloworld.c: In function 'SetupInterrupts':
+../src/helloworld.c:11:29: error: 'XPAR_AXI_INTC_0_FIT_TIMER_0_INTERRUPT_INTR' undeclared (first use in this function)
+ #define FIT_TIMER_0_INT_ID  XPAR_AXI_INTC_0_FIT_TIMER_0_INTERRUPT_INTR
+                             ^
+../src/helloworld.c:11:29: note: in definition of macro 'FIT_TIMER_0_INT_ID'
+ #define FIT_TIMER_0_INT_ID  XPAR_AXI_INTC_0_FIT_TIMER_0_INTERRUPT_INTR
+                             ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+../src/helloworld.c:11:29: note: each undeclared identifier is reported only once for each function it appears in
+ #define FIT_TIMER_0_INT_ID  XPAR_AXI_INTC_0_FIT_TIMER_0_INTERRUPT_INTR
+                             ^
+../src/helloworld.c:11:29: note: in definition of macro 'FIT_TIMER_0_INT_ID'
+ #define FIT_TIMER_0_INT_ID  XPAR_AXI_INTC_0_FIT_TIMER_0_INTERRUPT_INTR
+                             ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+../src/helloworld.c:13:27: error: 'XPAR_AXI_INTC_0_AXI_GPIO_PUSH_BUT_IP2INTC_IRPT_INTR' undeclared (first use in this function)
+ #define PUSH_BUT_INT_ID   XPAR_AXI_INTC_0_AXI_GPIO_PUSH_BUT_IP2INTC_IRPT_INTR
+                           ^
+../src/helloworld.c:13:27: note: in definition of macro 'PUSH_BUT_INT_ID'
+ #define PUSH_BUT_INT_ID   XPAR_AXI_INTC_0_AXI_GPIO_PUSH_BUT_IP2INTC_IRPT_INTR
+                           ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+In file included from ../src/helloworld.c:5:0:
+../src/helloworld.c:12:30: error: 'XPAR_FIT_TIMER_0_INTERRUPT_MASK' undeclared (first use in this function)
+ #define FIT_TIMER_0_INT_MASK XPAR_FIT_TIMER_0_INTERRUPT_MASK
+                              ^
+../../CountDownTimer_bsp/microblaze_0/include/xintc_l.h:243:47: note: in definition of macro 'XIntc_EnableIntr'
+  XIntc_Out32((BaseAddress) + XIN_IER_OFFSET, (EnableMask))
+                                               ^~~~~~~~~~
+../src/helloworld.c:99:36: note: in expansion of macro 'FIT_TIMER_0_INT_MASK'
+  XIntc_EnableIntr(IntcBaseAddress, FIT_TIMER_0_INT_MASK | PUSH_BUT_INT_MASK);
+                                    ^~~~~~~~~~~~~~~~~~~~
+../src/helloworld.c:14:28: error: 'XPAR_AXI_GPIO_PUSH_BUT_IP2INTC_IRPT_MASK' undeclared (first use in this function)
+ #define PUSH_BUT_INT_MASK  XPAR_AXI_GPIO_PUSH_BUT_IP2INTC_IRPT_MASK
+                            ^
+../../CountDownTimer_bsp/microblaze_0/include/xintc_l.h:243:47: note: in definition of macro 'XIntc_EnableIntr'
+  XIntc_Out32((BaseAddress) + XIN_IER_OFFSET, (EnableMask))
+                                               ^~~~~~~~~~
+../src/helloworld.c:99:59: note: in expansion of macro 'PUSH_BUT_INT_MASK'
+  XIntc_EnableIntr(IntcBaseAddress, FIT_TIMER_0_INT_MASK | PUSH_BUT_INT_MASK);
+                                                           ^~~~~~~~~~~~~~~~~
+In file included from ../src/helloworld.c:4:0:
+../src/helloworld.c: In function 'main':
+../src/helloworld.c:140:20: error: 'XPAR_AXI_GPIO_LED_BASEADDR' undeclared (first use in this function)
+     XGpio_WriteReg(XPAR_AXI_GPIO_LED_BASEADDR, XGPIO_TRI_OFFSET, 0);
+                    ^
+../../CountDownTimer_bsp/microblaze_0/include/xgpio_l.h:162:15: note: in definition of macro 'XGpio_WriteReg'
+  XGpio_Out32((BaseAddress) + (RegOffset), (u32)(Data))
+               ^~~~~~~~~~~
+../src/helloworld.c:141:20: error: 'XPAR_AXI_GPIO_DISP_SEG_BASEADDR' undeclared (first use in this function)
+     XGpio_WriteReg(XPAR_AXI_GPIO_DISP_SEG_BASEADDR, XGPIO_TRI_OFFSET, 0);
+                    ^
+../../CountDownTimer_bsp/microblaze_0/include/xgpio_l.h:162:15: note: in definition of macro 'XGpio_WriteReg'
+  XGpio_Out32((BaseAddress) + (RegOffset), (u32)(Data))
+               ^~~~~~~~~~~
+../src/helloworld.c:142:20: error: 'XPAR_AXI_GPIO_DISP_AN_BASEADDR' undeclared (first use in this function)
+     XGpio_WriteReg(XPAR_AXI_GPIO_DISP_AN_BASEADDR, XGPIO_TRI_OFFSET, 0);
+                    ^
+../../CountDownTimer_bsp/microblaze_0/include/xgpio_l.h:162:15: note: in definition of macro 'XGpio_WriteReg'
+  XGpio_Out32((BaseAddress) + (RegOffset), (u32)(Data))
+               ^~~~~~~~~~~
+make: ** [src/helloworld.o] Erro 1
+16:37:16 **** Auto Build of configuration Debug for project CountDownTimer ****
+make all 
+'Building file: ../src/helloworld.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -I../../CountDownTimer_bsp/microblaze_0/include -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+../src/helloworld.c: In function 'SetupInterrupts':
+../src/helloworld.c:11:29: error: 'XPAR_AXI_INTC_0_FIT_TIMER_0_INTERRUPT_INTR' undeclared (first use in this function)
+ #define FIT_TIMER_0_INT_ID  XPAR_AXI_INTC_0_FIT_TIMER_0_INTERRUPT_INTR
+                             ^
+../src/helloworld.c:11:29: note: in definition of macro 'FIT_TIMER_0_INT_ID'
+ #define FIT_TIMER_0_INT_ID  XPAR_AXI_INTC_0_FIT_TIMER_0_INTERRUPT_INTR
+                             ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+../src/helloworld.c:11:29: note: each undeclared identifier is reported only once for each function it appears in
+ #define FIT_TIMER_0_INT_ID  XPAR_AXI_INTC_0_FIT_TIMER_0_INTERRUPT_INTR
+                             ^
+../src/helloworld.c:11:29: note: in definition of macro 'FIT_TIMER_0_INT_ID'
+ #define FIT_TIMER_0_INT_ID  XPAR_AXI_INTC_0_FIT_TIMER_0_INTERRUPT_INTR
+                             ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+../src/helloworld.c:13:27: error: 'XPAR_AXI_INTC_0_AXI_GPIO_PUSH_BUT_IP2INTC_IRPT_INTR' undeclared (first use in this function)
+ #define PUSH_BUT_INT_ID   XPAR_AXI_INTC_0_AXI_GPIO_PUSH_BUT_IP2INTC_IRPT_INTR
+                           ^
+../src/helloworld.c:13:27: note: in definition of macro 'PUSH_BUT_INT_ID'
+ #define PUSH_BUT_INT_ID   XPAR_AXI_INTC_0_AXI_GPIO_PUSH_BUT_IP2INTC_IRPT_INTR
+                           ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+In file included from ../src/helloworld.c:5:0:
+../src/helloworld.c:12:30: error: 'XPAR_FIT_TIMER_0_INTERRUPT_MASK' undeclared (first use in this function)
+ #define FIT_TIMER_0_INT_MASK XPAR_FIT_TIMER_0_INTERRUPT_MASK
+                              ^
+../../CountDownTimer_bsp/microblaze_0/include/xintc_l.h:243:47: note: in definition of macro 'XIntc_EnableIntr'
+  XIntc_Out32((BaseAddress) + XIN_IER_OFFSET, (EnableMask))
+                                               ^~~~~~~~~~
+../src/helloworld.c:99:36: note: in expansion of macro 'FIT_TIMER_0_INT_MASK'
+  XIntc_EnableIntr(IntcBaseAddress, FIT_TIMER_0_INT_MASK | PUSH_BUT_INT_MASK);
+                                    ^~~~~~~~~~~~~~~~~~~~
+../src/helloworld.c:14:28: error: 'XPAR_AXI_GPIO_PUSH_BUT_IP2INTC_IRPT_MASK' undeclared (first use in this function)
+ #define PUSH_BUT_INT_MASK  XPAR_AXI_GPIO_PUSH_BUT_IP2INTC_IRPT_MASK
+                            ^
+../../CountDownTimer_bsp/microblaze_0/include/xintc_l.h:243:47: note: in definition of macro 'XIntc_EnableIntr'
+  XIntc_Out32((BaseAddress) + XIN_IER_OFFSET, (EnableMask))
+                                               ^~~~~~~~~~
+../src/helloworld.c:99:59: note: in expansion of macro 'PUSH_BUT_INT_MASK'
+  XIntc_EnableIntr(IntcBaseAddress, FIT_TIMER_0_INT_MASK | PUSH_BUT_INT_MASK);
+                                                           ^~~~~~~~~~~~~~~~~
+In file included from ../src/helloworld.c:4:0:
+../src/helloworld.c: In function 'main':
+../src/helloworld.c:164:21: error: 'XPAR_AXI_GPIO_LED_BASEADDR' undeclared (first use in this function)
+      XGpio_WriteReg(XPAR_AXI_GPIO_LED_BASEADDR, XGPIO_DATA_OFFSET,
+                     ^
+../../CountDownTimer_bsp/microblaze_0/include/xgpio_l.h:162:15: note: in definition of macro 'XGpio_WriteReg'
+  XGpio_Out32((BaseAddress) + (RegOffset), (u32)(Data))
+               ^~~~~~~~~~~
+make: ** [src/helloworld.o] Erro 1
+16:37:23 **** Auto Build of configuration Debug for project CountDownTimer ****
+make all 
+'Building file: ../src/helloworld.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -I../../CountDownTimer_bsp/microblaze_0/include -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+../src/helloworld.c: In function 'SetupInterrupts':
+../src/helloworld.c:11:29: error: 'XPAR_AXI_INTC_0_FIT_TIMER_0_INTERRUPT_INTR' undeclared (first use in this function)
+ #define FIT_TIMER_0_INT_ID  XPAR_AXI_INTC_0_FIT_TIMER_0_INTERRUPT_INTR
+                             ^
+../src/helloworld.c:11:29: note: in definition of macro 'FIT_TIMER_0_INT_ID'
+ #define FIT_TIMER_0_INT_ID  XPAR_AXI_INTC_0_FIT_TIMER_0_INTERRUPT_INTR
+                             ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+../src/helloworld.c:11:29: note: each undeclared identifier is reported only once for each function it appears in
+ #define FIT_TIMER_0_INT_ID  XPAR_AXI_INTC_0_FIT_TIMER_0_INTERRUPT_INTR
+                             ^
+../src/helloworld.c:11:29: note: in definition of macro 'FIT_TIMER_0_INT_ID'
+ #define FIT_TIMER_0_INT_ID  XPAR_AXI_INTC_0_FIT_TIMER_0_INTERRUPT_INTR
+                             ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+../src/helloworld.c:13:27: error: 'XPAR_AXI_INTC_0_AXI_GPIO_PUSH_BUT_IP2INTC_IRPT_INTR' undeclared (first use in this function)
+ #define PUSH_BUT_INT_ID   XPAR_AXI_INTC_0_AXI_GPIO_PUSH_BUT_IP2INTC_IRPT_INTR
+                           ^
+../src/helloworld.c:13:27: note: in definition of macro 'PUSH_BUT_INT_ID'
+ #define PUSH_BUT_INT_ID   XPAR_AXI_INTC_0_AXI_GPIO_PUSH_BUT_IP2INTC_IRPT_INTR
+                           ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+In file included from ../src/helloworld.c:5:0:
+../src/helloworld.c:12:30: error: 'XPAR_FIT_TIMER_0_INTERRUPT_MASK' undeclared (first use in this function)
+ #define FIT_TIMER_0_INT_MASK XPAR_FIT_TIMER_0_INTERRUPT_MASK
+                              ^
+../../CountDownTimer_bsp/microblaze_0/include/xintc_l.h:243:47: note: in definition of macro 'XIntc_EnableIntr'
+  XIntc_Out32((BaseAddress) + XIN_IER_OFFSET, (EnableMask))
+                                               ^~~~~~~~~~
+../src/helloworld.c:99:36: note: in expansion of macro 'FIT_TIMER_0_INT_MASK'
+  XIntc_EnableIntr(IntcBaseAddress, FIT_TIMER_0_INT_MASK | PUSH_BUT_INT_MASK);
+                                    ^~~~~~~~~~~~~~~~~~~~
+../src/helloworld.c:14:28: error: 'XPAR_AXI_GPIO_PUSH_BUT_IP2INTC_IRPT_MASK' undeclared (first use in this function)
+ #define PUSH_BUT_INT_MASK  XPAR_AXI_GPIO_PUSH_BUT_IP2INTC_IRPT_MASK
+                            ^
+../../CountDownTimer_bsp/microblaze_0/include/xintc_l.h:243:47: note: in definition of macro 'XIntc_EnableIntr'
+  XIntc_Out32((BaseAddress) + XIN_IER_OFFSET, (EnableMask))
+                                               ^~~~~~~~~~
+../src/helloworld.c:99:59: note: in expansion of macro 'PUSH_BUT_INT_MASK'
+  XIntc_EnableIntr(IntcBaseAddress, FIT_TIMER_0_INT_MASK | PUSH_BUT_INT_MASK);
+                                                           ^~~~~~~~~~~~~~~~~
+make: ** [src/helloworld.o] Erro 1
+16:37:49 **** Auto Build of configuration Debug for project CountDownTimer ****
+make all 
+'Building file: ../src/helloworld.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -I../../CountDownTimer_bsp/microblaze_0/include -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+../src/helloworld.c: In function 'SetupInterrupts':
+../src/helloworld.c:11:29: error: 'XPAR_AXI_INTC_0_FIT_TIMER_0_INTERRUPT_INTR' undeclared (first use in this function)
+ #define FIT_TIMER_0_INT_ID  XPAR_AXI_INTC_0_FIT_TIMER_0_INTERRUPT_INTR
+                             ^
+../src/helloworld.c:11:29: note: in definition of macro 'FIT_TIMER_0_INT_ID'
+ #define FIT_TIMER_0_INT_ID  XPAR_AXI_INTC_0_FIT_TIMER_0_INTERRUPT_INTR
+                             ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+../src/helloworld.c:11:29: note: each undeclared identifier is reported only once for each function it appears in
+ #define FIT_TIMER_0_INT_ID  XPAR_AXI_INTC_0_FIT_TIMER_0_INTERRUPT_INTR
+                             ^
+../src/helloworld.c:11:29: note: in definition of macro 'FIT_TIMER_0_INT_ID'
+ #define FIT_TIMER_0_INT_ID  XPAR_AXI_INTC_0_FIT_TIMER_0_INTERRUPT_INTR
+                             ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+../src/helloworld.c:13:27: error: 'XPAR_AXI_INTC_0_AXI_GPIO_BTN_IP2INTC_IRPT_INTR' undeclared (first use in this function)
+ #define PUSH_BUT_INT_ID   XPAR_AXI_INTC_0_AXI_GPIO_BTN_IP2INTC_IRPT_INTR
+                           ^
+../src/helloworld.c:13:27: note: in definition of macro 'PUSH_BUT_INT_ID'
+ #define PUSH_BUT_INT_ID   XPAR_AXI_INTC_0_AXI_GPIO_BTN_IP2INTC_IRPT_INTR
+                           ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+In file included from ../src/helloworld.c:5:0:
+../src/helloworld.c:12:30: error: 'XPAR_FIT_TIMER_0_INTERRUPT_MASK' undeclared (first use in this function)
+ #define FIT_TIMER_0_INT_MASK XPAR_FIT_TIMER_0_INTERRUPT_MASK
+                              ^
+../../CountDownTimer_bsp/microblaze_0/include/xintc_l.h:243:47: note: in definition of macro 'XIntc_EnableIntr'
+  XIntc_Out32((BaseAddress) + XIN_IER_OFFSET, (EnableMask))
+                                               ^~~~~~~~~~
+../src/helloworld.c:99:36: note: in expansion of macro 'FIT_TIMER_0_INT_MASK'
+  XIntc_EnableIntr(IntcBaseAddress, FIT_TIMER_0_INT_MASK | PUSH_BUT_INT_MASK);
+                                    ^~~~~~~~~~~~~~~~~~~~
+make: ** [src/helloworld.o] Erro 1
+16:40:14 **** Auto Build of configuration Debug for project CountDownTimer ****
+make all 
+'Building file: ../src/helloworld.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -I../../CountDownTimer_bsp/microblaze_0/include -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+../src/helloworld.c: In function 'SetupInterrupts':
+../src/helloworld.c:11:29: error: 'XPAR_AXI_INTC_0_FIT_TIMER_0_INTERRUPT_INTR' undeclared (first use in this function)
+ #define FIT_TIMER_0_INT_ID  XPAR_AXI_INTC_0_FIT_TIMER_0_INTERRUPT_INTR
+                             ^
+../src/helloworld.c:11:29: note: in definition of macro 'FIT_TIMER_0_INT_ID'
+ #define FIT_TIMER_0_INT_ID  XPAR_AXI_INTC_0_FIT_TIMER_0_INTERRUPT_INTR
+                             ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+../src/helloworld.c:11:29: note: each undeclared identifier is reported only once for each function it appears in
+ #define FIT_TIMER_0_INT_ID  XPAR_AXI_INTC_0_FIT_TIMER_0_INTERRUPT_INTR
+                             ^
+../src/helloworld.c:11:29: note: in definition of macro 'FIT_TIMER_0_INT_ID'
+ #define FIT_TIMER_0_INT_ID  XPAR_AXI_INTC_0_FIT_TIMER_0_INTERRUPT_INTR
+                             ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+../src/helloworld.c:13:27: error: 'XPARMICROBLAZE_0_AXI_INTC_GPIO_BTN_IP2INTC_IRPT_INTR' undeclared (first use in this function)
+ #define PUSH_BUT_INT_ID   XPARMICROBLAZE_0_AXI_INTC_GPIO_BTN_IP2INTC_IRPT_INTR
+                           ^
+../src/helloworld.c:13:27: note: in definition of macro 'PUSH_BUT_INT_ID'
+ #define PUSH_BUT_INT_ID   XPARMICROBLAZE_0_AXI_INTC_GPIO_BTN_IP2INTC_IRPT_INTR
+                           ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+make: ** [src/helloworld.o] Erro 1
+16:40:55 **** Auto Build of configuration Debug for project CountDownTimer ****
+make all 
+'Building file: ../src/helloworld.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -I../../CountDownTimer_bsp/microblaze_0/include -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+../src/helloworld.c: In function 'SetupInterrupts':
+../src/helloworld.c:11:29: error: 'XPAR_AXI_INTC_0_FIT_TIMER_0_INTERRUPT_INTR' undeclared (first use in this function)
+ #define FIT_TIMER_0_INT_ID  XPAR_AXI_INTC_0_FIT_TIMER_0_INTERRUPT_INTR
+                             ^
+../src/helloworld.c:11:29: note: in definition of macro 'FIT_TIMER_0_INT_ID'
+ #define FIT_TIMER_0_INT_ID  XPAR_AXI_INTC_0_FIT_TIMER_0_INTERRUPT_INTR
+                             ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+../src/helloworld.c:11:29: note: each undeclared identifier is reported only once for each function it appears in
+ #define FIT_TIMER_0_INT_ID  XPAR_AXI_INTC_0_FIT_TIMER_0_INTERRUPT_INTR
+                             ^
+../src/helloworld.c:11:29: note: in definition of macro 'FIT_TIMER_0_INT_ID'
+ #define FIT_TIMER_0_INT_ID  XPAR_AXI_INTC_0_FIT_TIMER_0_INTERRUPT_INTR
+                             ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+../src/helloworld.c:13:85: error: expected ')' before numeric constant
+ #define PUSH_BUT_INT_ID   XPAR_MICROBLAZE_0_AXI_INTC_AXI_GPIO_BTN_IP2INTC_IRPT_INTR 1U
+                                                                                     ^
+../src/helloworld.c:92:41: note: in expansion of macro 'PUSH_BUT_INT_ID'
+  XIntc_RegisterHandler(IntcBaseAddress, PUSH_BUT_INT_ID,
+                                         ^~~~~~~~~~~~~~~
+../src/helloworld.c:92:2: error: too few arguments to function 'XIntc_RegisterHandler'
+  XIntc_RegisterHandler(IntcBaseAddress, PUSH_BUT_INT_ID,
+  ^~~~~~~~~~~~~~~~~~~~~
+In file included from ../src/helloworld.c:5:0:
+../../CountDownTimer_bsp/microblaze_0/include/xintc_l.h:319:6: note: declared here
+ void XIntc_RegisterHandler(UINTPTR BaseAddress, int InterruptId,
+      ^~~~~~~~~~~~~~~~~~~~~
+make: ** [src/helloworld.o] Erro 1
+16:41:04 **** Auto Build of configuration Debug for project CountDownTimer ****
+make all 
+'Building file: ../src/helloworld.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -I../../CountDownTimer_bsp/microblaze_0/include -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+../src/helloworld.c: In function 'SetupInterrupts':
+../src/helloworld.c:11:29: error: 'XPAR_AXI_INTC_0_FIT_TIMER_INTERRUPT_INTR' undeclared (first use in this function)
+ #define FIT_TIMER_0_INT_ID  XPAR_AXI_INTC_0_FIT_TIMER_INTERRUPT_INTR
+                             ^
+../src/helloworld.c:11:29: note: in definition of macro 'FIT_TIMER_0_INT_ID'
+ #define FIT_TIMER_0_INT_ID  XPAR_AXI_INTC_0_FIT_TIMER_INTERRUPT_INTR
+                             ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+../src/helloworld.c:11:29: note: each undeclared identifier is reported only once for each function it appears in
+ #define FIT_TIMER_0_INT_ID  XPAR_AXI_INTC_0_FIT_TIMER_INTERRUPT_INTR
+                             ^
+../src/helloworld.c:11:29: note: in definition of macro 'FIT_TIMER_0_INT_ID'
+ #define FIT_TIMER_0_INT_ID  XPAR_AXI_INTC_0_FIT_TIMER_INTERRUPT_INTR
+                             ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+../src/helloworld.c:13:85: error: expected ')' before numeric constant
+ #define PUSH_BUT_INT_ID   XPAR_MICROBLAZE_0_AXI_INTC_AXI_GPIO_BTN_IP2INTC_IRPT_INTR 1U
+                                                                                     ^
+../src/helloworld.c:92:41: note: in expansion of macro 'PUSH_BUT_INT_ID'
+  XIntc_RegisterHandler(IntcBaseAddress, PUSH_BUT_INT_ID,
+                                         ^~~~~~~~~~~~~~~
+../src/helloworld.c:92:2: error: too few arguments to function 'XIntc_RegisterHandler'
+  XIntc_RegisterHandler(IntcBaseAddress, PUSH_BUT_INT_ID,
+  ^~~~~~~~~~~~~~~~~~~~~
+In file included from ../src/helloworld.c:5:0:
+../../CountDownTimer_bsp/microblaze_0/include/xintc_l.h:319:6: note: declared here
+ void XIntc_RegisterHandler(UINTPTR BaseAddress, int InterruptId,
+      ^~~~~~~~~~~~~~~~~~~~~
+make: ** [src/helloworld.o] Erro 1
+16:41:58 **** Auto Build of configuration Debug for project CountDownTimer ****
+make all 
+'Building file: ../src/helloworld.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -I../../CountDownTimer_bsp/microblaze_0/include -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+../src/helloworld.c: In function 'SetupInterrupts':
+../src/helloworld.c:13:85: error: expected ')' before numeric constant
+ #define PUSH_BUT_INT_ID   XPAR_MICROBLAZE_0_AXI_INTC_AXI_GPIO_BTN_IP2INTC_IRPT_INTR 1U
+                                                                                     ^
+../src/helloworld.c:92:41: note: in expansion of macro 'PUSH_BUT_INT_ID'
+  XIntc_RegisterHandler(IntcBaseAddress, PUSH_BUT_INT_ID,
+                                         ^~~~~~~~~~~~~~~
+../src/helloworld.c:92:2: error: too few arguments to function 'XIntc_RegisterHandler'
+  XIntc_RegisterHandler(IntcBaseAddress, PUSH_BUT_INT_ID,
+  ^~~~~~~~~~~~~~~~~~~~~
+In file included from ../src/helloworld.c:5:0:
+../../CountDownTimer_bsp/microblaze_0/include/xintc_l.h:319:6: note: declared here
+ void XIntc_RegisterHandler(UINTPTR BaseAddress, int InterruptId,
+      ^~~~~~~~~~~~~~~~~~~~~
+make: ** [src/helloworld.o] Erro 1
+16:42:41 **** Auto Build of configuration Debug for project CountDownTimer ****
+make all 
+'Building file: ../src/helloworld.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -I../../CountDownTimer_bsp/microblaze_0/include -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+../src/helloworld.c: In function 'SetupInterrupts':
+../src/helloworld.c:13:27: error: 'XPAR_AXI_INTC_0_AXI_GPIO_PUSH_BUT_IP2INTC_IRPT_INTR' undeclared (first use in this function)
+ #define PUSH_BUT_INT_ID   XPAR_AXI_INTC_0_AXI_GPIO_PUSH_BUT_IP2INTC_IRPT_INTR
+                           ^
+../src/helloworld.c:13:27: note: in definition of macro 'PUSH_BUT_INT_ID'
+ #define PUSH_BUT_INT_ID   XPAR_AXI_INTC_0_AXI_GPIO_PUSH_BUT_IP2INTC_IRPT_INTR
+                           ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+../src/helloworld.c:13:27: note: each undeclared identifier is reported only once for each function it appears in
+ #define PUSH_BUT_INT_ID   XPAR_AXI_INTC_0_AXI_GPIO_PUSH_BUT_IP2INTC_IRPT_INTR
+                           ^
+../src/helloworld.c:13:27: note: in definition of macro 'PUSH_BUT_INT_ID'
+ #define PUSH_BUT_INT_ID   XPAR_AXI_INTC_0_AXI_GPIO_PUSH_BUT_IP2INTC_IRPT_INTR
+                           ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+make: ** [src/helloworld.o] Erro 1
+16:42:52 **** Auto Build of configuration Debug for project CountDownTimer ****
+make all 
+'Building file: ../src/helloworld.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -I../../CountDownTimer_bsp/microblaze_0/include -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+../src/helloworld.c: In function 'SetupInterrupts':
+../src/helloworld.c:13:27: error: 'XPAR_MICROBLAZE_0_AXI_INTC_AXI_GPIO_PUSH_BUT_IP2INTC_IRPT_INTR' undeclared (first use in this function)
+ #define PUSH_BUT_INT_ID   XPAR_MICROBLAZE_0_AXI_INTC_AXI_GPIO_PUSH_BUT_IP2INTC_IRPT_INTR
+                           ^
+../src/helloworld.c:13:27: note: in definition of macro 'PUSH_BUT_INT_ID'
+ #define PUSH_BUT_INT_ID   XPAR_MICROBLAZE_0_AXI_INTC_AXI_GPIO_PUSH_BUT_IP2INTC_IRPT_INTR
+                           ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+../src/helloworld.c:13:27: note: each undeclared identifier is reported only once for each function it appears in
+ #define PUSH_BUT_INT_ID   XPAR_MICROBLAZE_0_AXI_INTC_AXI_GPIO_PUSH_BUT_IP2INTC_IRPT_INTR
+                           ^
+../src/helloworld.c:13:27: note: in definition of macro 'PUSH_BUT_INT_ID'
+ #define PUSH_BUT_INT_ID   XPAR_MICROBLAZE_0_AXI_INTC_AXI_GPIO_PUSH_BUT_IP2INTC_IRPT_INTR
+                           ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+make: ** [src/helloworld.o] Erro 1
+16:44:25 **** Auto Build of configuration Debug for project CountDownTimer ****
+make all 
+'Building file: ../src/helloworld.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -I../../CountDownTimer_bsp/microblaze_0/include -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+'Finished building: ../src/helloworld.c'
+' '
+'Building target: CountDownTimer.elf'
+'Invoking: MicroBlaze gcc linker'
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../CountDownTimer_bsp/microblaze_0/lib -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "CountDownTimer.elf"  ./src/helloworld.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: CountDownTimer.elf'
+' '
+'Invoking: MicroBlaze Print Size'
+mb-size CountDownTimer.elf  |tee "CountDownTimer.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+   7896	    332	   3124	  11352	   2c58	CountDownTimer.elf
+'Finished building: CountDownTimer.elf.size'
+' '
+16:44:44 **** Incremental Build of configuration Debug for project CountDownTimer ****
+make all 
+make: Nada a ser feito para `all'.
+16:45:49 **** Incremental Build of configuration Debug for project CountDownTimer ****
+make all 
+make: Nada a ser feito para `all'.
+16:46:16 **** Incremental Build of configuration Debug for project CountDownTimer ****
+make all 
+make: Nada a ser feito para `all'.
+16:54:42 **** Auto Build of configuration Debug for project CountDownTimer ****
+make all 
+'Building file: ../src/helloworld.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -I../../CountDownTimer_bsp/microblaze_0/include -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+../src/helloworld.c: In function 'TimerIntCallbackHandler':
+../src/helloworld.c:35:3: error: 'userCount' undeclared (first use in this function)
+   userCount = (userCount + 1) % 100; // Incremented once every 500 interrupts
+   ^~~~~~~~~
+../src/helloworld.c:35:3: note: each undeclared identifier is reported only once for each function it appears in
+../src/helloworld.c: In function 'PushButIntCallbackHandler':
+../src/helloworld.c:66:2: error: 'userCount' undeclared (first use in this function)
+  userCount = 0;
+  ^~~~~~~~~
+At top level:
+../src/helloworld.c:19:21: warning: 'timerValue' defined but not used [-Wunused-variable]
+ static unsigned int timerValue = 3600;
+                     ^~~~~~~~~~
+make: ** [src/helloworld.o] Erro 1
+16:55:01 **** Auto Build of configuration Debug for project CountDownTimer ****
+make all 
+'Building file: ../src/helloworld.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -I../../CountDownTimer_bsp/microblaze_0/include -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+../src/helloworld.c: In function 'TimerIntCallbackHandler':
+../src/helloworld.c:46:12: error: 'userCount' undeclared (first use in this function)
+    digit = userCount % 10;
+            ^~~~~~~~~
+../src/helloworld.c:46:12: note: each undeclared identifier is reported only once for each function it appears in
+../src/helloworld.c: In function 'PushButIntCallbackHandler':
+../src/helloworld.c:66:2: error: 'userCount' undeclared (first use in this function)
+  userCount = 0;
+  ^~~~~~~~~
+make: ** [src/helloworld.o] Erro 1
+16:55:09 **** Auto Build of configuration Debug for project CountDownTimer ****
+make all 
+'Building file: ../src/helloworld.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -I../../CountDownTimer_bsp/microblaze_0/include -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+../src/helloworld.c: In function 'PushButIntCallbackHandler':
+../src/helloworld.c:66:2: error: 'userCount' undeclared (first use in this function)
+  userCount = 0;
+  ^~~~~~~~~
+../src/helloworld.c:66:2: note: each undeclared identifier is reported only once for each function it appears in
+make: ** [src/helloworld.o] Erro 1
+16:55:14 **** Auto Build of configuration Debug for project CountDownTimer ****
+make all 
+'Building file: ../src/helloworld.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -I../../CountDownTimer_bsp/microblaze_0/include -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+'Finished building: ../src/helloworld.c'
+' '
+'Building target: CountDownTimer.elf'
+'Invoking: MicroBlaze gcc linker'
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../CountDownTimer_bsp/microblaze_0/lib -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "CountDownTimer.elf"  ./src/helloworld.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: CountDownTimer.elf'
+' '
+'Invoking: MicroBlaze Print Size'
+mb-size CountDownTimer.elf  |tee "CountDownTimer.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+   7896	    336	   3112	  11344	   2c50	CountDownTimer.elf
+'Finished building: CountDownTimer.elf.size'
+' '
+16:55:19 **** Auto Build of configuration Debug for project CountDownTimer ****
+make all 
+'Building file: ../src/helloworld.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -I../../CountDownTimer_bsp/microblaze_0/include -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+'Finished building: ../src/helloworld.c'
+' '
+'Building target: CountDownTimer.elf'
+'Invoking: MicroBlaze gcc linker'
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../CountDownTimer_bsp/microblaze_0/lib -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "CountDownTimer.elf"  ./src/helloworld.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: CountDownTimer.elf'
+' '
+'Invoking: MicroBlaze Print Size'
+mb-size CountDownTimer.elf  |tee "CountDownTimer.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+   7900	    336	   3116	  11352	   2c58	CountDownTimer.elf
+'Finished building: CountDownTimer.elf.size'
+' '
+16:55:55 **** Auto Build of configuration Debug for project CountDownTimer ****
+make all 
+'Building file: ../src/helloworld.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -I../../CountDownTimer_bsp/microblaze_0/include -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+../src/helloworld.c: In function 'TimerIntCallbackHandler':
+../src/helloworld.c:36:3: error: 'timerValue' undeclared (first use in this function)
+   timerValue = (timerValue + 1) % 100; // Incremented once every 500 interrupts
+   ^~~~~~~~~~
+../src/helloworld.c:36:3: note: each undeclared identifier is reported only once for each function it appears in
+../src/helloworld.c: In function 'PushButIntCallbackHandler':
+../src/helloworld.c:67:2: error: 'timerValue' undeclared (first use in this function)
+  timerValue = 3600;
+  ^~~~~~~~~~
+At top level:
+../src/helloworld.c:20:21: warning: 'ss' defined but not used [-Wunused-variable]
+ static unsigned int ss = 59;
+                     ^~
+../src/helloworld.c:19:21: warning: 'mm' defined but not used [-Wunused-variable]
+ static unsigned int mm = 59;
+                     ^~
+make: ** [src/helloworld.o] Erro 1
+16:56:26 **** Auto Build of configuration Debug for project CountDownTimer ****
+make all 
+'Building file: ../src/helloworld.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -I../../CountDownTimer_bsp/microblaze_0/include -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+../src/helloworld.c: In function 'TimerIntCallbackHandler':
+../src/helloworld.c:36:3: error: 'timerValue' undeclared (first use in this function)
+   timerValue = (timerValue + 1) % 100; // Incremented once every 500 interrupts
+   ^~~~~~~~~~
+../src/helloworld.c:36:3: note: each undeclared identifier is reported only once for each function it appears in
+../src/helloworld.c: In function 'PushButIntCallbackHandler':
+../src/helloworld.c:67:2: error: 'timerValue' undeclared (first use in this function)
+  timerValue = 3600;
+  ^~~~~~~~~~
+At top level:
+../src/helloworld.c:20:21: warning: 'ss' defined but not used [-Wunused-variable]
+ static unsigned int ss = 59;
+                     ^~
+../src/helloworld.c:19:21: warning: 'mm' defined but not used [-Wunused-variable]
+ static unsigned int mm = 59;
+                     ^~
+make: ** [src/helloworld.o] Erro 1
+16:57:10 **** Auto Build of configuration Debug for project CountDownTimer ****
+make all 
+'Building file: ../src/helloworld.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -I../../CountDownTimer_bsp/microblaze_0/include -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+../src/helloworld.c: In function 'TimerIntCallbackHandler':
+../src/helloworld.c:47:12: error: 'timerValue' undeclared (first use in this function)
+    digit = timerValue % 10;
+            ^~~~~~~~~~
+../src/helloworld.c:47:12: note: each undeclared identifier is reported only once for each function it appears in
+../src/helloworld.c: In function 'PushButIntCallbackHandler':
+../src/helloworld.c:67:2: error: 'timerValue' undeclared (first use in this function)
+  timerValue = 3600;
+  ^~~~~~~~~~
+At top level:
+../src/helloworld.c:19:21: warning: 'mm' defined but not used [-Wunused-variable]
+ static unsigned int mm = 59;
+                     ^~
+make: ** [src/helloworld.o] Erro 1
+16:57:54 **** Auto Build of configuration Debug for project CountDownTimer ****
+make all 
+'Building file: ../src/helloworld.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -I../../CountDownTimer_bsp/microblaze_0/include -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+../src/helloworld.c: In function 'TimerIntCallbackHandler':
+../src/helloworld.c:50:12: error: 'timerValue' undeclared (first use in this function)
+    digit = timerValue % 10;
+            ^~~~~~~~~~
+../src/helloworld.c:50:12: note: each undeclared identifier is reported only once for each function it appears in
+../src/helloworld.c: In function 'PushButIntCallbackHandler':
+../src/helloworld.c:70:2: error: 'timerValue' undeclared (first use in this function)
+  timerValue = 3600;
+  ^~~~~~~~~~
+At top level:
+../src/helloworld.c:21:21: warning: 'done' defined but not used [-Wunused-variable]
+ static unsigned int done = 0;
+                     ^~~~
+../src/helloworld.c:19:21: warning: 'mm' defined but not used [-Wunused-variable]
+ static unsigned int mm = 59;
+                     ^~
+make: ** [src/helloworld.o] Erro 1
+16:58:47 **** Auto Build of configuration Debug for project CountDownTimer ****
+make all 
+'Building file: ../src/helloworld.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -I../../CountDownTimer_bsp/microblaze_0/include -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+../src/helloworld.c: In function 'TimerIntCallbackHandler':
+../src/helloworld.c:50:12: error: 'timerValue' undeclared (first use in this function)
+    digit = timerValue % 10;
+            ^~~~~~~~~~
+../src/helloworld.c:50:12: note: each undeclared identifier is reported only once for each function it appears in
+../src/helloworld.c: In function 'PushButIntCallbackHandler':
+../src/helloworld.c:86:2: error: 'timerValue' undeclared (first use in this function)
+  timerValue = 3600;
+  ^~~~~~~~~~
+At top level:
+../src/helloworld.c:21:21: warning: 'done' defined but not used [-Wunused-variable]
+ static unsigned int done = 0;
+                     ^~~~
+../src/helloworld.c:19:21: warning: 'mm' defined but not used [-Wunused-variable]
+ static unsigned int mm = 59;
+                     ^~
+make: ** [src/helloworld.o] Erro 1
+16:58:52 **** Auto Build of configuration Debug for project CountDownTimer ****
+make all 
+'Building file: ../src/helloworld.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -I../../CountDownTimer_bsp/microblaze_0/include -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+../src/helloworld.c: In function 'TimerIntCallbackHandler':
+../src/helloworld.c:50:12: error: 'timerValue' undeclared (first use in this function)
+    digit = timerValue % 10;
+            ^~~~~~~~~~
+../src/helloworld.c:50:12: note: each undeclared identifier is reported only once for each function it appears in
+../src/helloworld.c: In function 'PushButIntCallbackHandler':
+../src/helloworld.c:86:2: error: 'timerValue' undeclared (first use in this function)
+  timerValue = 3600;
+  ^~~~~~~~~~
+At top level:
+../src/helloworld.c:21:21: warning: 'done' defined but not used [-Wunused-variable]
+ static unsigned int done = 0;
+                     ^~~~
+make: ** [src/helloworld.o] Erro 1
+16:59:00 **** Auto Build of configuration Debug for project CountDownTimer ****
+make all 
+'Building file: ../src/helloworld.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -I../../CountDownTimer_bsp/microblaze_0/include -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+../src/helloworld.c: In function 'PushButIntCallbackHandler':
+../src/helloworld.c:86:2: error: 'timerValue' undeclared (first use in this function)
+  timerValue = 3600;
+  ^~~~~~~~~~
+../src/helloworld.c:86:2: note: each undeclared identifier is reported only once for each function it appears in
+At top level:
+../src/helloworld.c:21:21: warning: 'done' defined but not used [-Wunused-variable]
+ static unsigned int done = 0;
+                     ^~~~
+make: ** [src/helloworld.o] Erro 1
+16:59:44 **** Auto Build of configuration Debug for project CountDownTimer ****
+make all 
+'Building file: ../src/helloworld.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -I../../CountDownTimer_bsp/microblaze_0/include -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+../src/helloworld.c: In function 'PushButIntCallbackHandler':
+../src/helloworld.c:86:2: error: 'timerValue' undeclared (first use in this function)
+  timerValue = 3600;
+  ^~~~~~~~~~
+../src/helloworld.c:86:2: note: each undeclared identifier is reported only once for each function it appears in
+At top level:
+../src/helloworld.c:21:21: warning: 'done' defined but not used [-Wunused-variable]
+ static unsigned int done = 0;
+                     ^~~~
+make: ** [src/helloworld.o] Erro 1
+17:00:06 **** Auto Build of configuration Debug for project CountDownTimer ****
+make all 
+'Building file: ../src/helloworld.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -I../../CountDownTimer_bsp/microblaze_0/include -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+../src/helloworld.c: In function 'PushButIntCallbackHandler':
+../src/helloworld.c:86:2: error: 'timerValue' undeclared (first use in this function)
+  timerValue = 3600;
+  ^~~~~~~~~~
+../src/helloworld.c:86:2: note: each undeclared identifier is reported only once for each function it appears in
+At top level:
+../src/helloworld.c:21:21: warning: 'done' defined but not used [-Wunused-variable]
+ static unsigned int done = 0;
+                     ^~~~
+make: ** [src/helloworld.o] Erro 1
+17:00:47 **** Auto Build of configuration Debug for project CountDownTimer ****
+make all 
+'Building file: ../src/helloworld.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -I../../CountDownTimer_bsp/microblaze_0/include -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+../src/helloworld.c: In function 'PushButIntCallbackHandler':
+../src/helloworld.c:86:2: error: 'timerValue' undeclared (first use in this function)
+  timerValue = 3600;
+  ^~~~~~~~~~
+../src/helloworld.c:86:2: note: each undeclared identifier is reported only once for each function it appears in
+At top level:
+../src/helloworld.c:21:21: warning: 'done' defined but not used [-Wunused-variable]
+ static unsigned int done = 0;
+                     ^~~~
+make: ** [src/helloworld.o] Erro 1
+17:01:30 **** Auto Build of configuration Debug for project CountDownTimer ****
+make all 
+'Building file: ../src/helloworld.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -I../../CountDownTimer_bsp/microblaze_0/include -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+../src/helloworld.c: In function 'PushButIntCallbackHandler':
+../src/helloworld.c:86:2: error: 'timerValue' undeclared (first use in this function)
+  timerValue = 3600;
+  ^~~~~~~~~~
+../src/helloworld.c:86:2: note: each undeclared identifier is reported only once for each function it appears in
+At top level:
+../src/helloworld.c:21:21: warning: 'done' defined but not used [-Wunused-variable]
+ static unsigned int done = 0;
+                     ^~~~
+make: ** [src/helloworld.o] Erro 1
+17:01:43 **** Auto Build of configuration Debug for project CountDownTimer ****
+make all 
+'Building file: ../src/helloworld.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -I../../CountDownTimer_bsp/microblaze_0/include -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+../src/helloworld.c: In function 'PushButIntCallbackHandler':
+../src/helloworld.c:86:2: error: 'timerValue' undeclared (first use in this function)
+  timerValue = 3600;
+  ^~~~~~~~~~
+../src/helloworld.c:86:2: note: each undeclared identifier is reported only once for each function it appears in
+At top level:
+../src/helloworld.c:21:21: warning: 'done' defined but not used [-Wunused-variable]
+ static unsigned int done = 0;
+                     ^~~~
+make: ** [src/helloworld.o] Erro 1
+17:02:27 **** Auto Build of configuration Debug for project CountDownTimer ****
+make all 
+'Building file: ../src/helloworld.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -I../../CountDownTimer_bsp/microblaze_0/include -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+../src/helloworld.c: In function 'PushButIntCallbackHandler':
+../src/helloworld.c:93:2: error: 'timerValue' undeclared (first use in this function)
+  timerValue = 3600;
+  ^~~~~~~~~~
+../src/helloworld.c:93:2: note: each undeclared identifier is reported only once for each function it appears in
+make: ** [src/helloworld.o] Erro 1
+17:02:54 **** Auto Build of configuration Debug for project CountDownTimer ****
+make all 
+'Building file: ../src/helloworld.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -I../../CountDownTimer_bsp/microblaze_0/include -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+../src/helloworld.c: In function 'PushButIntCallbackHandler':
+../src/helloworld.c:96:2: error: 'timerValue' undeclared (first use in this function)
+  timerValue = 3600;
+  ^~~~~~~~~~
+../src/helloworld.c:96:2: note: each undeclared identifier is reported only once for each function it appears in
+make: ** [src/helloworld.o] Erro 1
+17:03:10 **** Auto Build of configuration Debug for project CountDownTimer ****
+make all 
+'Building file: ../src/helloworld.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -I../../CountDownTimer_bsp/microblaze_0/include -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+'Finished building: ../src/helloworld.c'
+' '
+'Building target: CountDownTimer.elf'
+'Invoking: MicroBlaze gcc linker'
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../CountDownTimer_bsp/microblaze_0/lib -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "CountDownTimer.elf"  ./src/helloworld.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: CountDownTimer.elf'
+' '
+'Invoking: MicroBlaze Print Size'
+mb-size CountDownTimer.elf  |tee "CountDownTimer.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+   8456	    340	   3124	  11920	   2e90	CountDownTimer.elf
+'Finished building: CountDownTimer.elf.size'
+' '
+17:04:06 **** Incremental Build of configuration Debug for project CountDownTimer ****
+make all 
+make: Nada a ser feito para `all'.
+17:04:25 **** Auto Build of configuration Debug for project CountDownTimer ****
+make all 
+'Building file: ../src/helloworld.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -I../../CountDownTimer_bsp/microblaze_0/include -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+'Finished building: ../src/helloworld.c'
+' '
+'Building target: CountDownTimer.elf'
+'Invoking: MicroBlaze gcc linker'
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../CountDownTimer_bsp/microblaze_0/lib -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "CountDownTimer.elf"  ./src/helloworld.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: CountDownTimer.elf'
+' '
+'Invoking: MicroBlaze Print Size'
+mb-size CountDownTimer.elf  |tee "CountDownTimer.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+   8456	    340	   3124	  11920	   2e90	CountDownTimer.elf
+'Finished building: CountDownTimer.elf.size'
+' '
+17:05:37 **** Incremental Build of configuration Debug for project CountDownTimer ****
+make all 
+make: Nada a ser feito para `all'.
+17:06:11 **** Auto Build of configuration Debug for project CountDownTimer ****
+make all 
+'Building file: ../src/helloworld.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -I../../CountDownTimer_bsp/microblaze_0/include -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+'Finished building: ../src/helloworld.c'
+' '
+'Building target: CountDownTimer.elf'
+'Invoking: MicroBlaze gcc linker'
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../CountDownTimer_bsp/microblaze_0/lib -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "CountDownTimer.elf"  ./src/helloworld.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: CountDownTimer.elf'
+' '
+'Invoking: MicroBlaze Print Size'
+mb-size CountDownTimer.elf  |tee "CountDownTimer.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+   8452	    340	   3128	  11920	   2e90	CountDownTimer.elf
+'Finished building: CountDownTimer.elf.size'
+' '
+17:08:02 **** Incremental Build of configuration Debug for project CountDownTimer ****
+make all 
+make: Nada a ser feito para `all'.
+17:08:43 **** Auto Build of configuration Debug for project CountDownTimer ****
+make all 
+'Building file: ../src/helloworld.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -I../../CountDownTimer_bsp/microblaze_0/include -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+'Finished building: ../src/helloworld.c'
+' '
+'Building target: CountDownTimer.elf'
+'Invoking: MicroBlaze gcc linker'
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../CountDownTimer_bsp/microblaze_0/lib -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "CountDownTimer.elf"  ./src/helloworld.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: CountDownTimer.elf'
+' '
+'Invoking: MicroBlaze Print Size'
+mb-size CountDownTimer.elf  |tee "CountDownTimer.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+   8452	    340	   3128	  11920	   2e90	CountDownTimer.elf
+'Finished building: CountDownTimer.elf.size'
+' '
+17:11:29 **** Incremental Build of configuration Debug for project CountDownTimer ****
+make all 
+make: Nada a ser feito para `all'.
+17:19:18 **** Auto Build of configuration Debug for project CountDownTimer ****
+make all 
+'Building file: ../src/helloworld.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -I../../CountDownTimer_bsp/microblaze_0/include -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+'Finished building: ../src/helloworld.c'
+' '
+'Building target: CountDownTimer.elf'
+'Invoking: MicroBlaze gcc linker'
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../CountDownTimer_bsp/microblaze_0/lib -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "CountDownTimer.elf"  ./src/helloworld.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: CountDownTimer.elf'
+' '
+'Invoking: MicroBlaze Print Size'
+mb-size CountDownTimer.elf  |tee "CountDownTimer.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+   8460	    340	   3128	  11928	   2e98	CountDownTimer.elf
+'Finished building: CountDownTimer.elf.size'
+' '

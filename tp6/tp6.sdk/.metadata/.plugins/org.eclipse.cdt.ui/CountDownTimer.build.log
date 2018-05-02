@@ -1,0 +1,21 @@
+17:19:18 **** Auto Build of configuration Debug for project CountDownTimer ****
+make all 
+'Building file: ../src/helloworld.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -I../../CountDownTimer_bsp/microblaze_0/include -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+'Finished building: ../src/helloworld.c'
+' '
+'Building target: CountDownTimer.elf'
+'Invoking: MicroBlaze gcc linker'
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../CountDownTimer_bsp/microblaze_0/lib -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "CountDownTimer.elf"  ./src/helloworld.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: CountDownTimer.elf'
+' '
+'Invoking: MicroBlaze Print Size'
+mb-size CountDownTimer.elf  |tee "CountDownTimer.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+   8460	    340	   3128	  11928	   2e98	CountDownTimer.elf
+'Finished building: CountDownTimer.elf.size'
+' '
+
+17:19:20 Build Finished (took 1s.637ms)
+
