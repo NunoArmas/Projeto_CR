@@ -1,0 +1,505 @@
+
+*** Running vivado
+    with args -log design_1_sha256IPCoProcessor_0_1.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source design_1_sha256IPCoProcessor_0_1.tcl
+
+
+****** Vivado v2017.4 (64-bit)
+  **** SW Build 2086221 on Fri Dec 15 20:55:39 MST 2017
+  **** IP Build 2085800 on Fri Dec 15 22:25:07 MST 2017
+    ** Copyright 1986-2017 Xilinx, Inc. All Rights Reserved.
+
+source design_1_sha256IPCoProcessor_0_1.tcl -notrace
+Command: synth_design -top design_1_sha256IPCoProcessor_0_1 -part xc7a100tcsg324-1 -mode out_of_context
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7a100t'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7a100t'
+INFO: Launching helper process for spawning children vivado processes
+INFO: Helper process launched with PID 7544 
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:07 ; elapsed = 00:00:07 . Memory (MB): peak = 353.043 ; gain = 99.641
+---------------------------------------------------------------------------------
+INFO: [Synth 8-638] synthesizing module 'design_1_sha256IPCoProcessor_0_1' [d:/Universidade/cr/SHA2/SHA2.srcs/sources_1/bd/design_1/ip/design_1_sha256IPCoProcessor_0_1/synth/design_1_sha256IPCoProcessor_0_1.vhd:82]
+	Parameter C_S00_AXI_DATA_WIDTH bound to: 32 - type: integer 
+	Parameter C_S00_AXI_ADDR_WIDTH bound to: 6 - type: integer 
+INFO: [Synth 8-3491] module 'sha256IPCoProcessor_v1_0' declared at 'd:/Universidade/cr/SHA2/SHA2.srcs/sources_1/bd/design_1/ipshared/ab65/hdl/sha256IPCoProcessor_v1_0.vhd:5' bound to instance 'U0' of component 'sha256IPCoProcessor_v1_0' [d:/Universidade/cr/SHA2/SHA2.srcs/sources_1/bd/design_1/ip/design_1_sha256IPCoProcessor_0_1/synth/design_1_sha256IPCoProcessor_0_1.vhd:147]
+INFO: [Synth 8-638] synthesizing module 'sha256IPCoProcessor_v1_0' [d:/Universidade/cr/SHA2/SHA2.srcs/sources_1/bd/design_1/ipshared/ab65/hdl/sha256IPCoProcessor_v1_0.vhd:49]
+	Parameter C_S00_AXI_DATA_WIDTH bound to: 32 - type: integer 
+	Parameter C_S00_AXI_ADDR_WIDTH bound to: 6 - type: integer 
+	Parameter C_S_AXI_DATA_WIDTH bound to: 32 - type: integer 
+	Parameter C_S_AXI_ADDR_WIDTH bound to: 6 - type: integer 
+INFO: [Synth 8-3491] module 'sha256IPCoProcessor_v1_0_S00_AXI' declared at 'd:/Universidade/cr/SHA2/SHA2.srcs/sources_1/bd/design_1/ipshared/ab65/hdl/sha256IPCoProcessor_v1_0_S00_AXI.vhd:5' bound to instance 'sha256IPCoProcessor_v1_0_S00_AXI_inst' of component 'sha256IPCoProcessor_v1_0_S00_AXI' [d:/Universidade/cr/SHA2/SHA2.srcs/sources_1/bd/design_1/ipshared/ab65/hdl/sha256IPCoProcessor_v1_0.vhd:85]
+INFO: [Synth 8-638] synthesizing module 'sha256IPCoProcessor_v1_0_S00_AXI' [d:/Universidade/cr/SHA2/SHA2.srcs/sources_1/bd/design_1/ipshared/ab65/hdl/sha256IPCoProcessor_v1_0_S00_AXI.vhd:86]
+	Parameter C_S_AXI_DATA_WIDTH bound to: 32 - type: integer 
+	Parameter C_S_AXI_ADDR_WIDTH bound to: 6 - type: integer 
+INFO: [Synth 8-226] default block is never used [d:/Universidade/cr/SHA2/SHA2.srcs/sources_1/bd/design_1/ipshared/ab65/hdl/sha256IPCoProcessor_v1_0_S00_AXI.vhd:304]
+INFO: [Synth 8-226] default block is never used [d:/Universidade/cr/SHA2/SHA2.srcs/sources_1/bd/design_1/ipshared/ab65/hdl/sha256IPCoProcessor_v1_0_S00_AXI.vhd:542]
+WARNING: [Synth 8-614] signal 's_digest' is read in the process but is not in the sensitivity list [d:/Universidade/cr/SHA2/SHA2.srcs/sources_1/bd/design_1/ipshared/ab65/hdl/sha256IPCoProcessor_v1_0_S00_AXI.vhd:537]
+WARNING: [Synth 8-614] signal 's_chunk' is read in the process but is not in the sensitivity list [d:/Universidade/cr/SHA2/SHA2.srcs/sources_1/bd/design_1/ipshared/ab65/hdl/sha256IPCoProcessor_v1_0_S00_AXI.vhd:620]
+WARNING: [Synth 8-614] signal 's_extendI' is read in the process but is not in the sensitivity list [d:/Universidade/cr/SHA2/SHA2.srcs/sources_1/bd/design_1/ipshared/ab65/hdl/sha256IPCoProcessor_v1_0_S00_AXI.vhd:620]
+WARNING: [Synth 8-614] signal 'W' is read in the process but is not in the sensitivity list [d:/Universidade/cr/SHA2/SHA2.srcs/sources_1/bd/design_1/ipshared/ab65/hdl/sha256IPCoProcessor_v1_0_S00_AXI.vhd:620]
+WARNING: [Synth 8-614] signal 's_entend_s0_0' is read in the process but is not in the sensitivity list [d:/Universidade/cr/SHA2/SHA2.srcs/sources_1/bd/design_1/ipshared/ab65/hdl/sha256IPCoProcessor_v1_0_S00_AXI.vhd:620]
+WARNING: [Synth 8-614] signal 's_entend_s1_0' is read in the process but is not in the sensitivity list [d:/Universidade/cr/SHA2/SHA2.srcs/sources_1/bd/design_1/ipshared/ab65/hdl/sha256IPCoProcessor_v1_0_S00_AXI.vhd:620]
+WARNING: [Synth 8-614] signal 's_entend_s0_1' is read in the process but is not in the sensitivity list [d:/Universidade/cr/SHA2/SHA2.srcs/sources_1/bd/design_1/ipshared/ab65/hdl/sha256IPCoProcessor_v1_0_S00_AXI.vhd:620]
+WARNING: [Synth 8-614] signal 's_entend_s1_1' is read in the process but is not in the sensitivity list [d:/Universidade/cr/SHA2/SHA2.srcs/sources_1/bd/design_1/ipshared/ab65/hdl/sha256IPCoProcessor_v1_0_S00_AXI.vhd:620]
+WARNING: [Synth 8-614] signal 's_h0' is read in the process but is not in the sensitivity list [d:/Universidade/cr/SHA2/SHA2.srcs/sources_1/bd/design_1/ipshared/ab65/hdl/sha256IPCoProcessor_v1_0_S00_AXI.vhd:620]
+WARNING: [Synth 8-614] signal 's_h1' is read in the process but is not in the sensitivity list [d:/Universidade/cr/SHA2/SHA2.srcs/sources_1/bd/design_1/ipshared/ab65/hdl/sha256IPCoProcessor_v1_0_S00_AXI.vhd:620]
+WARNING: [Synth 8-614] signal 's_h2' is read in the process but is not in the sensitivity list [d:/Universidade/cr/SHA2/SHA2.srcs/sources_1/bd/design_1/ipshared/ab65/hdl/sha256IPCoProcessor_v1_0_S00_AXI.vhd:620]
+WARNING: [Synth 8-614] signal 's_h3' is read in the process but is not in the sensitivity list [d:/Universidade/cr/SHA2/SHA2.srcs/sources_1/bd/design_1/ipshared/ab65/hdl/sha256IPCoProcessor_v1_0_S00_AXI.vhd:620]
+WARNING: [Synth 8-614] signal 's_h4' is read in the process but is not in the sensitivity list [d:/Universidade/cr/SHA2/SHA2.srcs/sources_1/bd/design_1/ipshared/ab65/hdl/sha256IPCoProcessor_v1_0_S00_AXI.vhd:620]
+WARNING: [Synth 8-614] signal 's_h5' is read in the process but is not in the sensitivity list [d:/Universidade/cr/SHA2/SHA2.srcs/sources_1/bd/design_1/ipshared/ab65/hdl/sha256IPCoProcessor_v1_0_S00_AXI.vhd:620]
+WARNING: [Synth 8-614] signal 's_h6' is read in the process but is not in the sensitivity list [d:/Universidade/cr/SHA2/SHA2.srcs/sources_1/bd/design_1/ipshared/ab65/hdl/sha256IPCoProcessor_v1_0_S00_AXI.vhd:620]
+WARNING: [Synth 8-614] signal 's_h7' is read in the process but is not in the sensitivity list [d:/Universidade/cr/SHA2/SHA2.srcs/sources_1/bd/design_1/ipshared/ab65/hdl/sha256IPCoProcessor_v1_0_S00_AXI.vhd:620]
+WARNING: [Synth 8-614] signal 's_compressionI' is read in the process but is not in the sensitivity list [d:/Universidade/cr/SHA2/SHA2.srcs/sources_1/bd/design_1/ipshared/ab65/hdl/sha256IPCoProcessor_v1_0_S00_AXI.vhd:620]
+WARNING: [Synth 8-614] signal 's_h' is read in the process but is not in the sensitivity list [d:/Universidade/cr/SHA2/SHA2.srcs/sources_1/bd/design_1/ipshared/ab65/hdl/sha256IPCoProcessor_v1_0_S00_AXI.vhd:620]
+WARNING: [Synth 8-614] signal 's_e1' is read in the process but is not in the sensitivity list [d:/Universidade/cr/SHA2/SHA2.srcs/sources_1/bd/design_1/ipshared/ab65/hdl/sha256IPCoProcessor_v1_0_S00_AXI.vhd:620]
+WARNING: [Synth 8-614] signal 's_ch' is read in the process but is not in the sensitivity list [d:/Universidade/cr/SHA2/SHA2.srcs/sources_1/bd/design_1/ipshared/ab65/hdl/sha256IPCoProcessor_v1_0_S00_AXI.vhd:620]
+WARNING: [Synth 8-614] signal 's_e0' is read in the process but is not in the sensitivity list [d:/Universidade/cr/SHA2/SHA2.srcs/sources_1/bd/design_1/ipshared/ab65/hdl/sha256IPCoProcessor_v1_0_S00_AXI.vhd:620]
+WARNING: [Synth 8-614] signal 's_ma' is read in the process but is not in the sensitivity list [d:/Universidade/cr/SHA2/SHA2.srcs/sources_1/bd/design_1/ipshared/ab65/hdl/sha256IPCoProcessor_v1_0_S00_AXI.vhd:620]
+WARNING: [Synth 8-614] signal 's_tmp0' is read in the process but is not in the sensitivity list [d:/Universidade/cr/SHA2/SHA2.srcs/sources_1/bd/design_1/ipshared/ab65/hdl/sha256IPCoProcessor_v1_0_S00_AXI.vhd:620]
+WARNING: [Synth 8-614] signal 's_tmp1' is read in the process but is not in the sensitivity list [d:/Universidade/cr/SHA2/SHA2.srcs/sources_1/bd/design_1/ipshared/ab65/hdl/sha256IPCoProcessor_v1_0_S00_AXI.vhd:620]
+WARNING: [Synth 8-614] signal 's_a' is read in the process but is not in the sensitivity list [d:/Universidade/cr/SHA2/SHA2.srcs/sources_1/bd/design_1/ipshared/ab65/hdl/sha256IPCoProcessor_v1_0_S00_AXI.vhd:620]
+WARNING: [Synth 8-614] signal 's_b' is read in the process but is not in the sensitivity list [d:/Universidade/cr/SHA2/SHA2.srcs/sources_1/bd/design_1/ipshared/ab65/hdl/sha256IPCoProcessor_v1_0_S00_AXI.vhd:620]
+WARNING: [Synth 8-614] signal 's_c' is read in the process but is not in the sensitivity list [d:/Universidade/cr/SHA2/SHA2.srcs/sources_1/bd/design_1/ipshared/ab65/hdl/sha256IPCoProcessor_v1_0_S00_AXI.vhd:620]
+WARNING: [Synth 8-614] signal 's_d' is read in the process but is not in the sensitivity list [d:/Universidade/cr/SHA2/SHA2.srcs/sources_1/bd/design_1/ipshared/ab65/hdl/sha256IPCoProcessor_v1_0_S00_AXI.vhd:620]
+WARNING: [Synth 8-614] signal 's_e' is read in the process but is not in the sensitivity list [d:/Universidade/cr/SHA2/SHA2.srcs/sources_1/bd/design_1/ipshared/ab65/hdl/sha256IPCoProcessor_v1_0_S00_AXI.vhd:620]
+WARNING: [Synth 8-614] signal 's_f' is read in the process but is not in the sensitivity list [d:/Universidade/cr/SHA2/SHA2.srcs/sources_1/bd/design_1/ipshared/ab65/hdl/sha256IPCoProcessor_v1_0_S00_AXI.vhd:620]
+WARNING: [Synth 8-614] signal 's_g' is read in the process but is not in the sensitivity list [d:/Universidade/cr/SHA2/SHA2.srcs/sources_1/bd/design_1/ipshared/ab65/hdl/sha256IPCoProcessor_v1_0_S00_AXI.vhd:620]
+WARNING: [Synth 8-6014] Unused sequential element slv_reg0_reg was removed.  [d:/Universidade/cr/SHA2/SHA2.srcs/sources_1/bd/design_1/ipshared/ab65/hdl/sha256IPCoProcessor_v1_0_S00_AXI.vhd:285]
+WARNING: [Synth 8-6014] Unused sequential element slv_reg1_reg was removed.  [d:/Universidade/cr/SHA2/SHA2.srcs/sources_1/bd/design_1/ipshared/ab65/hdl/sha256IPCoProcessor_v1_0_S00_AXI.vhd:286]
+WARNING: [Synth 8-6014] Unused sequential element slv_reg2_reg was removed.  [d:/Universidade/cr/SHA2/SHA2.srcs/sources_1/bd/design_1/ipshared/ab65/hdl/sha256IPCoProcessor_v1_0_S00_AXI.vhd:287]
+WARNING: [Synth 8-6014] Unused sequential element slv_reg3_reg was removed.  [d:/Universidade/cr/SHA2/SHA2.srcs/sources_1/bd/design_1/ipshared/ab65/hdl/sha256IPCoProcessor_v1_0_S00_AXI.vhd:288]
+WARNING: [Synth 8-6014] Unused sequential element slv_reg4_reg was removed.  [d:/Universidade/cr/SHA2/SHA2.srcs/sources_1/bd/design_1/ipshared/ab65/hdl/sha256IPCoProcessor_v1_0_S00_AXI.vhd:289]
+WARNING: [Synth 8-6014] Unused sequential element slv_reg5_reg was removed.  [d:/Universidade/cr/SHA2/SHA2.srcs/sources_1/bd/design_1/ipshared/ab65/hdl/sha256IPCoProcessor_v1_0_S00_AXI.vhd:290]
+WARNING: [Synth 8-6014] Unused sequential element slv_reg6_reg was removed.  [d:/Universidade/cr/SHA2/SHA2.srcs/sources_1/bd/design_1/ipshared/ab65/hdl/sha256IPCoProcessor_v1_0_S00_AXI.vhd:291]
+WARNING: [Synth 8-6014] Unused sequential element slv_reg7_reg was removed.  [d:/Universidade/cr/SHA2/SHA2.srcs/sources_1/bd/design_1/ipshared/ab65/hdl/sha256IPCoProcessor_v1_0_S00_AXI.vhd:292]
+WARNING: [Synth 8-6014] Unused sequential element loc_addr_reg was removed.  [d:/Universidade/cr/SHA2/SHA2.srcs/sources_1/bd/design_1/ipshared/ab65/hdl/sha256IPCoProcessor_v1_0_S00_AXI.vhd:302]
+INFO: [Synth 8-256] done synthesizing module 'sha256IPCoProcessor_v1_0_S00_AXI' (1#1) [d:/Universidade/cr/SHA2/SHA2.srcs/sources_1/bd/design_1/ipshared/ab65/hdl/sha256IPCoProcessor_v1_0_S00_AXI.vhd:86]
+INFO: [Synth 8-256] done synthesizing module 'sha256IPCoProcessor_v1_0' (2#1) [d:/Universidade/cr/SHA2/SHA2.srcs/sources_1/bd/design_1/ipshared/ab65/hdl/sha256IPCoProcessor_v1_0.vhd:49]
+INFO: [Synth 8-256] done synthesizing module 'design_1_sha256IPCoProcessor_0_1' (3#1) [d:/Universidade/cr/SHA2/SHA2.srcs/sources_1/bd/design_1/ip/design_1_sha256IPCoProcessor_0_1/synth/design_1_sha256IPCoProcessor_0_1.vhd:82]
+WARNING: [Synth 8-3331] design sha256IPCoProcessor_v1_0_S00_AXI has unconnected port S_AXI_AWPROT[2]
+WARNING: [Synth 8-3331] design sha256IPCoProcessor_v1_0_S00_AXI has unconnected port S_AXI_AWPROT[1]
+WARNING: [Synth 8-3331] design sha256IPCoProcessor_v1_0_S00_AXI has unconnected port S_AXI_AWPROT[0]
+WARNING: [Synth 8-3331] design sha256IPCoProcessor_v1_0_S00_AXI has unconnected port S_AXI_ARPROT[2]
+WARNING: [Synth 8-3331] design sha256IPCoProcessor_v1_0_S00_AXI has unconnected port S_AXI_ARPROT[1]
+WARNING: [Synth 8-3331] design sha256IPCoProcessor_v1_0_S00_AXI has unconnected port S_AXI_ARPROT[0]
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:09 ; elapsed = 00:00:09 . Memory (MB): peak = 417.559 ; gain = 164.156
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:09 ; elapsed = 00:00:10 . Memory (MB): peak = 417.559 ; gain = 164.156
+---------------------------------------------------------------------------------
+INFO: [Device 21-403] Loading part xc7a100tcsg324-1
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Completed Processing XDC Constraints
+
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.124 . Memory (MB): peak = 761.703 ; gain = 3.633
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:24 ; elapsed = 00:00:25 . Memory (MB): peak = 761.703 ; gain = 508.301
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7a100tcsg324-1
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:24 ; elapsed = 00:00:25 . Memory (MB): peak = 761.703 ; gain = 508.301
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:24 ; elapsed = 00:00:25 . Memory (MB): peak = 761.703 ; gain = 508.301
+---------------------------------------------------------------------------------
+INFO: [Synth 8-802] inferred FSM for state register 'CS_reg' in module 'sha256IPCoProcessor_v1_0_S00_AXI'
+INFO: [Synth 8-5545] ROM "NS" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "NS" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "NS" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+WARNING: [Synth 8-327] inferring latch for variable 's_digest_reg' [d:/Universidade/cr/SHA2/SHA2.srcs/sources_1/bd/design_1/ipshared/ab65/hdl/sha256IPCoProcessor_v1_0_S00_AXI.vhd:715]
+WARNING: [Synth 8-327] inferring latch for variable 'NS_reg' [d:/Universidade/cr/SHA2/SHA2.srcs/sources_1/bd/design_1/ipshared/ab65/hdl/sha256IPCoProcessor_v1_0_S00_AXI.vhd:608]
+WARNING: [Synth 8-327] inferring latch for variable 'NS_reg' [d:/Universidade/cr/SHA2/SHA2.srcs/sources_1/bd/design_1/ipshared/ab65/hdl/sha256IPCoProcessor_v1_0_S00_AXI.vhd:608]
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+           process_chunk |                            00001 |                              000
+            extend_words |                            00010 |                              001
+                compress |                            00100 |                              010
+          add_compressed |                            01000 |                              011
+                   final |                            10000 |                              100
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'CS_reg' using encoding 'one-hot' in module 'sha256IPCoProcessor_v1_0_S00_AXI'
+WARNING: [Synth 8-327] inferring latch for variable 'FSM_onehot_NS_reg' [d:/Universidade/cr/SHA2/SHA2.srcs/sources_1/bd/design_1/ipshared/ab65/hdl/sha256IPCoProcessor_v1_0_S00_AXI.vhd:608]
+WARNING: [Synth 8-327] inferring latch for variable 's_h7_reg' [d:/Universidade/cr/SHA2/SHA2.srcs/sources_1/bd/design_1/ipshared/ab65/hdl/sha256IPCoProcessor_v1_0_S00_AXI.vhd:674]
+WARNING: [Synth 8-327] inferring latch for variable 's_h6_reg' [d:/Universidade/cr/SHA2/SHA2.srcs/sources_1/bd/design_1/ipshared/ab65/hdl/sha256IPCoProcessor_v1_0_S00_AXI.vhd:673]
+WARNING: [Synth 8-327] inferring latch for variable 's_h5_reg' [d:/Universidade/cr/SHA2/SHA2.srcs/sources_1/bd/design_1/ipshared/ab65/hdl/sha256IPCoProcessor_v1_0_S00_AXI.vhd:672]
+WARNING: [Synth 8-327] inferring latch for variable 's_h4_reg' [d:/Universidade/cr/SHA2/SHA2.srcs/sources_1/bd/design_1/ipshared/ab65/hdl/sha256IPCoProcessor_v1_0_S00_AXI.vhd:671]
+WARNING: [Synth 8-327] inferring latch for variable 's_h3_reg' [d:/Universidade/cr/SHA2/SHA2.srcs/sources_1/bd/design_1/ipshared/ab65/hdl/sha256IPCoProcessor_v1_0_S00_AXI.vhd:670]
+WARNING: [Synth 8-327] inferring latch for variable 's_h2_reg' [d:/Universidade/cr/SHA2/SHA2.srcs/sources_1/bd/design_1/ipshared/ab65/hdl/sha256IPCoProcessor_v1_0_S00_AXI.vhd:669]
+WARNING: [Synth 8-327] inferring latch for variable 's_h1_reg' [d:/Universidade/cr/SHA2/SHA2.srcs/sources_1/bd/design_1/ipshared/ab65/hdl/sha256IPCoProcessor_v1_0_S00_AXI.vhd:668]
+WARNING: [Synth 8-327] inferring latch for variable 's_h0_reg' [d:/Universidade/cr/SHA2/SHA2.srcs/sources_1/bd/design_1/ipshared/ab65/hdl/sha256IPCoProcessor_v1_0_S00_AXI.vhd:667]
+WARNING: [Synth 8-327] inferring latch for variable 's_entend_s0_1_reg' [d:/Universidade/cr/SHA2/SHA2.srcs/sources_1/bd/design_1/ipshared/ab65/hdl/sha256IPCoProcessor_v1_0_S00_AXI.vhd:654]
+WARNING: [Synth 8-327] inferring latch for variable 'W_reg[0]' [d:/Universidade/cr/SHA2/SHA2.srcs/sources_1/bd/design_1/ipshared/ab65/hdl/sha256IPCoProcessor_v1_0_S00_AXI.vhd:625]
+WARNING: [Synth 8-327] inferring latch for variable 'W_reg[1]' [d:/Universidade/cr/SHA2/SHA2.srcs/sources_1/bd/design_1/ipshared/ab65/hdl/sha256IPCoProcessor_v1_0_S00_AXI.vhd:625]
+WARNING: [Synth 8-327] inferring latch for variable 'W_reg[2]' [d:/Universidade/cr/SHA2/SHA2.srcs/sources_1/bd/design_1/ipshared/ab65/hdl/sha256IPCoProcessor_v1_0_S00_AXI.vhd:625]
+WARNING: [Synth 8-327] inferring latch for variable 'W_reg[3]' [d:/Universidade/cr/SHA2/SHA2.srcs/sources_1/bd/design_1/ipshared/ab65/hdl/sha256IPCoProcessor_v1_0_S00_AXI.vhd:625]
+WARNING: [Synth 8-327] inferring latch for variable 'W_reg[4]' [d:/Universidade/cr/SHA2/SHA2.srcs/sources_1/bd/design_1/ipshared/ab65/hdl/sha256IPCoProcessor_v1_0_S00_AXI.vhd:625]
+WARNING: [Synth 8-327] inferring latch for variable 'W_reg[5]' [d:/Universidade/cr/SHA2/SHA2.srcs/sources_1/bd/design_1/ipshared/ab65/hdl/sha256IPCoProcessor_v1_0_S00_AXI.vhd:625]
+WARNING: [Synth 8-327] inferring latch for variable 'W_reg[6]' [d:/Universidade/cr/SHA2/SHA2.srcs/sources_1/bd/design_1/ipshared/ab65/hdl/sha256IPCoProcessor_v1_0_S00_AXI.vhd:625]
+WARNING: [Synth 8-327] inferring latch for variable 'W_reg[7]' [d:/Universidade/cr/SHA2/SHA2.srcs/sources_1/bd/design_1/ipshared/ab65/hdl/sha256IPCoProcessor_v1_0_S00_AXI.vhd:625]
+WARNING: [Synth 8-327] inferring latch for variable 'W_reg[8]' [d:/Universidade/cr/SHA2/SHA2.srcs/sources_1/bd/design_1/ipshared/ab65/hdl/sha256IPCoProcessor_v1_0_S00_AXI.vhd:625]
+WARNING: [Synth 8-327] inferring latch for variable 'W_reg[9]' [d:/Universidade/cr/SHA2/SHA2.srcs/sources_1/bd/design_1/ipshared/ab65/hdl/sha256IPCoProcessor_v1_0_S00_AXI.vhd:625]
+WARNING: [Synth 8-327] inferring latch for variable 'W_reg[10]' [d:/Universidade/cr/SHA2/SHA2.srcs/sources_1/bd/design_1/ipshared/ab65/hdl/sha256IPCoProcessor_v1_0_S00_AXI.vhd:625]
+WARNING: [Synth 8-327] inferring latch for variable 'W_reg[11]' [d:/Universidade/cr/SHA2/SHA2.srcs/sources_1/bd/design_1/ipshared/ab65/hdl/sha256IPCoProcessor_v1_0_S00_AXI.vhd:625]
+WARNING: [Synth 8-327] inferring latch for variable 'W_reg[12]' [d:/Universidade/cr/SHA2/SHA2.srcs/sources_1/bd/design_1/ipshared/ab65/hdl/sha256IPCoProcessor_v1_0_S00_AXI.vhd:625]
+WARNING: [Synth 8-327] inferring latch for variable 'W_reg[13]' [d:/Universidade/cr/SHA2/SHA2.srcs/sources_1/bd/design_1/ipshared/ab65/hdl/sha256IPCoProcessor_v1_0_S00_AXI.vhd:625]
+WARNING: [Synth 8-327] inferring latch for variable 'W_reg[14]' [d:/Universidade/cr/SHA2/SHA2.srcs/sources_1/bd/design_1/ipshared/ab65/hdl/sha256IPCoProcessor_v1_0_S00_AXI.vhd:625]
+WARNING: [Synth 8-327] inferring latch for variable 'W_reg[15]' [d:/Universidade/cr/SHA2/SHA2.srcs/sources_1/bd/design_1/ipshared/ab65/hdl/sha256IPCoProcessor_v1_0_S00_AXI.vhd:625]
+WARNING: [Synth 8-327] inferring latch for variable 'W_reg[16]' [d:/Universidade/cr/SHA2/SHA2.srcs/sources_1/bd/design_1/ipshared/ab65/hdl/sha256IPCoProcessor_v1_0_S00_AXI.vhd:625]
+WARNING: [Synth 8-327] inferring latch for variable 'W_reg[17]' [d:/Universidade/cr/SHA2/SHA2.srcs/sources_1/bd/design_1/ipshared/ab65/hdl/sha256IPCoProcessor_v1_0_S00_AXI.vhd:625]
+WARNING: [Synth 8-327] inferring latch for variable 'W_reg[18]' [d:/Universidade/cr/SHA2/SHA2.srcs/sources_1/bd/design_1/ipshared/ab65/hdl/sha256IPCoProcessor_v1_0_S00_AXI.vhd:625]
+WARNING: [Synth 8-327] inferring latch for variable 'W_reg[19]' [d:/Universidade/cr/SHA2/SHA2.srcs/sources_1/bd/design_1/ipshared/ab65/hdl/sha256IPCoProcessor_v1_0_S00_AXI.vhd:625]
+WARNING: [Synth 8-327] inferring latch for variable 'W_reg[20]' [d:/Universidade/cr/SHA2/SHA2.srcs/sources_1/bd/design_1/ipshared/ab65/hdl/sha256IPCoProcessor_v1_0_S00_AXI.vhd:625]
+WARNING: [Synth 8-327] inferring latch for variable 'W_reg[21]' [d:/Universidade/cr/SHA2/SHA2.srcs/sources_1/bd/design_1/ipshared/ab65/hdl/sha256IPCoProcessor_v1_0_S00_AXI.vhd:625]
+WARNING: [Synth 8-327] inferring latch for variable 'W_reg[22]' [d:/Universidade/cr/SHA2/SHA2.srcs/sources_1/bd/design_1/ipshared/ab65/hdl/sha256IPCoProcessor_v1_0_S00_AXI.vhd:625]
+WARNING: [Synth 8-327] inferring latch for variable 'W_reg[23]' [d:/Universidade/cr/SHA2/SHA2.srcs/sources_1/bd/design_1/ipshared/ab65/hdl/sha256IPCoProcessor_v1_0_S00_AXI.vhd:625]
+WARNING: [Synth 8-327] inferring latch for variable 'W_reg[24]' [d:/Universidade/cr/SHA2/SHA2.srcs/sources_1/bd/design_1/ipshared/ab65/hdl/sha256IPCoProcessor_v1_0_S00_AXI.vhd:625]
+WARNING: [Synth 8-327] inferring latch for variable 'W_reg[25]' [d:/Universidade/cr/SHA2/SHA2.srcs/sources_1/bd/design_1/ipshared/ab65/hdl/sha256IPCoProcessor_v1_0_S00_AXI.vhd:625]
+WARNING: [Synth 8-327] inferring latch for variable 'W_reg[26]' [d:/Universidade/cr/SHA2/SHA2.srcs/sources_1/bd/design_1/ipshared/ab65/hdl/sha256IPCoProcessor_v1_0_S00_AXI.vhd:625]
+WARNING: [Synth 8-327] inferring latch for variable 'W_reg[27]' [d:/Universidade/cr/SHA2/SHA2.srcs/sources_1/bd/design_1/ipshared/ab65/hdl/sha256IPCoProcessor_v1_0_S00_AXI.vhd:625]
+WARNING: [Synth 8-327] inferring latch for variable 'W_reg[28]' [d:/Universidade/cr/SHA2/SHA2.srcs/sources_1/bd/design_1/ipshared/ab65/hdl/sha256IPCoProcessor_v1_0_S00_AXI.vhd:625]
+WARNING: [Synth 8-327] inferring latch for variable 'W_reg[29]' [d:/Universidade/cr/SHA2/SHA2.srcs/sources_1/bd/design_1/ipshared/ab65/hdl/sha256IPCoProcessor_v1_0_S00_AXI.vhd:625]
+WARNING: [Synth 8-327] inferring latch for variable 'W_reg[30]' [d:/Universidade/cr/SHA2/SHA2.srcs/sources_1/bd/design_1/ipshared/ab65/hdl/sha256IPCoProcessor_v1_0_S00_AXI.vhd:625]
+WARNING: [Synth 8-327] inferring latch for variable 'W_reg[31]' [d:/Universidade/cr/SHA2/SHA2.srcs/sources_1/bd/design_1/ipshared/ab65/hdl/sha256IPCoProcessor_v1_0_S00_AXI.vhd:625]
+WARNING: [Synth 8-327] inferring latch for variable 'W_reg[32]' [d:/Universidade/cr/SHA2/SHA2.srcs/sources_1/bd/design_1/ipshared/ab65/hdl/sha256IPCoProcessor_v1_0_S00_AXI.vhd:625]
+WARNING: [Synth 8-327] inferring latch for variable 'W_reg[33]' [d:/Universidade/cr/SHA2/SHA2.srcs/sources_1/bd/design_1/ipshared/ab65/hdl/sha256IPCoProcessor_v1_0_S00_AXI.vhd:625]
+WARNING: [Synth 8-327] inferring latch for variable 'W_reg[34]' [d:/Universidade/cr/SHA2/SHA2.srcs/sources_1/bd/design_1/ipshared/ab65/hdl/sha256IPCoProcessor_v1_0_S00_AXI.vhd:625]
+WARNING: [Synth 8-327] inferring latch for variable 'W_reg[35]' [d:/Universidade/cr/SHA2/SHA2.srcs/sources_1/bd/design_1/ipshared/ab65/hdl/sha256IPCoProcessor_v1_0_S00_AXI.vhd:625]
+WARNING: [Synth 8-327] inferring latch for variable 'W_reg[36]' [d:/Universidade/cr/SHA2/SHA2.srcs/sources_1/bd/design_1/ipshared/ab65/hdl/sha256IPCoProcessor_v1_0_S00_AXI.vhd:625]
+WARNING: [Synth 8-327] inferring latch for variable 'W_reg[37]' [d:/Universidade/cr/SHA2/SHA2.srcs/sources_1/bd/design_1/ipshared/ab65/hdl/sha256IPCoProcessor_v1_0_S00_AXI.vhd:625]
+WARNING: [Synth 8-327] inferring latch for variable 'W_reg[38]' [d:/Universidade/cr/SHA2/SHA2.srcs/sources_1/bd/design_1/ipshared/ab65/hdl/sha256IPCoProcessor_v1_0_S00_AXI.vhd:625]
+WARNING: [Synth 8-327] inferring latch for variable 'W_reg[39]' [d:/Universidade/cr/SHA2/SHA2.srcs/sources_1/bd/design_1/ipshared/ab65/hdl/sha256IPCoProcessor_v1_0_S00_AXI.vhd:625]
+WARNING: [Synth 8-327] inferring latch for variable 'W_reg[40]' [d:/Universidade/cr/SHA2/SHA2.srcs/sources_1/bd/design_1/ipshared/ab65/hdl/sha256IPCoProcessor_v1_0_S00_AXI.vhd:625]
+WARNING: [Synth 8-327] inferring latch for variable 'W_reg[41]' [d:/Universidade/cr/SHA2/SHA2.srcs/sources_1/bd/design_1/ipshared/ab65/hdl/sha256IPCoProcessor_v1_0_S00_AXI.vhd:625]
+WARNING: [Synth 8-327] inferring latch for variable 'W_reg[42]' [d:/Universidade/cr/SHA2/SHA2.srcs/sources_1/bd/design_1/ipshared/ab65/hdl/sha256IPCoProcessor_v1_0_S00_AXI.vhd:625]
+WARNING: [Synth 8-327] inferring latch for variable 'W_reg[43]' [d:/Universidade/cr/SHA2/SHA2.srcs/sources_1/bd/design_1/ipshared/ab65/hdl/sha256IPCoProcessor_v1_0_S00_AXI.vhd:625]
+WARNING: [Synth 8-327] inferring latch for variable 'W_reg[44]' [d:/Universidade/cr/SHA2/SHA2.srcs/sources_1/bd/design_1/ipshared/ab65/hdl/sha256IPCoProcessor_v1_0_S00_AXI.vhd:625]
+WARNING: [Synth 8-327] inferring latch for variable 'W_reg[45]' [d:/Universidade/cr/SHA2/SHA2.srcs/sources_1/bd/design_1/ipshared/ab65/hdl/sha256IPCoProcessor_v1_0_S00_AXI.vhd:625]
+WARNING: [Synth 8-327] inferring latch for variable 'W_reg[46]' [d:/Universidade/cr/SHA2/SHA2.srcs/sources_1/bd/design_1/ipshared/ab65/hdl/sha256IPCoProcessor_v1_0_S00_AXI.vhd:625]
+WARNING: [Synth 8-327] inferring latch for variable 'W_reg[47]' [d:/Universidade/cr/SHA2/SHA2.srcs/sources_1/bd/design_1/ipshared/ab65/hdl/sha256IPCoProcessor_v1_0_S00_AXI.vhd:625]
+WARNING: [Synth 8-327] inferring latch for variable 'W_reg[48]' [d:/Universidade/cr/SHA2/SHA2.srcs/sources_1/bd/design_1/ipshared/ab65/hdl/sha256IPCoProcessor_v1_0_S00_AXI.vhd:625]
+WARNING: [Synth 8-327] inferring latch for variable 'W_reg[49]' [d:/Universidade/cr/SHA2/SHA2.srcs/sources_1/bd/design_1/ipshared/ab65/hdl/sha256IPCoProcessor_v1_0_S00_AXI.vhd:625]
+WARNING: [Synth 8-327] inferring latch for variable 'W_reg[50]' [d:/Universidade/cr/SHA2/SHA2.srcs/sources_1/bd/design_1/ipshared/ab65/hdl/sha256IPCoProcessor_v1_0_S00_AXI.vhd:625]
+WARNING: [Synth 8-327] inferring latch for variable 'W_reg[51]' [d:/Universidade/cr/SHA2/SHA2.srcs/sources_1/bd/design_1/ipshared/ab65/hdl/sha256IPCoProcessor_v1_0_S00_AXI.vhd:625]
+WARNING: [Synth 8-327] inferring latch for variable 'W_reg[52]' [d:/Universidade/cr/SHA2/SHA2.srcs/sources_1/bd/design_1/ipshared/ab65/hdl/sha256IPCoProcessor_v1_0_S00_AXI.vhd:625]
+WARNING: [Synth 8-327] inferring latch for variable 'W_reg[53]' [d:/Universidade/cr/SHA2/SHA2.srcs/sources_1/bd/design_1/ipshared/ab65/hdl/sha256IPCoProcessor_v1_0_S00_AXI.vhd:625]
+WARNING: [Synth 8-327] inferring latch for variable 'W_reg[54]' [d:/Universidade/cr/SHA2/SHA2.srcs/sources_1/bd/design_1/ipshared/ab65/hdl/sha256IPCoProcessor_v1_0_S00_AXI.vhd:625]
+WARNING: [Synth 8-327] inferring latch for variable 'W_reg[55]' [d:/Universidade/cr/SHA2/SHA2.srcs/sources_1/bd/design_1/ipshared/ab65/hdl/sha256IPCoProcessor_v1_0_S00_AXI.vhd:625]
+WARNING: [Synth 8-327] inferring latch for variable 'W_reg[56]' [d:/Universidade/cr/SHA2/SHA2.srcs/sources_1/bd/design_1/ipshared/ab65/hdl/sha256IPCoProcessor_v1_0_S00_AXI.vhd:625]
+WARNING: [Synth 8-327] inferring latch for variable 'W_reg[57]' [d:/Universidade/cr/SHA2/SHA2.srcs/sources_1/bd/design_1/ipshared/ab65/hdl/sha256IPCoProcessor_v1_0_S00_AXI.vhd:625]
+WARNING: [Synth 8-327] inferring latch for variable 'W_reg[58]' [d:/Universidade/cr/SHA2/SHA2.srcs/sources_1/bd/design_1/ipshared/ab65/hdl/sha256IPCoProcessor_v1_0_S00_AXI.vhd:625]
+WARNING: [Synth 8-327] inferring latch for variable 'W_reg[59]' [d:/Universidade/cr/SHA2/SHA2.srcs/sources_1/bd/design_1/ipshared/ab65/hdl/sha256IPCoProcessor_v1_0_S00_AXI.vhd:625]
+WARNING: [Synth 8-327] inferring latch for variable 'W_reg[60]' [d:/Universidade/cr/SHA2/SHA2.srcs/sources_1/bd/design_1/ipshared/ab65/hdl/sha256IPCoProcessor_v1_0_S00_AXI.vhd:625]
+WARNING: [Synth 8-327] inferring latch for variable 'W_reg[61]' [d:/Universidade/cr/SHA2/SHA2.srcs/sources_1/bd/design_1/ipshared/ab65/hdl/sha256IPCoProcessor_v1_0_S00_AXI.vhd:625]
+WARNING: [Synth 8-327] inferring latch for variable 'W_reg[62]' [d:/Universidade/cr/SHA2/SHA2.srcs/sources_1/bd/design_1/ipshared/ab65/hdl/sha256IPCoProcessor_v1_0_S00_AXI.vhd:625]
+WARNING: [Synth 8-327] inferring latch for variable 'W_reg[63]' [d:/Universidade/cr/SHA2/SHA2.srcs/sources_1/bd/design_1/ipshared/ab65/hdl/sha256IPCoProcessor_v1_0_S00_AXI.vhd:625]
+WARNING: [Synth 8-327] inferring latch for variable 's_extendI_reg' [d:/Universidade/cr/SHA2/SHA2.srcs/sources_1/bd/design_1/ipshared/ab65/hdl/sha256IPCoProcessor_v1_0_S00_AXI.vhd:642]
+WARNING: [Synth 8-327] inferring latch for variable 's_entend_s1_1_reg' [d:/Universidade/cr/SHA2/SHA2.srcs/sources_1/bd/design_1/ipshared/ab65/hdl/sha256IPCoProcessor_v1_0_S00_AXI.vhd:655]
+WARNING: [Synth 8-327] inferring latch for variable 's_entend_s0_0_reg' [d:/Universidade/cr/SHA2/SHA2.srcs/sources_1/bd/design_1/ipshared/ab65/hdl/sha256IPCoProcessor_v1_0_S00_AXI.vhd:651]
+WARNING: [Synth 8-327] inferring latch for variable 's_entend_s1_0_reg' [d:/Universidade/cr/SHA2/SHA2.srcs/sources_1/bd/design_1/ipshared/ab65/hdl/sha256IPCoProcessor_v1_0_S00_AXI.vhd:652]
+WARNING: [Synth 8-327] inferring latch for variable 's_compressionI_reg' [d:/Universidade/cr/SHA2/SHA2.srcs/sources_1/bd/design_1/ipshared/ab65/hdl/sha256IPCoProcessor_v1_0_S00_AXI.vhd:643]
+WARNING: [Synth 8-327] inferring latch for variable 's_tmp1_reg' [d:/Universidade/cr/SHA2/SHA2.srcs/sources_1/bd/design_1/ipshared/ab65/hdl/sha256IPCoProcessor_v1_0_S00_AXI.vhd:684]
+WARNING: [Synth 8-327] inferring latch for variable 's_tmp0_reg' [d:/Universidade/cr/SHA2/SHA2.srcs/sources_1/bd/design_1/ipshared/ab65/hdl/sha256IPCoProcessor_v1_0_S00_AXI.vhd:683]
+WARNING: [Synth 8-327] inferring latch for variable 's_a_reg' [d:/Universidade/cr/SHA2/SHA2.srcs/sources_1/bd/design_1/ipshared/ab65/hdl/sha256IPCoProcessor_v1_0_S00_AXI.vhd:616]
+WARNING: [Synth 8-327] inferring latch for variable 's_b_reg' [d:/Universidade/cr/SHA2/SHA2.srcs/sources_1/bd/design_1/ipshared/ab65/hdl/sha256IPCoProcessor_v1_0_S00_AXI.vhd:616]
+WARNING: [Synth 8-327] inferring latch for variable 's_c_reg' [d:/Universidade/cr/SHA2/SHA2.srcs/sources_1/bd/design_1/ipshared/ab65/hdl/sha256IPCoProcessor_v1_0_S00_AXI.vhd:616]
+WARNING: [Synth 8-327] inferring latch for variable 's_d_reg' [d:/Universidade/cr/SHA2/SHA2.srcs/sources_1/bd/design_1/ipshared/ab65/hdl/sha256IPCoProcessor_v1_0_S00_AXI.vhd:670]
+WARNING: [Synth 8-327] inferring latch for variable 's_e_reg' [d:/Universidade/cr/SHA2/SHA2.srcs/sources_1/bd/design_1/ipshared/ab65/hdl/sha256IPCoProcessor_v1_0_S00_AXI.vhd:615]
+WARNING: [Synth 8-327] inferring latch for variable 's_f_reg' [d:/Universidade/cr/SHA2/SHA2.srcs/sources_1/bd/design_1/ipshared/ab65/hdl/sha256IPCoProcessor_v1_0_S00_AXI.vhd:615]
+WARNING: [Synth 8-327] inferring latch for variable 's_g_reg' [d:/Universidade/cr/SHA2/SHA2.srcs/sources_1/bd/design_1/ipshared/ab65/hdl/sha256IPCoProcessor_v1_0_S00_AXI.vhd:673]
+WARNING: [Synth 8-327] inferring latch for variable 's_h_reg' [d:/Universidade/cr/SHA2/SHA2.srcs/sources_1/bd/design_1/ipshared/ab65/hdl/sha256IPCoProcessor_v1_0_S00_AXI.vhd:674]
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:32 ; elapsed = 00:00:34 . Memory (MB): peak = 761.703 ; gain = 508.301
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++------+--------------------------------------+------------+----------+
+|      |RTL Partition                         |Replication |Instances |
++------+--------------------------------------+------------+----------+
+|1     |sha256IPCoProcessor_v1_0_S00_AXI__GB0 |           1|     36270|
+|2     |sha256IPCoProcessor_v1_0_S00_AXI__GB1 |           1|     13528|
+|3     |sha256IPCoProcessor_v1_0_S00_AXI__GB2 |           1|     20275|
+|4     |sha256IPCoProcessor_v1_0_S00_AXI__GB3 |           1|     25184|
++------+--------------------------------------+------------+----------+
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     32 Bit       Adders := 13    
+	   4 Input     32 Bit       Adders := 2     
+	   5 Input     32 Bit       Adders := 1     
++---XORs : 
+	   3 Input     32 Bit         XORs := 7     
+	   2 Input     32 Bit         XORs := 1     
++---Registers : 
+	               32 Bit    Registers := 9     
+	                6 Bit    Registers := 2     
+	                2 Bit    Registers := 2     
+	                1 Bit    Registers := 6     
++---Muxes : 
+	   5 Input     32 Bit        Muxes := 26    
+	   2 Input     32 Bit        Muxes := 72    
+	  16 Input     32 Bit        Muxes := 8     
+	   5 Input      3 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 107   
+	   5 Input      1 Bit        Muxes := 69    
+	   3 Input      1 Bit        Muxes := 32    
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Hierarchical Component Statistics 
+---------------------------------------------------------------------------------
+Hierarchical RTL Component report 
+Module sha256IPCoProcessor_v1_0_S00_AXI 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     32 Bit       Adders := 13    
+	   4 Input     32 Bit       Adders := 2     
+	   5 Input     32 Bit       Adders := 1     
++---XORs : 
+	   3 Input     32 Bit         XORs := 7     
+	   2 Input     32 Bit         XORs := 1     
++---Registers : 
+	               32 Bit    Registers := 9     
+	                6 Bit    Registers := 2     
+	                2 Bit    Registers := 2     
+	                1 Bit    Registers := 6     
++---Muxes : 
+	   5 Input     32 Bit        Muxes := 26    
+	   2 Input     32 Bit        Muxes := 72    
+	  16 Input     32 Bit        Muxes := 8     
+	   5 Input      3 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 107   
+	   5 Input      1 Bit        Muxes := 69    
+	   3 Input      1 Bit        Muxes := 32    
+---------------------------------------------------------------------------------
+Finished RTL Hierarchical Component Statistics
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 240 (col length:80)
+BRAMs: 270 (col length: RAMB18 80 RAMB36 40)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+INFO: [Synth 8-5545] ROM "NS" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "NS" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5546] ROM "p_0_out" won't be mapped to RAM because it is too sparse
+WARNING: [Synth 8-3331] design design_1_sha256IPCoProcessor_0_1 has unconnected port s00_axi_awprot[2]
+WARNING: [Synth 8-3331] design design_1_sha256IPCoProcessor_0_1 has unconnected port s00_axi_awprot[1]
+WARNING: [Synth 8-3331] design design_1_sha256IPCoProcessor_0_1 has unconnected port s00_axi_awprot[0]
+WARNING: [Synth 8-3331] design design_1_sha256IPCoProcessor_0_1 has unconnected port s00_axi_arprot[2]
+WARNING: [Synth 8-3331] design design_1_sha256IPCoProcessor_0_1 has unconnected port s00_axi_arprot[1]
+WARNING: [Synth 8-3331] design design_1_sha256IPCoProcessor_0_1 has unconnected port s00_axi_arprot[0]
+INFO: [Synth 8-3886] merging instance 'sha256IPCoProcessor_v1_0_S00_AXI_insti_0/axi_rresp_reg[0]' (FDRE) to 'sha256IPCoProcessor_v1_0_S00_AXI_insti_0/axi_rresp_reg[1]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (sha256IPCoProcessor_v1_0_S00_AXI_insti_0/\axi_rresp_reg[1] )
+INFO: [Synth 8-3886] merging instance 'sha256IPCoProcessor_v1_0_S00_AXI_insti_0/axi_bresp_reg[0]' (FDRE) to 'sha256IPCoProcessor_v1_0_S00_AXI_insti_0/axi_bresp_reg[1]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (sha256IPCoProcessor_v1_0_S00_AXI_insti_0/\axi_bresp_reg[1] )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (sha256IPCoProcessor_v1_0_S00_AXI_insti_1/aw_en_reg)
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:01:07 ; elapsed = 00:01:09 . Memory (MB): peak = 878.781 ; gain = 625.379
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+
+ROM:
++---------------------------------+------------+---------------+----------------+
+|Module Name                      | RTL Object | Depth x Width | Implemented As | 
++---------------------------------+------------+---------------+----------------+
+|sha256IPCoProcessor_v1_0_S00_AXI | K[0]       | 64x32         | LUT            | 
+|design_1_sha256IPCoProcessor_0_1 | K[0]       | 64x32         | LUT            | 
++---------------------------------+------------+---------------+----------------+
+
+---------------------------------------------------------------------------------
+Finished ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++------+--------------------------------------+------------+----------+
+|      |RTL Partition                         |Replication |Instances |
++------+--------------------------------------+------------+----------+
+|1     |sha256IPCoProcessor_v1_0_S00_AXI__GB0 |           1|     22868|
+|2     |sha256IPCoProcessor_v1_0_S00_AXI__GB1 |           1|      1274|
+|3     |sha256IPCoProcessor_v1_0_S00_AXI__GB2 |           1|       141|
+|4     |sha256IPCoProcessor_v1_0_S00_AXI__GB3 |           1|        74|
++------+--------------------------------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:01:20 ; elapsed = 00:01:21 . Memory (MB): peak = 878.781 ; gain = 625.379
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:01:20 ; elapsed = 00:01:21 . Memory (MB): peak = 878.781 ; gain = 625.379
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++------+--------------------------------------+------------+----------+
+|      |RTL Partition                         |Replication |Instances |
++------+--------------------------------------+------------+----------+
+|1     |sha256IPCoProcessor_v1_0_S00_AXI__GB0 |           1|     22868|
+|2     |sha256IPCoProcessor_v1_0_S00_AXI__GB1 |           1|      1274|
+|3     |sha256IPCoProcessor_v1_0_S00_AXI__GB2 |           1|       141|
+|4     |sha256IPCoProcessor_v1_0_S00_AXI__GB3 |           1|        74|
++------+--------------------------------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:01:23 ; elapsed = 00:01:25 . Memory (MB): peak = 914.398 ; gain = 660.996
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:01:26 ; elapsed = 00:01:28 . Memory (MB): peak = 914.398 ; gain = 660.996
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:01:26 ; elapsed = 00:01:28 . Memory (MB): peak = 914.398 ; gain = 660.996
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:01:26 ; elapsed = 00:01:28 . Memory (MB): peak = 914.398 ; gain = 660.996
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:01:26 ; elapsed = 00:01:28 . Memory (MB): peak = 914.398 ; gain = 660.996
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:01:27 ; elapsed = 00:01:29 . Memory (MB): peak = 914.398 ; gain = 660.996
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:01:27 ; elapsed = 00:01:29 . Memory (MB): peak = 914.398 ; gain = 660.996
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++------+-------+------+
+|      |Cell   |Count |
++------+-------+------+
+|1     |CARRY4 |   144|
+|2     |LUT1   |     2|
+|3     |LUT2   |   513|
+|4     |LUT3   |   333|
+|5     |LUT4   |   774|
+|6     |LUT5   |  1705|
+|7     |LUT6   |  3731|
+|8     |MUXF7  |  1182|
+|9     |MUXF8  |   440|
+|10    |FDRE   |   301|
+|11    |FDSE   |     5|
+|12    |LD     |  3119|
++------+-------+------+
+
+Report Instance Areas: 
++------+------------------------------------------+---------------------------------+------+
+|      |Instance                                  |Module                           |Cells |
++------+------------------------------------------+---------------------------------+------+
+|1     |top                                       |                                 | 12249|
+|2     |  U0                                      |sha256IPCoProcessor_v1_0         | 12249|
+|3     |    sha256IPCoProcessor_v1_0_S00_AXI_inst |sha256IPCoProcessor_v1_0_S00_AXI | 12249|
++------+------------------------------------------+---------------------------------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:01:27 ; elapsed = 00:01:29 . Memory (MB): peak = 914.398 ; gain = 660.996
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 98 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:01:10 ; elapsed = 00:01:20 . Memory (MB): peak = 914.398 ; gain = 316.852
+Synthesis Optimization Complete : Time (s): cpu = 00:01:27 ; elapsed = 00:01:29 . Memory (MB): peak = 914.398 ; gain = 660.996
+INFO: [Project 1-571] Translating synthesized netlist
+INFO: [Netlist 29-17] Analyzing 4885 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+WARNING: [Netlist 29-101] Netlist 'design_1_sha256IPCoProcessor_0_1' is not ideal for floorplanning, since the cellview 'sha256IPCoProcessor_v1_0_S00_AXI' contains a large number of primitives.  Please consider enabling hierarchy in synthesis if you want to do floorplanning.
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 3119 instances were transformed.
+  LD => LDCE: 3119 instances
+
+INFO: [Common 17-83] Releasing license: Synthesis
+34 Infos, 145 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:01:32 ; elapsed = 00:01:34 . Memory (MB): peak = 914.398 ; gain = 672.465
+INFO: [Common 17-1381] The checkpoint 'D:/Universidade/cr/SHA2/SHA2.runs/design_1_sha256IPCoProcessor_0_1_synth_1/design_1_sha256IPCoProcessor_0_1.dcp' has been generated.

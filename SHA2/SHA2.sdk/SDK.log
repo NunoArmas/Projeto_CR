@@ -1,0 +1,1537 @@
+20:25:07 INFO  : Registering command handlers for SDK TCF services
+20:25:10 INFO  : Launching XSCT server: xsct.bat -interactive D:\Universidade\cr\SHA2\SHA2.sdk\temp_xsdb_launch_script.tcl
+20:25:16 INFO  : XSCT server has started successfully.
+20:25:29 INFO  : Successfully done setting XSCT server connection channel  
+20:25:29 INFO  : Successfully done setting SDK workspace  
+20:25:29 INFO  : Processing command line option -hwspec D:/Universidade/cr/SHA2/SHA2.sdk/design_1_wrapper.hdf.
+20:33:56 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+20:33:58 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Nexys4 210274674840A" && level==0} -index 0' command is executed.
+20:34:00 INFO  : FPGA configured successfully with bitstream "D:/Universidade/cr/SHA2/SHA2.sdk/design_1_wrapper_hw_platform_0/download.bit"
+20:35:16 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Nexys4 210274674840A" && level==0} -index 0' command is executed.
+20:35:16 INFO  : 'fpga -state' command is executed.
+20:35:16 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+20:35:16 INFO  : Jtag cable 'Digilent Nexys4 210274674840A' is selected.
+20:35:16 INFO  : 'jtag frequency' command is executed.
+20:35:16 INFO  : Context for processor 'microblaze_0' is selected.
+20:35:16 INFO  : Processor reset is completed for 'microblaze_0'.
+20:35:16 INFO  : Context for processor 'microblaze_0' is selected.
+20:35:16 INFO  : The application 'D:/Universidade/cr/SHA2/SHA2.sdk/SHA2/Debug/SHA2.elf' is downloaded to processor 'microblaze_0'.
+20:35:16 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -nocase -filter {name =~ "microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent Nexys4 210274674840A"} -index 0
+rst -processor
+targets -set -nocase -filter {name =~ "microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent Nexys4 210274674840A"} -index 0
+dow D:/Universidade/cr/SHA2/SHA2.sdk/SHA2/Debug/SHA2.elf
+----------------End of Script----------------
+
+20:35:17 INFO  : Memory regions updated for context MicroBlaze #0
+20:35:17 INFO  : Memory regions updated for context MicroBlaze Debug Module at USER2
+20:35:17 INFO  : Context for processor 'microblaze_0' is selected.
+20:35:17 INFO  : 'con' command is executed.
+20:35:17 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent Nexys4 210274674840A"} -index 0
+con
+----------------End of Script----------------
+
+20:35:17 INFO  : Launch script is exported to file 'D:\Universidade\cr\SHA2\SHA2.sdk\.sdk\launch_scripts\xilinx_c-c++_application_(system_debugger)\system_debugger_using_debug_sha2.elf_on_local.tcl'
+20:36:36 INFO  : Disconnected from the channel tcfchan#1.
+20:36:37 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Nexys4 210274674840A" && level==0} -index 0' command is executed.
+20:36:37 INFO  : 'fpga -state' command is executed.
+20:36:37 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+20:36:37 INFO  : Jtag cable 'Digilent Nexys4 210274674840A' is selected.
+20:36:37 INFO  : 'jtag frequency' command is executed.
+20:36:37 INFO  : Context for processor 'microblaze_0' is selected.
+20:36:37 INFO  : Processor reset is completed for 'microblaze_0'.
+20:36:37 INFO  : Context for processor 'microblaze_0' is selected.
+20:36:38 INFO  : The application 'D:/Universidade/cr/SHA2/SHA2.sdk/SHA2/Debug/SHA2.elf' is downloaded to processor 'microblaze_0'.
+20:36:38 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -nocase -filter {name =~ "microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent Nexys4 210274674840A"} -index 0
+rst -processor
+targets -set -nocase -filter {name =~ "microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent Nexys4 210274674840A"} -index 0
+dow D:/Universidade/cr/SHA2/SHA2.sdk/SHA2/Debug/SHA2.elf
+----------------End of Script----------------
+
+20:36:38 INFO  : Memory regions updated for context MicroBlaze #0
+20:36:38 INFO  : Memory regions updated for context MicroBlaze Debug Module at USER2
+20:36:38 INFO  : Context for processor 'microblaze_0' is selected.
+20:36:38 INFO  : 'con' command is executed.
+20:36:38 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent Nexys4 210274674840A"} -index 0
+con
+----------------End of Script----------------
+
+20:36:38 INFO  : Launch script is exported to file 'D:\Universidade\cr\SHA2\SHA2.sdk\.sdk\launch_scripts\xilinx_c-c++_application_(system_debugger)\system_debugger_using_debug_sha2.elf_on_local.tcl'
+20:53:13 INFO  : SDK has detected change in the last modified timestamps for source hardware specification file Source:1525981971497,  Project:1525980218843
+20:53:13 INFO  : Project design_1_wrapper_hw_platform_0's source hardware specification located at D:/Universidade/cr/SHA2/SHA2.sdk/design_1_wrapper.hdf is now different from the local copy.
+		 The local copy will be replaced with the source specification and your workspace will be updated.
+20:53:15 INFO  : Copied contents of D:/Universidade/cr/SHA2/SHA2.sdk/design_1_wrapper.hdf into \design_1_wrapper_hw_platform_0\system.hdf.
+20:53:16 INFO  : Synchronizing projects in the workspace with the hardware platform specification changes.
+20:53:18 INFO  : 
+20:53:19 INFO  : Updating hardware inferred compiler options for SHA2.
+20:53:19 INFO  : Clearing existing target manager status.
+20:53:19 WARN  : Given IPC port value is invalid. Using default port 2350
+20:53:19 WARN  : Given XMD timeout value is invalid. Using default value of 50000
+20:53:21 WARN  : Given XMD transaction timeout value is invalid. Using default value of 60000 milli seconds
+20:53:21 INFO  : Closing and re-opening the MSS file of ther project SHA2_bsp
+20:53:22 INFO  : Closing and re-opening the MSS file of ther project SHA2_bsp
+20:53:22 INFO  : Closing and re-opening the MSS file of ther project SHA2_bsp
+20:53:22 INFO  : Workspace synchronized with the new hardware specification file. Cleaning dependent projects...
+20:53:23 WARN  : Linker script will not be updated automatically. Users need to update it manually.
+20:55:42 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+20:55:42 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Nexys4 210274674840A" && level==0} -index 0' command is executed.
+20:55:44 INFO  : FPGA configured successfully with bitstream "D:/Universidade/cr/SHA2/SHA2.sdk/design_1_wrapper_hw_platform_0/download.bit"
+20:55:59 INFO  : Disconnected from the channel tcfchan#2.
+20:56:01 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Nexys4 210274674840A" && level==0} -index 0' command is executed.
+20:56:01 INFO  : 'fpga -state' command is executed.
+20:56:01 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+20:56:01 INFO  : Jtag cable 'Digilent Nexys4 210274674840A' is selected.
+20:56:01 INFO  : 'jtag frequency' command is executed.
+20:56:01 INFO  : Context for processor 'microblaze_0' is selected.
+20:56:01 INFO  : Processor reset is completed for 'microblaze_0'.
+20:56:01 INFO  : Context for processor 'microblaze_0' is selected.
+20:56:01 INFO  : The application 'D:/Universidade/cr/SHA2/SHA2.sdk/SHA2/Debug/SHA2.elf' is downloaded to processor 'microblaze_0'.
+20:56:01 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -nocase -filter {name =~ "microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent Nexys4 210274674840A"} -index 0
+rst -processor
+targets -set -nocase -filter {name =~ "microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent Nexys4 210274674840A"} -index 0
+dow D:/Universidade/cr/SHA2/SHA2.sdk/SHA2/Debug/SHA2.elf
+----------------End of Script----------------
+
+20:56:01 INFO  : Memory regions updated for context MicroBlaze #0
+20:56:01 INFO  : Memory regions updated for context MicroBlaze Debug Module at USER2
+20:56:01 INFO  : Context for processor 'microblaze_0' is selected.
+20:56:01 INFO  : 'con' command is executed.
+20:56:01 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent Nexys4 210274674840A"} -index 0
+con
+----------------End of Script----------------
+
+20:56:01 INFO  : Launch script is exported to file 'D:\Universidade\cr\SHA2\SHA2.sdk\.sdk\launch_scripts\xilinx_c-c++_application_(system_debugger)\system_debugger_using_debug_sha2.elf_on_local.tcl'
+21:25:49 INFO  : SDK has detected change in the last modified timestamps for source hardware specification file Source:1525983932785,  Project:1525981971497
+21:25:49 INFO  : Project design_1_wrapper_hw_platform_0's source hardware specification located at D:/Universidade/cr/SHA2/SHA2.sdk/design_1_wrapper.hdf is now different from the local copy.
+		 The local copy will be replaced with the source specification and your workspace will be updated.
+21:26:08 INFO  : Copied contents of D:/Universidade/cr/SHA2/SHA2.sdk/design_1_wrapper.hdf into \design_1_wrapper_hw_platform_0\system.hdf.
+21:26:08 INFO  : Synchronizing projects in the workspace with the hardware platform specification changes.
+21:26:12 INFO  : 
+21:26:13 INFO  : Updating hardware inferred compiler options for SHA2.
+21:26:13 INFO  : Clearing existing target manager status.
+21:26:13 INFO  : Closing and re-opening the MSS file of ther project SHA2_bsp
+21:26:13 INFO  : Workspace synchronized with the new hardware specification file. Cleaning dependent projects...
+21:26:14 WARN  : Linker script will not be updated automatically. Users need to update it manually.
+21:26:52 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+21:26:52 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Nexys4 210274674840A" && level==0} -index 0' command is executed.
+21:26:54 INFO  : FPGA configured successfully with bitstream "D:/Universidade/cr/SHA2/SHA2.sdk/design_1_wrapper_hw_platform_0/download.bit"
+21:27:37 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+21:27:37 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Nexys4 210274674840A" && level==0} -index 0' command is executed.
+21:27:40 INFO  : FPGA configured successfully with bitstream "D:/Universidade/cr/SHA2/SHA2.sdk/design_1_wrapper_hw_platform_0/download.bit"
+21:27:53 INFO  : Disconnected from the channel tcfchan#3.
+21:27:54 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Nexys4 210274674840A" && level==0} -index 0' command is executed.
+21:27:54 INFO  : 'fpga -state' command is executed.
+21:27:54 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+21:27:55 INFO  : Jtag cable 'Digilent Nexys4 210274674840A' is selected.
+21:27:55 INFO  : 'jtag frequency' command is executed.
+21:27:55 INFO  : Context for processor 'microblaze_0' is selected.
+21:27:55 INFO  : Processor reset is completed for 'microblaze_0'.
+21:27:55 INFO  : Context for processor 'microblaze_0' is selected.
+21:27:55 INFO  : The application 'D:/Universidade/cr/SHA2/SHA2.sdk/SHA2/Debug/SHA2.elf' is downloaded to processor 'microblaze_0'.
+21:27:55 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -nocase -filter {name =~ "microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent Nexys4 210274674840A"} -index 0
+rst -processor
+targets -set -nocase -filter {name =~ "microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent Nexys4 210274674840A"} -index 0
+dow D:/Universidade/cr/SHA2/SHA2.sdk/SHA2/Debug/SHA2.elf
+----------------End of Script----------------
+
+21:27:55 INFO  : Memory regions updated for context MicroBlaze #0
+21:27:55 INFO  : Memory regions updated for context MicroBlaze Debug Module at USER2
+21:27:55 INFO  : Context for processor 'microblaze_0' is selected.
+21:27:55 INFO  : 'con' command is executed.
+21:27:55 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent Nexys4 210274674840A"} -index 0
+con
+----------------End of Script----------------
+
+21:27:55 INFO  : Launch script is exported to file 'D:\Universidade\cr\SHA2\SHA2.sdk\.sdk\launch_scripts\xilinx_c-c++_application_(system_debugger)\system_debugger_using_debug_sha2.elf_on_local.tcl'
+21:34:25 INFO  : Disconnected from the channel tcfchan#4.
+21:34:26 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Nexys4 210274674840A" && level==0} -index 0' command is executed.
+21:34:26 INFO  : 'fpga -state' command is executed.
+21:34:26 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+21:34:26 INFO  : Jtag cable 'Digilent Nexys4 210274674840A' is selected.
+21:34:26 INFO  : 'jtag frequency' command is executed.
+21:34:26 INFO  : Context for processor 'microblaze_0' is selected.
+21:34:27 INFO  : Processor reset is completed for 'microblaze_0'.
+21:34:27 INFO  : Context for processor 'microblaze_0' is selected.
+21:34:27 INFO  : The application 'D:/Universidade/cr/SHA2/SHA2.sdk/SHA2/Debug/SHA2.elf' is downloaded to processor 'microblaze_0'.
+21:34:27 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -nocase -filter {name =~ "microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent Nexys4 210274674840A"} -index 0
+rst -processor
+targets -set -nocase -filter {name =~ "microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent Nexys4 210274674840A"} -index 0
+dow D:/Universidade/cr/SHA2/SHA2.sdk/SHA2/Debug/SHA2.elf
+----------------End of Script----------------
+
+21:34:27 INFO  : Memory regions updated for context MicroBlaze #0
+21:34:27 INFO  : Memory regions updated for context MicroBlaze Debug Module at USER2
+21:34:27 INFO  : Context for processor 'microblaze_0' is selected.
+21:34:27 INFO  : 'con' command is executed.
+21:34:27 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent Nexys4 210274674840A"} -index 0
+con
+----------------End of Script----------------
+
+21:34:27 INFO  : Launch script is exported to file 'D:\Universidade\cr\SHA2\SHA2.sdk\.sdk\launch_scripts\xilinx_c-c++_application_(system_debugger)\system_debugger_using_debug_sha2.elf_on_local.tcl'
+21:45:31 INFO  : SDK has detected change in the last modified timestamps for source hardware specification file Source:1525985061173,  Project:1525983932785
+21:45:31 INFO  : Project design_1_wrapper_hw_platform_0's source hardware specification located at D:/Universidade/cr/SHA2/SHA2.sdk/design_1_wrapper.hdf is now different from the local copy.
+		 The local copy will be replaced with the source specification and your workspace will be updated.
+21:45:33 INFO  : Copied contents of D:/Universidade/cr/SHA2/SHA2.sdk/design_1_wrapper.hdf into \design_1_wrapper_hw_platform_0\system.hdf.
+21:45:33 INFO  : Synchronizing projects in the workspace with the hardware platform specification changes.
+21:45:36 INFO  : 
+21:45:37 INFO  : Updating hardware inferred compiler options for SHA2.
+21:45:37 INFO  : Clearing existing target manager status.
+21:45:37 INFO  : Workspace synchronized with the new hardware specification file. Cleaning dependent projects...
+21:45:38 WARN  : Linker script will not be updated automatically. Users need to update it manually.
+21:46:46 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+21:46:46 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Nexys4 210274674840A" && level==0} -index 0' command is executed.
+21:46:49 INFO  : FPGA configured successfully with bitstream "D:/Universidade/cr/SHA2/SHA2.sdk/design_1_wrapper_hw_platform_0/download.bit"
+21:47:12 INFO  : Disconnected from the channel tcfchan#5.
+21:47:14 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Nexys4 210274674840A" && level==0} -index 0' command is executed.
+21:47:14 INFO  : 'fpga -state' command is executed.
+21:47:14 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+21:47:14 INFO  : Jtag cable 'Digilent Nexys4 210274674840A' is selected.
+21:47:14 INFO  : 'jtag frequency' command is executed.
+21:47:14 INFO  : Context for processor 'microblaze_0' is selected.
+21:47:14 INFO  : Processor reset is completed for 'microblaze_0'.
+21:47:14 INFO  : Context for processor 'microblaze_0' is selected.
+21:47:14 INFO  : The application 'D:/Universidade/cr/SHA2/SHA2.sdk/SHA2/Debug/SHA2.elf' is downloaded to processor 'microblaze_0'.
+21:47:14 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -nocase -filter {name =~ "microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent Nexys4 210274674840A"} -index 0
+rst -processor
+targets -set -nocase -filter {name =~ "microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent Nexys4 210274674840A"} -index 0
+dow D:/Universidade/cr/SHA2/SHA2.sdk/SHA2/Debug/SHA2.elf
+----------------End of Script----------------
+
+21:47:14 INFO  : Memory regions updated for context MicroBlaze #0
+21:47:14 INFO  : Memory regions updated for context MicroBlaze Debug Module at USER2
+21:47:14 INFO  : Context for processor 'microblaze_0' is selected.
+21:47:14 INFO  : 'con' command is executed.
+21:47:14 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent Nexys4 210274674840A"} -index 0
+con
+----------------End of Script----------------
+
+21:47:14 INFO  : Launch script is exported to file 'D:\Universidade\cr\SHA2\SHA2.sdk\.sdk\launch_scripts\xilinx_c-c++_application_(system_debugger)\system_debugger_using_debug_sha2.elf_on_local.tcl'
+21:47:37 INFO  : Disconnected from the channel tcfchan#6.
+21:47:38 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Nexys4 210274674840A" && level==0} -index 0' command is executed.
+21:47:38 INFO  : 'fpga -state' command is executed.
+21:47:38 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+21:47:38 INFO  : Jtag cable 'Digilent Nexys4 210274674840A' is selected.
+21:47:38 INFO  : 'jtag frequency' command is executed.
+21:47:39 INFO  : Context for processor 'microblaze_0' is selected.
+21:47:39 INFO  : Processor reset is completed for 'microblaze_0'.
+21:47:39 INFO  : Context for processor 'microblaze_0' is selected.
+21:47:39 INFO  : The application 'D:/Universidade/cr/SHA2/SHA2.sdk/SHA2/Debug/SHA2.elf' is downloaded to processor 'microblaze_0'.
+21:47:39 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -nocase -filter {name =~ "microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent Nexys4 210274674840A"} -index 0
+rst -processor
+targets -set -nocase -filter {name =~ "microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent Nexys4 210274674840A"} -index 0
+dow D:/Universidade/cr/SHA2/SHA2.sdk/SHA2/Debug/SHA2.elf
+----------------End of Script----------------
+
+21:47:39 INFO  : Memory regions updated for context MicroBlaze #0
+21:47:39 INFO  : Memory regions updated for context MicroBlaze Debug Module at USER2
+21:47:39 INFO  : Context for processor 'microblaze_0' is selected.
+21:47:39 INFO  : 'con' command is executed.
+21:47:39 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent Nexys4 210274674840A"} -index 0
+con
+----------------End of Script----------------
+
+21:47:39 INFO  : Launch script is exported to file 'D:\Universidade\cr\SHA2\SHA2.sdk\.sdk\launch_scripts\xilinx_c-c++_application_(system_debugger)\system_debugger_using_debug_sha2.elf_on_local.tcl'
+21:48:30 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+21:48:30 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Nexys4 210274674840A" && level==0} -index 0' command is executed.
+21:48:33 INFO  : FPGA configured successfully with bitstream "D:/Universidade/cr/SHA2/SHA2.sdk/design_1_wrapper_hw_platform_0/download.bit"
+21:48:49 INFO  : Disconnected from the channel tcfchan#7.
+21:48:50 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Nexys4 210274674840A" && level==0} -index 0' command is executed.
+21:48:50 INFO  : 'fpga -state' command is executed.
+21:48:50 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+21:48:51 INFO  : Jtag cable 'Digilent Nexys4 210274674840A' is selected.
+21:48:51 INFO  : 'jtag frequency' command is executed.
+21:48:51 INFO  : Context for processor 'microblaze_0' is selected.
+21:48:51 INFO  : Processor reset is completed for 'microblaze_0'.
+21:48:51 INFO  : Context for processor 'microblaze_0' is selected.
+21:48:51 INFO  : The application 'D:/Universidade/cr/SHA2/SHA2.sdk/SHA2/Debug/SHA2.elf' is downloaded to processor 'microblaze_0'.
+21:48:51 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -nocase -filter {name =~ "microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent Nexys4 210274674840A"} -index 0
+rst -processor
+targets -set -nocase -filter {name =~ "microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent Nexys4 210274674840A"} -index 0
+dow D:/Universidade/cr/SHA2/SHA2.sdk/SHA2/Debug/SHA2.elf
+----------------End of Script----------------
+
+21:48:51 INFO  : Memory regions updated for context MicroBlaze #0
+21:48:51 INFO  : Memory regions updated for context MicroBlaze Debug Module at USER2
+21:48:51 INFO  : Context for processor 'microblaze_0' is selected.
+21:48:51 INFO  : 'con' command is executed.
+21:48:51 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent Nexys4 210274674840A"} -index 0
+con
+----------------End of Script----------------
+
+21:48:51 INFO  : Launch script is exported to file 'D:\Universidade\cr\SHA2\SHA2.sdk\.sdk\launch_scripts\xilinx_c-c++_application_(system_debugger)\system_debugger_using_debug_sha2.elf_on_local.tcl'
+21:51:27 INFO  : Disconnected from the channel tcfchan#8.
+21:51:28 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Nexys4 210274674840A" && level==0} -index 0' command is executed.
+21:51:29 INFO  : 'fpga -state' command is executed.
+21:51:29 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+21:51:29 INFO  : Jtag cable 'Digilent Nexys4 210274674840A' is selected.
+21:51:29 INFO  : 'jtag frequency' command is executed.
+21:51:29 INFO  : Context for processor 'microblaze_0' is selected.
+21:51:29 INFO  : Processor reset is completed for 'microblaze_0'.
+21:51:29 INFO  : Context for processor 'microblaze_0' is selected.
+21:51:29 INFO  : The application 'D:/Universidade/cr/SHA2/SHA2.sdk/SHA2/Debug/SHA2.elf' is downloaded to processor 'microblaze_0'.
+21:51:29 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -nocase -filter {name =~ "microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent Nexys4 210274674840A"} -index 0
+rst -processor
+targets -set -nocase -filter {name =~ "microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent Nexys4 210274674840A"} -index 0
+dow D:/Universidade/cr/SHA2/SHA2.sdk/SHA2/Debug/SHA2.elf
+----------------End of Script----------------
+
+21:51:29 INFO  : Memory regions updated for context MicroBlaze #0
+21:51:29 INFO  : Memory regions updated for context MicroBlaze Debug Module at USER2
+21:51:29 INFO  : Context for processor 'microblaze_0' is selected.
+21:51:29 INFO  : 'con' command is executed.
+21:51:29 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent Nexys4 210274674840A"} -index 0
+con
+----------------End of Script----------------
+
+21:51:29 INFO  : Launch script is exported to file 'D:\Universidade\cr\SHA2\SHA2.sdk\.sdk\launch_scripts\xilinx_c-c++_application_(system_debugger)\system_debugger_using_debug_sha2.elf_on_local.tcl'
+22:04:59 INFO  : SDK has detected change in the last modified timestamps for source hardware specification file Source:1525986225313,  Project:1525985061173
+22:04:59 INFO  : Project design_1_wrapper_hw_platform_0's source hardware specification located at D:/Universidade/cr/SHA2/SHA2.sdk/design_1_wrapper.hdf is now different from the local copy.
+		 The local copy will be replaced with the source specification and your workspace will be updated.
+22:05:00 INFO  : Copied contents of D:/Universidade/cr/SHA2/SHA2.sdk/design_1_wrapper.hdf into \design_1_wrapper_hw_platform_0\system.hdf.
+22:05:00 INFO  : Synchronizing projects in the workspace with the hardware platform specification changes.
+22:05:04 INFO  : 
+22:05:05 INFO  : Updating hardware inferred compiler options for SHA2.
+22:05:05 INFO  : Clearing existing target manager status.
+22:05:05 INFO  : Workspace synchronized with the new hardware specification file. Cleaning dependent projects...
+22:05:06 WARN  : Linker script will not be updated automatically. Users need to update it manually.
+22:06:10 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+22:06:10 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Nexys4 210274674840A" && level==0} -index 0' command is executed.
+22:06:12 INFO  : FPGA configured successfully with bitstream "D:/Universidade/cr/SHA2/SHA2.sdk/design_1_wrapper_hw_platform_0/download.bit"
+22:06:30 INFO  : Disconnected from the channel tcfchan#9.
+22:06:31 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Nexys4 210274674840A" && level==0} -index 0' command is executed.
+22:06:31 INFO  : 'fpga -state' command is executed.
+22:06:31 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+22:06:32 INFO  : Jtag cable 'Digilent Nexys4 210274674840A' is selected.
+22:06:32 INFO  : 'jtag frequency' command is executed.
+22:06:32 INFO  : Context for processor 'microblaze_0' is selected.
+22:06:32 INFO  : Processor reset is completed for 'microblaze_0'.
+22:06:32 INFO  : Context for processor 'microblaze_0' is selected.
+22:06:32 INFO  : The application 'D:/Universidade/cr/SHA2/SHA2.sdk/SHA2/Debug/SHA2.elf' is downloaded to processor 'microblaze_0'.
+22:06:32 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -nocase -filter {name =~ "microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent Nexys4 210274674840A"} -index 0
+rst -processor
+targets -set -nocase -filter {name =~ "microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent Nexys4 210274674840A"} -index 0
+dow D:/Universidade/cr/SHA2/SHA2.sdk/SHA2/Debug/SHA2.elf
+----------------End of Script----------------
+
+22:06:32 INFO  : Memory regions updated for context MicroBlaze #0
+22:06:32 INFO  : Memory regions updated for context MicroBlaze Debug Module at USER2
+22:06:32 INFO  : Context for processor 'microblaze_0' is selected.
+22:06:32 INFO  : 'con' command is executed.
+22:06:32 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent Nexys4 210274674840A"} -index 0
+con
+----------------End of Script----------------
+
+22:06:32 INFO  : Launch script is exported to file 'D:\Universidade\cr\SHA2\SHA2.sdk\.sdk\launch_scripts\xilinx_c-c++_application_(system_debugger)\system_debugger_using_debug_sha2.elf_on_local.tcl'
+22:07:27 INFO  : Disconnected from the channel tcfchan#10.
+22:07:28 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Nexys4 210274674840A" && level==0} -index 0' command is executed.
+22:07:28 INFO  : 'fpga -state' command is executed.
+22:07:28 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+22:07:29 INFO  : Jtag cable 'Digilent Nexys4 210274674840A' is selected.
+22:07:29 INFO  : 'jtag frequency' command is executed.
+22:07:29 INFO  : Context for processor 'microblaze_0' is selected.
+22:07:29 INFO  : Processor reset is completed for 'microblaze_0'.
+22:07:29 INFO  : Context for processor 'microblaze_0' is selected.
+22:07:29 INFO  : The application 'D:/Universidade/cr/SHA2/SHA2.sdk/SHA2/Debug/SHA2.elf' is downloaded to processor 'microblaze_0'.
+22:07:29 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -nocase -filter {name =~ "microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent Nexys4 210274674840A"} -index 0
+rst -processor
+targets -set -nocase -filter {name =~ "microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent Nexys4 210274674840A"} -index 0
+dow D:/Universidade/cr/SHA2/SHA2.sdk/SHA2/Debug/SHA2.elf
+----------------End of Script----------------
+
+22:07:29 INFO  : Memory regions updated for context MicroBlaze #0
+22:07:29 INFO  : Memory regions updated for context MicroBlaze Debug Module at USER2
+22:07:29 INFO  : Context for processor 'microblaze_0' is selected.
+22:07:29 INFO  : 'con' command is executed.
+22:07:29 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent Nexys4 210274674840A"} -index 0
+con
+----------------End of Script----------------
+
+22:07:29 INFO  : Launch script is exported to file 'D:\Universidade\cr\SHA2\SHA2.sdk\.sdk\launch_scripts\xilinx_c-c++_application_(system_debugger)\system_debugger_using_debug_sha2.elf_on_local.tcl'
+22:07:47 INFO  : Disconnected from the channel tcfchan#11.
+22:07:48 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Nexys4 210274674840A" && level==0} -index 0' command is executed.
+22:07:48 INFO  : 'fpga -state' command is executed.
+22:07:48 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+22:07:49 INFO  : Jtag cable 'Digilent Nexys4 210274674840A' is selected.
+22:07:49 INFO  : 'jtag frequency' command is executed.
+22:07:49 INFO  : Context for processor 'microblaze_0' is selected.
+22:07:49 INFO  : Processor reset is completed for 'microblaze_0'.
+22:07:49 INFO  : Context for processor 'microblaze_0' is selected.
+22:07:49 INFO  : The application 'D:/Universidade/cr/SHA2/SHA2.sdk/SHA2/Debug/SHA2.elf' is downloaded to processor 'microblaze_0'.
+22:07:49 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -nocase -filter {name =~ "microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent Nexys4 210274674840A"} -index 0
+rst -processor
+targets -set -nocase -filter {name =~ "microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent Nexys4 210274674840A"} -index 0
+dow D:/Universidade/cr/SHA2/SHA2.sdk/SHA2/Debug/SHA2.elf
+----------------End of Script----------------
+
+22:07:49 INFO  : Memory regions updated for context MicroBlaze #0
+22:07:49 INFO  : Memory regions updated for context MicroBlaze Debug Module at USER2
+22:07:49 INFO  : Context for processor 'microblaze_0' is selected.
+22:07:49 INFO  : 'con' command is executed.
+22:07:49 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent Nexys4 210274674840A"} -index 0
+con
+----------------End of Script----------------
+
+22:07:49 INFO  : Launch script is exported to file 'D:\Universidade\cr\SHA2\SHA2.sdk\.sdk\launch_scripts\xilinx_c-c++_application_(system_debugger)\system_debugger_using_debug_sha2.elf_on_local.tcl'
+22:20:21 INFO  : SDK has detected change in the last modified timestamps for source hardware specification file Source:1525987184068,  Project:1525986225313
+22:20:21 INFO  : Project design_1_wrapper_hw_platform_0's source hardware specification located at D:/Universidade/cr/SHA2/SHA2.sdk/design_1_wrapper.hdf is now different from the local copy.
+		 The local copy will be replaced with the source specification and your workspace will be updated.
+22:20:26 INFO  : Copied contents of D:/Universidade/cr/SHA2/SHA2.sdk/design_1_wrapper.hdf into \design_1_wrapper_hw_platform_0\system.hdf.
+22:20:27 INFO  : Synchronizing projects in the workspace with the hardware platform specification changes.
+22:20:29 INFO  : 
+22:20:30 INFO  : Updating hardware inferred compiler options for SHA2.
+22:20:30 INFO  : Clearing existing target manager status.
+22:20:30 INFO  : Workspace synchronized with the new hardware specification file. Cleaning dependent projects...
+22:20:31 WARN  : Linker script will not be updated automatically. Users need to update it manually.
+22:21:21 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+22:21:21 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Nexys4 210274674840A" && level==0} -index 0' command is executed.
+22:21:23 INFO  : FPGA configured successfully with bitstream "D:/Universidade/cr/SHA2/SHA2.sdk/design_1_wrapper_hw_platform_0/download.bit"
+22:21:50 INFO  : Disconnected from the channel tcfchan#12.
+22:21:51 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Nexys4 210274674840A" && level==0} -index 0' command is executed.
+22:21:51 INFO  : 'fpga -state' command is executed.
+22:21:51 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+22:21:51 INFO  : Jtag cable 'Digilent Nexys4 210274674840A' is selected.
+22:21:51 INFO  : 'jtag frequency' command is executed.
+22:21:51 INFO  : Context for processor 'microblaze_0' is selected.
+22:21:51 INFO  : Processor reset is completed for 'microblaze_0'.
+22:21:51 INFO  : Context for processor 'microblaze_0' is selected.
+22:21:51 INFO  : The application 'D:/Universidade/cr/SHA2/SHA2.sdk/SHA2/Debug/SHA2.elf' is downloaded to processor 'microblaze_0'.
+22:21:51 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -nocase -filter {name =~ "microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent Nexys4 210274674840A"} -index 0
+rst -processor
+targets -set -nocase -filter {name =~ "microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent Nexys4 210274674840A"} -index 0
+dow D:/Universidade/cr/SHA2/SHA2.sdk/SHA2/Debug/SHA2.elf
+----------------End of Script----------------
+
+22:21:51 INFO  : Memory regions updated for context MicroBlaze #0
+22:21:51 INFO  : Memory regions updated for context MicroBlaze Debug Module at USER2
+22:21:52 INFO  : Context for processor 'microblaze_0' is selected.
+22:21:52 INFO  : 'con' command is executed.
+22:21:52 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent Nexys4 210274674840A"} -index 0
+con
+----------------End of Script----------------
+
+22:21:52 INFO  : Launch script is exported to file 'D:\Universidade\cr\SHA2\SHA2.sdk\.sdk\launch_scripts\xilinx_c-c++_application_(system_debugger)\system_debugger_using_debug_sha2.elf_on_local.tcl'
+22:41:44 INFO  : SDK has detected change in the last modified timestamps for source hardware specification file Source:1525988490578,  Project:1525987184068
+22:41:44 INFO  : Project design_1_wrapper_hw_platform_0's source hardware specification located at D:/Universidade/cr/SHA2/SHA2.sdk/design_1_wrapper.hdf is now different from the local copy.
+		 The local copy will be replaced with the source specification and your workspace will be updated.
+22:41:47 INFO  : Copied contents of D:/Universidade/cr/SHA2/SHA2.sdk/design_1_wrapper.hdf into \design_1_wrapper_hw_platform_0\system.hdf.
+22:41:48 INFO  : Synchronizing projects in the workspace with the hardware platform specification changes.
+22:41:50 INFO  : 
+22:41:51 INFO  : Updating hardware inferred compiler options for SHA2.
+22:41:51 INFO  : Clearing existing target manager status.
+22:41:51 INFO  : Workspace synchronized with the new hardware specification file. Cleaning dependent projects...
+22:41:52 WARN  : Linker script will not be updated automatically. Users need to update it manually.
+22:42:28 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+22:42:28 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Nexys4 210274674840A" && level==0} -index 0' command is executed.
+22:42:30 INFO  : FPGA configured successfully with bitstream "D:/Universidade/cr/SHA2/SHA2.sdk/design_1_wrapper_hw_platform_0/download.bit"
+22:42:42 INFO  : Disconnected from the channel tcfchan#13.
+22:42:44 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Nexys4 210274674840A" && level==0} -index 0' command is executed.
+22:42:44 INFO  : 'fpga -state' command is executed.
+22:42:44 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+22:42:44 INFO  : Jtag cable 'Digilent Nexys4 210274674840A' is selected.
+22:42:44 INFO  : 'jtag frequency' command is executed.
+22:42:44 INFO  : Context for processor 'microblaze_0' is selected.
+22:42:44 INFO  : Processor reset is completed for 'microblaze_0'.
+22:42:44 INFO  : Context for processor 'microblaze_0' is selected.
+22:42:44 INFO  : The application 'D:/Universidade/cr/SHA2/SHA2.sdk/SHA2/Debug/SHA2.elf' is downloaded to processor 'microblaze_0'.
+22:42:44 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -nocase -filter {name =~ "microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent Nexys4 210274674840A"} -index 0
+rst -processor
+targets -set -nocase -filter {name =~ "microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent Nexys4 210274674840A"} -index 0
+dow D:/Universidade/cr/SHA2/SHA2.sdk/SHA2/Debug/SHA2.elf
+----------------End of Script----------------
+
+22:42:44 INFO  : Memory regions updated for context MicroBlaze #0
+22:42:44 INFO  : Memory regions updated for context MicroBlaze Debug Module at USER2
+22:42:44 INFO  : Context for processor 'microblaze_0' is selected.
+22:42:44 INFO  : 'con' command is executed.
+22:42:44 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent Nexys4 210274674840A"} -index 0
+con
+----------------End of Script----------------
+
+22:42:44 INFO  : Launch script is exported to file 'D:\Universidade\cr\SHA2\SHA2.sdk\.sdk\launch_scripts\xilinx_c-c++_application_(system_debugger)\system_debugger_using_debug_sha2.elf_on_local.tcl'
+22:45:12 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+22:45:12 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Nexys4 210274674840A" && level==0} -index 0' command is executed.
+22:45:14 INFO  : FPGA configured successfully with bitstream "D:/Universidade/cr/SHA2/SHA2.sdk/design_1_wrapper_hw_platform_0/download.bit"
+22:45:22 INFO  : Disconnected from the channel tcfchan#14.
+22:45:24 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Nexys4 210274674840A" && level==0} -index 0' command is executed.
+22:45:24 INFO  : 'fpga -state' command is executed.
+22:45:24 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+22:45:24 INFO  : Jtag cable 'Digilent Nexys4 210274674840A' is selected.
+22:45:24 INFO  : 'jtag frequency' command is executed.
+22:45:24 INFO  : Context for processor 'microblaze_0' is selected.
+22:45:24 INFO  : Processor reset is completed for 'microblaze_0'.
+22:45:24 INFO  : Context for processor 'microblaze_0' is selected.
+22:45:24 INFO  : The application 'D:/Universidade/cr/SHA2/SHA2.sdk/SHA2/Debug/SHA2.elf' is downloaded to processor 'microblaze_0'.
+22:45:24 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -nocase -filter {name =~ "microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent Nexys4 210274674840A"} -index 0
+rst -processor
+targets -set -nocase -filter {name =~ "microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent Nexys4 210274674840A"} -index 0
+dow D:/Universidade/cr/SHA2/SHA2.sdk/SHA2/Debug/SHA2.elf
+----------------End of Script----------------
+
+22:45:24 INFO  : Memory regions updated for context MicroBlaze #0
+22:45:24 INFO  : Memory regions updated for context MicroBlaze Debug Module at USER2
+22:45:24 INFO  : Context for processor 'microblaze_0' is selected.
+22:45:24 INFO  : 'con' command is executed.
+22:45:24 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent Nexys4 210274674840A"} -index 0
+con
+----------------End of Script----------------
+
+22:45:24 INFO  : Launch script is exported to file 'D:\Universidade\cr\SHA2\SHA2.sdk\.sdk\launch_scripts\xilinx_c-c++_application_(system_debugger)\system_debugger_using_debug_sha2.elf_on_local.tcl'
+22:47:51 INFO  : Disconnected from the channel tcfchan#15.
+22:47:53 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Nexys4 210274674840A" && level==0} -index 0' command is executed.
+22:47:53 INFO  : 'fpga -state' command is executed.
+22:47:53 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+22:47:53 INFO  : Jtag cable 'Digilent Nexys4 210274674840A' is selected.
+22:47:53 INFO  : 'jtag frequency' command is executed.
+22:47:53 INFO  : Context for processor 'microblaze_0' is selected.
+22:47:53 INFO  : Processor reset is completed for 'microblaze_0'.
+22:47:53 INFO  : Context for processor 'microblaze_0' is selected.
+22:47:53 INFO  : The application 'D:/Universidade/cr/SHA2/SHA2.sdk/SHA2/Debug/SHA2.elf' is downloaded to processor 'microblaze_0'.
+22:47:53 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -nocase -filter {name =~ "microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent Nexys4 210274674840A"} -index 0
+rst -processor
+targets -set -nocase -filter {name =~ "microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent Nexys4 210274674840A"} -index 0
+dow D:/Universidade/cr/SHA2/SHA2.sdk/SHA2/Debug/SHA2.elf
+----------------End of Script----------------
+
+22:47:53 INFO  : Memory regions updated for context MicroBlaze #0
+22:47:53 INFO  : Memory regions updated for context MicroBlaze Debug Module at USER2
+22:47:53 INFO  : Context for processor 'microblaze_0' is selected.
+22:47:53 INFO  : 'con' command is executed.
+22:47:53 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent Nexys4 210274674840A"} -index 0
+con
+----------------End of Script----------------
+
+22:47:53 INFO  : Launch script is exported to file 'D:\Universidade\cr\SHA2\SHA2.sdk\.sdk\launch_scripts\xilinx_c-c++_application_(system_debugger)\system_debugger_using_debug_sha2.elf_on_local.tcl'
+23:03:09 INFO  : SDK has detected change in the last modified timestamps for source hardware specification file Source:1525989573159,  Project:1525988490578
+23:03:09 INFO  : Project design_1_wrapper_hw_platform_0's source hardware specification located at D:/Universidade/cr/SHA2/SHA2.sdk/design_1_wrapper.hdf is now different from the local copy.
+		 The local copy will be replaced with the source specification and your workspace will be updated.
+23:03:13 INFO  : Copied contents of D:/Universidade/cr/SHA2/SHA2.sdk/design_1_wrapper.hdf into \design_1_wrapper_hw_platform_0\system.hdf.
+23:03:13 INFO  : Synchronizing projects in the workspace with the hardware platform specification changes.
+23:03:16 INFO  : 
+23:03:17 INFO  : Updating hardware inferred compiler options for SHA2.
+23:03:17 INFO  : Clearing existing target manager status.
+23:03:17 INFO  : Workspace synchronized with the new hardware specification file. Cleaning dependent projects...
+23:03:18 WARN  : Linker script will not be updated automatically. Users need to update it manually.
+23:03:50 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+23:03:50 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Nexys4 210274674840A" && level==0} -index 0' command is executed.
+23:03:52 INFO  : FPGA configured successfully with bitstream "D:/Universidade/cr/SHA2/SHA2.sdk/design_1_wrapper_hw_platform_0/download.bit"
+23:05:57 INFO  : Disconnected from the channel tcfchan#16.
+23:05:59 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Nexys4 210274674840A" && level==0} -index 0' command is executed.
+23:05:59 INFO  : 'fpga -state' command is executed.
+23:05:59 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+23:05:59 INFO  : Jtag cable 'Digilent Nexys4 210274674840A' is selected.
+23:05:59 INFO  : 'jtag frequency' command is executed.
+23:05:59 INFO  : Context for processor 'microblaze_0' is selected.
+23:05:59 INFO  : Processor reset is completed for 'microblaze_0'.
+23:05:59 INFO  : Context for processor 'microblaze_0' is selected.
+23:05:59 INFO  : The application 'D:/Universidade/cr/SHA2/SHA2.sdk/SHA2/Debug/SHA2.elf' is downloaded to processor 'microblaze_0'.
+23:05:59 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -nocase -filter {name =~ "microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent Nexys4 210274674840A"} -index 0
+rst -processor
+targets -set -nocase -filter {name =~ "microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent Nexys4 210274674840A"} -index 0
+dow D:/Universidade/cr/SHA2/SHA2.sdk/SHA2/Debug/SHA2.elf
+----------------End of Script----------------
+
+23:05:59 INFO  : Memory regions updated for context MicroBlaze #0
+23:05:59 INFO  : Memory regions updated for context MicroBlaze Debug Module at USER2
+23:05:59 INFO  : Context for processor 'microblaze_0' is selected.
+23:05:59 INFO  : 'con' command is executed.
+23:05:59 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent Nexys4 210274674840A"} -index 0
+con
+----------------End of Script----------------
+
+23:05:59 INFO  : Launch script is exported to file 'D:\Universidade\cr\SHA2\SHA2.sdk\.sdk\launch_scripts\xilinx_c-c++_application_(system_debugger)\system_debugger_using_debug_sha2.elf_on_local.tcl'
+23:20:34 INFO  : SDK has detected change in the last modified timestamps for source hardware specification file Source:1525990814485,  Project:1525989573159
+23:20:34 INFO  : Project design_1_wrapper_hw_platform_0's source hardware specification located at D:/Universidade/cr/SHA2/SHA2.sdk/design_1_wrapper.hdf is now different from the local copy.
+		 The local copy will be replaced with the source specification and your workspace will be updated.
+23:20:54 INFO  : Copied contents of D:/Universidade/cr/SHA2/SHA2.sdk/design_1_wrapper.hdf into \design_1_wrapper_hw_platform_0\system.hdf.
+23:20:54 INFO  : Synchronizing projects in the workspace with the hardware platform specification changes.
+23:20:56 INFO  : 
+23:20:57 INFO  : Updating hardware inferred compiler options for SHA2.
+23:20:57 INFO  : Clearing existing target manager status.
+23:20:57 INFO  : Workspace synchronized with the new hardware specification file. Cleaning dependent projects...
+23:20:58 WARN  : Linker script will not be updated automatically. Users need to update it manually.
+23:21:32 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+23:21:32 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Nexys4 210274674840A" && level==0} -index 0' command is executed.
+23:21:34 INFO  : FPGA configured successfully with bitstream "D:/Universidade/cr/SHA2/SHA2.sdk/design_1_wrapper_hw_platform_0/download.bit"
+23:21:45 INFO  : Disconnected from the channel tcfchan#17.
+23:21:46 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Nexys4 210274674840A" && level==0} -index 0' command is executed.
+23:21:46 INFO  : 'fpga -state' command is executed.
+23:21:46 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+23:21:46 INFO  : Jtag cable 'Digilent Nexys4 210274674840A' is selected.
+23:21:46 INFO  : 'jtag frequency' command is executed.
+23:21:46 INFO  : Context for processor 'microblaze_0' is selected.
+23:21:47 INFO  : Processor reset is completed for 'microblaze_0'.
+23:21:47 INFO  : Context for processor 'microblaze_0' is selected.
+23:21:47 INFO  : The application 'D:/Universidade/cr/SHA2/SHA2.sdk/SHA2/Debug/SHA2.elf' is downloaded to processor 'microblaze_0'.
+23:21:47 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -nocase -filter {name =~ "microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent Nexys4 210274674840A"} -index 0
+rst -processor
+targets -set -nocase -filter {name =~ "microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent Nexys4 210274674840A"} -index 0
+dow D:/Universidade/cr/SHA2/SHA2.sdk/SHA2/Debug/SHA2.elf
+----------------End of Script----------------
+
+23:21:47 INFO  : Memory regions updated for context MicroBlaze #0
+23:21:47 INFO  : Memory regions updated for context MicroBlaze Debug Module at USER2
+23:21:47 INFO  : Context for processor 'microblaze_0' is selected.
+23:21:47 INFO  : 'con' command is executed.
+23:21:47 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent Nexys4 210274674840A"} -index 0
+con
+----------------End of Script----------------
+
+23:21:47 INFO  : Launch script is exported to file 'D:\Universidade\cr\SHA2\SHA2.sdk\.sdk\launch_scripts\xilinx_c-c++_application_(system_debugger)\system_debugger_using_debug_sha2.elf_on_local.tcl'
+23:24:11 INFO  : Disconnected from the channel tcfchan#18.
+23:24:12 ERROR : Unexpected error while parsing XMD response ?: com.google.gson.JsonSyntaxException: com.google.gson.stream.MalformedJsonException: invalid number or unquoted string near 
+23:31:51 INFO  : Registering command handlers for SDK TCF services
+23:31:52 INFO  : Launching XSCT server: xsct.bat -interactive D:\Universidade\cr\SHA2\SHA2.sdk\temp_xsdb_launch_script.tcl
+23:31:55 INFO  : XSCT server has started successfully.
+23:31:55 INFO  : Successfully done setting XSCT server connection channel  
+23:32:03 INFO  : Successfully done setting SDK workspace  
+23:32:03 INFO  : Processing command line option -hwspec D:/Universidade/cr/SHA2/SHA2.sdk/design_1_wrapper.hdf.
+23:32:03 INFO  : Checking for hwspec changes in the project design_1_wrapper_hw_platform_0.
+23:32:10 INFO  : SDK has detected change in the last modified timestamps for source hardware specification file Source:1525991346981,  Project:1525990814485
+23:32:10 INFO  : The hardware specification for project 'design_1_wrapper_hw_platform_0' is different from D:/Universidade/cr/SHA2/SHA2.sdk/design_1_wrapper.hdf.
+23:32:10 INFO  : Copied contents of D:/Universidade/cr/SHA2/SHA2.sdk/design_1_wrapper.hdf into \design_1_wrapper_hw_platform_0\system.hdf.
+23:32:11 INFO  : Synchronizing projects in the workspace with the hardware platform specification changes.
+23:32:13 INFO  : 
+23:32:14 INFO  : Updating hardware inferred compiler options for SHA2.
+23:32:14 INFO  : Clearing existing target manager status.
+23:32:14 WARN  : Given IPC port value is invalid. Using default port 2350
+23:32:14 WARN  : Given XMD timeout value is invalid. Using default value of 50000
+23:32:15 WARN  : Given XMD transaction timeout value is invalid. Using default value of 60000 milli seconds
+23:32:15 INFO  : Workspace synchronized with the new hardware specification file. Cleaning dependent projects...
+23:32:16 WARN  : Linker script will not be updated automatically. Users need to update it manually.
+23:34:31 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+23:34:32 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Nexys4 210274674840A" && level==0} -index 0' command is executed.
+23:34:35 INFO  : FPGA configured successfully with bitstream "D:/Universidade/cr/SHA2/SHA2.sdk/design_1_wrapper_hw_platform_0/download.bit"
+23:34:57 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Nexys4 210274674840A" && level==0} -index 0' command is executed.
+23:34:57 INFO  : 'fpga -state' command is executed.
+23:34:57 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+23:34:57 INFO  : Jtag cable 'Digilent Nexys4 210274674840A' is selected.
+23:34:57 INFO  : 'jtag frequency' command is executed.
+23:34:57 INFO  : Context for processor 'microblaze_0' is selected.
+23:34:57 INFO  : Processor reset is completed for 'microblaze_0'.
+23:34:57 INFO  : Context for processor 'microblaze_0' is selected.
+23:34:57 INFO  : The application 'D:/Universidade/cr/SHA2/SHA2.sdk/SHA2/Debug/SHA2.elf' is downloaded to processor 'microblaze_0'.
+23:34:57 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -nocase -filter {name =~ "microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent Nexys4 210274674840A"} -index 0
+rst -processor
+targets -set -nocase -filter {name =~ "microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent Nexys4 210274674840A"} -index 0
+dow D:/Universidade/cr/SHA2/SHA2.sdk/SHA2/Debug/SHA2.elf
+----------------End of Script----------------
+
+23:34:57 INFO  : Memory regions updated for context MicroBlaze #0
+23:34:57 INFO  : Memory regions updated for context MicroBlaze Debug Module at USER2
+23:34:57 INFO  : Context for processor 'microblaze_0' is selected.
+23:34:57 INFO  : 'con' command is executed.
+23:34:57 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent Nexys4 210274674840A"} -index 0
+con
+----------------End of Script----------------
+
+23:34:57 INFO  : Launch script is exported to file 'D:\Universidade\cr\SHA2\SHA2.sdk\.sdk\launch_scripts\xilinx_c-c++_application_(system_debugger)\system_debugger_using_debug_sha2.elf_on_local.tcl'
+23:35:16 INFO  : Disconnected from the channel tcfchan#1.
+23:35:18 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Nexys4 210274674840A" && level==0} -index 0' command is executed.
+23:35:18 INFO  : 'fpga -state' command is executed.
+23:35:18 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+23:35:18 INFO  : Jtag cable 'Digilent Nexys4 210274674840A' is selected.
+23:35:18 INFO  : 'jtag frequency' command is executed.
+23:35:18 INFO  : Context for processor 'microblaze_0' is selected.
+23:35:18 INFO  : Processor reset is completed for 'microblaze_0'.
+23:35:18 INFO  : Context for processor 'microblaze_0' is selected.
+23:35:18 INFO  : The application 'D:/Universidade/cr/SHA2/SHA2.sdk/SHA2/Debug/SHA2.elf' is downloaded to processor 'microblaze_0'.
+23:35:18 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -nocase -filter {name =~ "microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent Nexys4 210274674840A"} -index 0
+rst -processor
+targets -set -nocase -filter {name =~ "microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent Nexys4 210274674840A"} -index 0
+dow D:/Universidade/cr/SHA2/SHA2.sdk/SHA2/Debug/SHA2.elf
+----------------End of Script----------------
+
+23:35:18 INFO  : Memory regions updated for context MicroBlaze #0
+23:35:18 INFO  : Memory regions updated for context MicroBlaze Debug Module at USER2
+23:35:18 INFO  : Context for processor 'microblaze_0' is selected.
+23:35:18 INFO  : 'con' command is executed.
+23:35:18 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent Nexys4 210274674840A"} -index 0
+con
+----------------End of Script----------------
+
+23:35:18 INFO  : Launch script is exported to file 'D:\Universidade\cr\SHA2\SHA2.sdk\.sdk\launch_scripts\xilinx_c-c++_application_(system_debugger)\system_debugger_using_debug_sha2.elf_on_local.tcl'
+23:35:56 INFO  : Disconnected from the channel tcfchan#2.
+23:35:58 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Nexys4 210274674840A" && level==0} -index 0' command is executed.
+23:35:58 INFO  : 'fpga -state' command is executed.
+23:35:58 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+23:35:58 INFO  : Jtag cable 'Digilent Nexys4 210274674840A' is selected.
+23:35:58 INFO  : 'jtag frequency' command is executed.
+23:35:58 INFO  : Context for processor 'microblaze_0' is selected.
+23:35:58 INFO  : Processor reset is completed for 'microblaze_0'.
+23:35:58 INFO  : Context for processor 'microblaze_0' is selected.
+23:35:58 INFO  : The application 'D:/Universidade/cr/SHA2/SHA2.sdk/SHA2/Debug/SHA2.elf' is downloaded to processor 'microblaze_0'.
+23:35:58 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -nocase -filter {name =~ "microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent Nexys4 210274674840A"} -index 0
+rst -processor
+targets -set -nocase -filter {name =~ "microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent Nexys4 210274674840A"} -index 0
+dow D:/Universidade/cr/SHA2/SHA2.sdk/SHA2/Debug/SHA2.elf
+----------------End of Script----------------
+
+23:35:58 INFO  : Memory regions updated for context MicroBlaze #0
+23:35:58 INFO  : Memory regions updated for context MicroBlaze Debug Module at USER2
+23:35:58 INFO  : Context for processor 'microblaze_0' is selected.
+23:35:58 INFO  : 'con' command is executed.
+23:35:58 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent Nexys4 210274674840A"} -index 0
+con
+----------------End of Script----------------
+
+23:35:58 INFO  : Launch script is exported to file 'D:\Universidade\cr\SHA2\SHA2.sdk\.sdk\launch_scripts\xilinx_c-c++_application_(system_debugger)\system_debugger_using_debug_sha2.elf_on_local.tcl'
+23:36:07 INFO  : Disconnected from the channel tcfchan#3.
+23:36:08 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Nexys4 210274674840A" && level==0} -index 0' command is executed.
+23:36:09 INFO  : 'fpga -state' command is executed.
+23:36:09 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+23:36:09 INFO  : Jtag cable 'Digilent Nexys4 210274674840A' is selected.
+23:36:09 INFO  : 'jtag frequency' command is executed.
+23:36:09 INFO  : Context for processor 'microblaze_0' is selected.
+23:36:09 INFO  : Processor reset is completed for 'microblaze_0'.
+23:36:09 INFO  : Context for processor 'microblaze_0' is selected.
+23:36:09 INFO  : The application 'D:/Universidade/cr/SHA2/SHA2.sdk/SHA2/Debug/SHA2.elf' is downloaded to processor 'microblaze_0'.
+23:36:09 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -nocase -filter {name =~ "microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent Nexys4 210274674840A"} -index 0
+rst -processor
+targets -set -nocase -filter {name =~ "microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent Nexys4 210274674840A"} -index 0
+dow D:/Universidade/cr/SHA2/SHA2.sdk/SHA2/Debug/SHA2.elf
+----------------End of Script----------------
+
+23:36:09 INFO  : Memory regions updated for context MicroBlaze #0
+23:36:09 INFO  : Memory regions updated for context MicroBlaze Debug Module at USER2
+23:36:09 INFO  : Context for processor 'microblaze_0' is selected.
+23:36:09 INFO  : 'con' command is executed.
+23:36:09 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent Nexys4 210274674840A"} -index 0
+con
+----------------End of Script----------------
+
+23:36:09 INFO  : Launch script is exported to file 'D:\Universidade\cr\SHA2\SHA2.sdk\.sdk\launch_scripts\xilinx_c-c++_application_(system_debugger)\system_debugger_using_debug_sha2.elf_on_local.tcl'
+23:36:38 INFO  : Disconnected from the channel tcfchan#4.
+23:36:39 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Nexys4 210274674840A" && level==0} -index 0' command is executed.
+23:36:39 INFO  : 'fpga -state' command is executed.
+23:36:39 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+23:36:40 INFO  : Jtag cable 'Digilent Nexys4 210274674840A' is selected.
+23:36:40 INFO  : 'jtag frequency' command is executed.
+23:36:40 INFO  : Context for processor 'microblaze_0' is selected.
+23:36:40 INFO  : Processor reset is completed for 'microblaze_0'.
+23:36:40 INFO  : Context for processor 'microblaze_0' is selected.
+23:36:40 INFO  : The application 'D:/Universidade/cr/SHA2/SHA2.sdk/SHA2/Debug/SHA2.elf' is downloaded to processor 'microblaze_0'.
+23:36:40 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -nocase -filter {name =~ "microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent Nexys4 210274674840A"} -index 0
+rst -processor
+targets -set -nocase -filter {name =~ "microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent Nexys4 210274674840A"} -index 0
+dow D:/Universidade/cr/SHA2/SHA2.sdk/SHA2/Debug/SHA2.elf
+----------------End of Script----------------
+
+23:36:40 INFO  : Memory regions updated for context MicroBlaze #0
+23:36:40 INFO  : Memory regions updated for context MicroBlaze Debug Module at USER2
+23:36:40 INFO  : Context for processor 'microblaze_0' is selected.
+23:36:40 INFO  : 'con' command is executed.
+23:36:40 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent Nexys4 210274674840A"} -index 0
+con
+----------------End of Script----------------
+
+23:36:40 INFO  : Launch script is exported to file 'D:\Universidade\cr\SHA2\SHA2.sdk\.sdk\launch_scripts\xilinx_c-c++_application_(system_debugger)\system_debugger_using_debug_sha2.elf_on_local.tcl'
+23:37:53 INFO  : Disconnected from the channel tcfchan#5.
+23:37:54 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Nexys4 210274674840A" && level==0} -index 0' command is executed.
+23:37:54 INFO  : 'fpga -state' command is executed.
+23:37:54 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+23:37:54 INFO  : Jtag cable 'Digilent Nexys4 210274674840A' is selected.
+23:37:54 INFO  : 'jtag frequency' command is executed.
+23:37:54 INFO  : Context for processor 'microblaze_0' is selected.
+23:37:54 INFO  : Processor reset is completed for 'microblaze_0'.
+23:37:54 INFO  : Context for processor 'microblaze_0' is selected.
+23:37:54 INFO  : The application 'D:/Universidade/cr/SHA2/SHA2.sdk/SHA2/Debug/SHA2.elf' is downloaded to processor 'microblaze_0'.
+23:37:54 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -nocase -filter {name =~ "microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent Nexys4 210274674840A"} -index 0
+rst -processor
+targets -set -nocase -filter {name =~ "microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent Nexys4 210274674840A"} -index 0
+dow D:/Universidade/cr/SHA2/SHA2.sdk/SHA2/Debug/SHA2.elf
+----------------End of Script----------------
+
+23:37:54 INFO  : Memory regions updated for context MicroBlaze #0
+23:37:54 INFO  : Memory regions updated for context MicroBlaze Debug Module at USER2
+23:37:55 INFO  : Context for processor 'microblaze_0' is selected.
+23:37:55 INFO  : 'con' command is executed.
+23:37:55 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent Nexys4 210274674840A"} -index 0
+con
+----------------End of Script----------------
+
+23:37:55 INFO  : Launch script is exported to file 'D:\Universidade\cr\SHA2\SHA2.sdk\.sdk\launch_scripts\xilinx_c-c++_application_(system_debugger)\system_debugger_using_debug_sha2.elf_on_local.tcl'
+00:00:01 INFO  : SDK has detected change in the last modified timestamps for source hardware specification file Source:1525993143371,  Project:1525991346981
+00:00:01 INFO  : Project design_1_wrapper_hw_platform_0's source hardware specification located at D:/Universidade/cr/SHA2/SHA2.sdk/design_1_wrapper.hdf is now different from the local copy.
+		 The local copy will be replaced with the source specification and your workspace will be updated.
+00:00:04 INFO  : Copied contents of D:/Universidade/cr/SHA2/SHA2.sdk/design_1_wrapper.hdf into \design_1_wrapper_hw_platform_0\system.hdf.
+00:00:04 INFO  : Synchronizing projects in the workspace with the hardware platform specification changes.
+00:00:11 INFO  : 
+00:00:12 INFO  : Updating hardware inferred compiler options for SHA2.
+00:00:12 INFO  : Clearing existing target manager status.
+00:00:12 INFO  : Closing and re-opening the MSS file of ther project SHA2_bsp
+00:00:12 INFO  : Workspace synchronized with the new hardware specification file. Cleaning dependent projects...
+00:00:13 WARN  : Linker script will not be updated automatically. Users need to update it manually.
+00:00:46 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+00:00:46 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Nexys4 210274674840A" && level==0} -index 0' command is executed.
+00:00:48 INFO  : FPGA configured successfully with bitstream "D:/Universidade/cr/SHA2/SHA2.sdk/design_1_wrapper_hw_platform_0/download.bit"
+00:01:04 INFO  : Disconnected from the channel tcfchan#6.
+00:01:05 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Nexys4 210274674840A" && level==0} -index 0' command is executed.
+00:01:05 INFO  : 'fpga -state' command is executed.
+00:01:05 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+00:01:06 INFO  : Jtag cable 'Digilent Nexys4 210274674840A' is selected.
+00:01:06 INFO  : 'jtag frequency' command is executed.
+00:01:06 INFO  : Context for processor 'microblaze_0' is selected.
+00:01:06 INFO  : Processor reset is completed for 'microblaze_0'.
+00:01:06 INFO  : Context for processor 'microblaze_0' is selected.
+00:01:06 INFO  : The application 'D:/Universidade/cr/SHA2/SHA2.sdk/SHA2/Debug/SHA2.elf' is downloaded to processor 'microblaze_0'.
+00:01:06 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -nocase -filter {name =~ "microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent Nexys4 210274674840A"} -index 0
+rst -processor
+targets -set -nocase -filter {name =~ "microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent Nexys4 210274674840A"} -index 0
+dow D:/Universidade/cr/SHA2/SHA2.sdk/SHA2/Debug/SHA2.elf
+----------------End of Script----------------
+
+00:01:06 INFO  : Memory regions updated for context MicroBlaze #0
+00:01:06 INFO  : Memory regions updated for context MicroBlaze Debug Module at USER2
+00:01:06 INFO  : Context for processor 'microblaze_0' is selected.
+00:01:06 INFO  : 'con' command is executed.
+00:01:06 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent Nexys4 210274674840A"} -index 0
+con
+----------------End of Script----------------
+
+00:01:06 INFO  : Launch script is exported to file 'D:\Universidade\cr\SHA2\SHA2.sdk\.sdk\launch_scripts\xilinx_c-c++_application_(system_debugger)\system_debugger_using_debug_sha2.elf_on_local.tcl'
+00:02:03 INFO  : Disconnected from the channel tcfchan#7.
+00:02:04 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Nexys4 210274674840A" && level==0} -index 0' command is executed.
+00:02:04 INFO  : 'fpga -state' command is executed.
+00:02:04 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+00:02:04 INFO  : Jtag cable 'Digilent Nexys4 210274674840A' is selected.
+00:02:04 INFO  : 'jtag frequency' command is executed.
+00:02:04 INFO  : Context for processor 'microblaze_0' is selected.
+00:02:04 INFO  : Processor reset is completed for 'microblaze_0'.
+00:02:04 INFO  : Context for processor 'microblaze_0' is selected.
+00:02:05 INFO  : The application 'D:/Universidade/cr/SHA2/SHA2.sdk/SHA2/Debug/SHA2.elf' is downloaded to processor 'microblaze_0'.
+00:02:05 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -nocase -filter {name =~ "microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent Nexys4 210274674840A"} -index 0
+rst -processor
+targets -set -nocase -filter {name =~ "microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent Nexys4 210274674840A"} -index 0
+dow D:/Universidade/cr/SHA2/SHA2.sdk/SHA2/Debug/SHA2.elf
+----------------End of Script----------------
+
+00:02:05 INFO  : Memory regions updated for context MicroBlaze #0
+00:02:05 INFO  : Memory regions updated for context MicroBlaze Debug Module at USER2
+00:02:05 INFO  : Context for processor 'microblaze_0' is selected.
+00:02:05 INFO  : 'con' command is executed.
+00:02:05 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent Nexys4 210274674840A"} -index 0
+con
+----------------End of Script----------------
+
+00:02:05 INFO  : Launch script is exported to file 'D:\Universidade\cr\SHA2\SHA2.sdk\.sdk\launch_scripts\xilinx_c-c++_application_(system_debugger)\system_debugger_using_debug_sha2.elf_on_local.tcl'
+00:02:54 INFO  : Disconnected from the channel tcfchan#8.
+00:02:55 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Nexys4 210274674840A" && level==0} -index 0' command is executed.
+00:02:55 INFO  : 'fpga -state' command is executed.
+00:02:55 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+00:02:55 INFO  : Jtag cable 'Digilent Nexys4 210274674840A' is selected.
+00:02:55 INFO  : 'jtag frequency' command is executed.
+00:02:55 INFO  : Context for processor 'microblaze_0' is selected.
+00:02:55 INFO  : Processor reset is completed for 'microblaze_0'.
+00:02:56 INFO  : Context for processor 'microblaze_0' is selected.
+00:02:56 INFO  : The application 'D:/Universidade/cr/SHA2/SHA2.sdk/SHA2/Debug/SHA2.elf' is downloaded to processor 'microblaze_0'.
+00:02:56 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -nocase -filter {name =~ "microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent Nexys4 210274674840A"} -index 0
+rst -processor
+targets -set -nocase -filter {name =~ "microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent Nexys4 210274674840A"} -index 0
+dow D:/Universidade/cr/SHA2/SHA2.sdk/SHA2/Debug/SHA2.elf
+----------------End of Script----------------
+
+00:02:56 INFO  : Memory regions updated for context MicroBlaze #0
+00:02:56 INFO  : Memory regions updated for context MicroBlaze Debug Module at USER2
+00:02:56 INFO  : Context for processor 'microblaze_0' is selected.
+00:02:56 INFO  : 'con' command is executed.
+00:02:56 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent Nexys4 210274674840A"} -index 0
+con
+----------------End of Script----------------
+
+00:02:56 INFO  : Launch script is exported to file 'D:\Universidade\cr\SHA2\SHA2.sdk\.sdk\launch_scripts\xilinx_c-c++_application_(system_debugger)\system_debugger_using_debug_sha2.elf_on_local.tcl'
+00:19:35 INFO  : SDK has detected change in the last modified timestamps for source hardware specification file Source:1525993918779,  Project:1525993143371
+00:19:35 INFO  : Project design_1_wrapper_hw_platform_0's source hardware specification located at D:/Universidade/cr/SHA2/SHA2.sdk/design_1_wrapper.hdf is now different from the local copy.
+		 The local copy will be replaced with the source specification and your workspace will be updated.
+00:20:05 INFO  : Copied contents of D:/Universidade/cr/SHA2/SHA2.sdk/design_1_wrapper.hdf into \design_1_wrapper_hw_platform_0\system.hdf.
+00:20:05 INFO  : Synchronizing projects in the workspace with the hardware platform specification changes.
+00:20:08 INFO  : 
+00:20:09 INFO  : Updating hardware inferred compiler options for SHA2.
+00:20:09 INFO  : Clearing existing target manager status.
+00:20:09 INFO  : Closing and re-opening the MSS file of ther project SHA2_bsp
+00:20:09 INFO  : Workspace synchronized with the new hardware specification file. Cleaning dependent projects...
+00:20:10 WARN  : Linker script will not be updated automatically. Users need to update it manually.
+00:21:07 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+00:21:07 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Nexys4 210274674840A" && level==0} -index 0' command is executed.
+00:21:09 INFO  : FPGA configured successfully with bitstream "D:/Universidade/cr/SHA2/SHA2.sdk/design_1_wrapper_hw_platform_0/download.bit"
+00:21:22 INFO  : Disconnected from the channel tcfchan#9.
+00:21:23 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Nexys4 210274674840A" && level==0} -index 0' command is executed.
+00:21:23 INFO  : 'fpga -state' command is executed.
+00:21:23 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+00:21:24 INFO  : Jtag cable 'Digilent Nexys4 210274674840A' is selected.
+00:21:24 INFO  : 'jtag frequency' command is executed.
+00:21:24 INFO  : Context for processor 'microblaze_0' is selected.
+00:21:24 INFO  : Processor reset is completed for 'microblaze_0'.
+00:21:24 INFO  : Context for processor 'microblaze_0' is selected.
+00:21:24 INFO  : The application 'D:/Universidade/cr/SHA2/SHA2.sdk/SHA2/Debug/SHA2.elf' is downloaded to processor 'microblaze_0'.
+00:21:24 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -nocase -filter {name =~ "microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent Nexys4 210274674840A"} -index 0
+rst -processor
+targets -set -nocase -filter {name =~ "microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent Nexys4 210274674840A"} -index 0
+dow D:/Universidade/cr/SHA2/SHA2.sdk/SHA2/Debug/SHA2.elf
+----------------End of Script----------------
+
+00:21:24 INFO  : Memory regions updated for context MicroBlaze #0
+00:21:24 INFO  : Memory regions updated for context MicroBlaze Debug Module at USER2
+00:21:24 INFO  : Context for processor 'microblaze_0' is selected.
+00:21:24 INFO  : 'con' command is executed.
+00:21:24 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent Nexys4 210274674840A"} -index 0
+con
+----------------End of Script----------------
+
+00:21:24 INFO  : Launch script is exported to file 'D:\Universidade\cr\SHA2\SHA2.sdk\.sdk\launch_scripts\xilinx_c-c++_application_(system_debugger)\system_debugger_using_debug_sha2.elf_on_local.tcl'
+00:21:58 INFO  : Disconnected from the channel tcfchan#10.
+00:22:00 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Nexys4 210274674840A" && level==0} -index 0' command is executed.
+00:22:00 INFO  : 'fpga -state' command is executed.
+00:22:00 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+00:22:00 INFO  : Jtag cable 'Digilent Nexys4 210274674840A' is selected.
+00:22:00 INFO  : 'jtag frequency' command is executed.
+00:22:00 INFO  : Context for processor 'microblaze_0' is selected.
+00:22:00 INFO  : Processor reset is completed for 'microblaze_0'.
+00:22:00 INFO  : Context for processor 'microblaze_0' is selected.
+00:22:00 INFO  : The application 'D:/Universidade/cr/SHA2/SHA2.sdk/SHA2/Debug/SHA2.elf' is downloaded to processor 'microblaze_0'.
+00:22:00 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -nocase -filter {name =~ "microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent Nexys4 210274674840A"} -index 0
+rst -processor
+targets -set -nocase -filter {name =~ "microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent Nexys4 210274674840A"} -index 0
+dow D:/Universidade/cr/SHA2/SHA2.sdk/SHA2/Debug/SHA2.elf
+----------------End of Script----------------
+
+00:22:00 INFO  : Memory regions updated for context MicroBlaze #0
+00:22:00 INFO  : Memory regions updated for context MicroBlaze Debug Module at USER2
+00:22:00 INFO  : Context for processor 'microblaze_0' is selected.
+00:22:00 INFO  : 'con' command is executed.
+00:22:00 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent Nexys4 210274674840A"} -index 0
+con
+----------------End of Script----------------
+
+00:22:00 INFO  : Launch script is exported to file 'D:\Universidade\cr\SHA2\SHA2.sdk\.sdk\launch_scripts\xilinx_c-c++_application_(system_debugger)\system_debugger_using_debug_sha2.elf_on_local.tcl'
+00:25:59 INFO  : Disconnected from the channel tcfchan#11.
+00:26:00 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Nexys4 210274674840A" && level==0} -index 0' command is executed.
+00:26:00 INFO  : 'fpga -state' command is executed.
+00:26:00 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+00:26:00 INFO  : Jtag cable 'Digilent Nexys4 210274674840A' is selected.
+00:26:00 INFO  : 'jtag frequency' command is executed.
+00:26:00 INFO  : Context for processor 'microblaze_0' is selected.
+00:26:00 INFO  : Processor reset is completed for 'microblaze_0'.
+00:26:00 INFO  : Context for processor 'microblaze_0' is selected.
+00:26:01 INFO  : The application 'D:/Universidade/cr/SHA2/SHA2.sdk/SHA2/Debug/SHA2.elf' is downloaded to processor 'microblaze_0'.
+00:26:01 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -nocase -filter {name =~ "microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent Nexys4 210274674840A"} -index 0
+rst -processor
+targets -set -nocase -filter {name =~ "microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent Nexys4 210274674840A"} -index 0
+dow D:/Universidade/cr/SHA2/SHA2.sdk/SHA2/Debug/SHA2.elf
+----------------End of Script----------------
+
+00:26:01 INFO  : Memory regions updated for context MicroBlaze #0
+00:26:01 INFO  : Memory regions updated for context MicroBlaze Debug Module at USER2
+00:26:01 INFO  : Context for processor 'microblaze_0' is selected.
+00:26:01 INFO  : 'con' command is executed.
+00:26:01 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent Nexys4 210274674840A"} -index 0
+con
+----------------End of Script----------------
+
+00:26:01 INFO  : Launch script is exported to file 'D:\Universidade\cr\SHA2\SHA2.sdk\.sdk\launch_scripts\xilinx_c-c++_application_(system_debugger)\system_debugger_using_debug_sha2.elf_on_local.tcl'
+00:27:20 INFO  : Disconnected from the channel tcfchan#12.
+00:27:21 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Nexys4 210274674840A" && level==0} -index 0' command is executed.
+00:27:21 INFO  : 'fpga -state' command is executed.
+00:27:21 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+00:27:21 INFO  : Jtag cable 'Digilent Nexys4 210274674840A' is selected.
+00:27:21 INFO  : 'jtag frequency' command is executed.
+00:27:21 INFO  : Context for processor 'microblaze_0' is selected.
+00:27:21 INFO  : Processor reset is completed for 'microblaze_0'.
+00:27:21 INFO  : Context for processor 'microblaze_0' is selected.
+00:27:21 INFO  : The application 'D:/Universidade/cr/SHA2/SHA2.sdk/SHA2/Debug/SHA2.elf' is downloaded to processor 'microblaze_0'.
+00:27:21 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -nocase -filter {name =~ "microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent Nexys4 210274674840A"} -index 0
+rst -processor
+targets -set -nocase -filter {name =~ "microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent Nexys4 210274674840A"} -index 0
+dow D:/Universidade/cr/SHA2/SHA2.sdk/SHA2/Debug/SHA2.elf
+----------------End of Script----------------
+
+00:27:21 INFO  : Memory regions updated for context MicroBlaze #0
+00:27:21 INFO  : Memory regions updated for context MicroBlaze Debug Module at USER2
+00:27:21 INFO  : Context for processor 'microblaze_0' is selected.
+00:27:21 INFO  : 'con' command is executed.
+00:27:21 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent Nexys4 210274674840A"} -index 0
+con
+----------------End of Script----------------
+
+00:27:21 INFO  : Launch script is exported to file 'D:\Universidade\cr\SHA2\SHA2.sdk\.sdk\launch_scripts\xilinx_c-c++_application_(system_debugger)\system_debugger_using_debug_sha2.elf_on_local.tcl'
+00:27:48 INFO  : SDK has detected change in the last modified timestamps for source hardware specification file Source:1525994814020,  Project:1525993918779
+00:27:48 INFO  : Project design_1_wrapper_hw_platform_0's source hardware specification located at D:/Universidade/cr/SHA2/SHA2.sdk/design_1_wrapper.hdf is now different from the local copy.
+		 The local copy will be replaced with the source specification and your workspace will be updated.
+00:28:17 INFO  : Copied contents of D:/Universidade/cr/SHA2/SHA2.sdk/design_1_wrapper.hdf into \design_1_wrapper_hw_platform_0\system.hdf.
+00:28:17 INFO  : Synchronizing projects in the workspace with the hardware platform specification changes.
+00:28:24 INFO  : 
+00:28:25 INFO  : Updating hardware inferred compiler options for SHA2.
+00:28:25 INFO  : Clearing existing target manager status.
+00:28:25 INFO  : Workspace synchronized with the new hardware specification file. Cleaning dependent projects...
+00:28:26 WARN  : Linker script will not be updated automatically. Users need to update it manually.
+00:29:25 INFO  : Disconnected from the channel tcfchan#13.
+00:29:26 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Nexys4 210274674840A" && level==0} -index 0' command is executed.
+00:29:26 INFO  : 'fpga -state' command is executed.
+00:29:26 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+00:29:26 INFO  : Jtag cable 'Digilent Nexys4 210274674840A' is selected.
+00:29:26 INFO  : 'jtag frequency' command is executed.
+00:29:26 INFO  : Context for processor 'microblaze_0' is selected.
+00:29:26 INFO  : Processor reset is completed for 'microblaze_0'.
+00:29:26 INFO  : Context for processor 'microblaze_0' is selected.
+00:29:27 INFO  : The application 'D:/Universidade/cr/SHA2/SHA2.sdk/SHA2/Debug/SHA2.elf' is downloaded to processor 'microblaze_0'.
+00:29:27 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -nocase -filter {name =~ "microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent Nexys4 210274674840A"} -index 0
+rst -processor
+targets -set -nocase -filter {name =~ "microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent Nexys4 210274674840A"} -index 0
+dow D:/Universidade/cr/SHA2/SHA2.sdk/SHA2/Debug/SHA2.elf
+----------------End of Script----------------
+
+00:29:27 INFO  : Memory regions updated for context MicroBlaze #0
+00:29:27 INFO  : Memory regions updated for context MicroBlaze Debug Module at USER2
+00:29:27 INFO  : Context for processor 'microblaze_0' is selected.
+00:29:27 INFO  : 'con' command is executed.
+00:29:27 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent Nexys4 210274674840A"} -index 0
+con
+----------------End of Script----------------
+
+00:29:27 INFO  : Launch script is exported to file 'D:\Universidade\cr\SHA2\SHA2.sdk\.sdk\launch_scripts\xilinx_c-c++_application_(system_debugger)\system_debugger_using_debug_sha2.elf_on_local.tcl'
+00:29:46 INFO  : Disconnected from the channel tcfchan#14.
+00:29:47 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Nexys4 210274674840A" && level==0} -index 0' command is executed.
+00:29:47 INFO  : 'fpga -state' command is executed.
+00:29:47 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+00:29:47 INFO  : Jtag cable 'Digilent Nexys4 210274674840A' is selected.
+00:29:47 INFO  : 'jtag frequency' command is executed.
+00:29:47 INFO  : Context for processor 'microblaze_0' is selected.
+00:29:47 INFO  : Processor reset is completed for 'microblaze_0'.
+00:29:47 INFO  : Context for processor 'microblaze_0' is selected.
+00:29:48 INFO  : The application 'D:/Universidade/cr/SHA2/SHA2.sdk/SHA2/Debug/SHA2.elf' is downloaded to processor 'microblaze_0'.
+00:29:48 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -nocase -filter {name =~ "microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent Nexys4 210274674840A"} -index 0
+rst -processor
+targets -set -nocase -filter {name =~ "microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent Nexys4 210274674840A"} -index 0
+dow D:/Universidade/cr/SHA2/SHA2.sdk/SHA2/Debug/SHA2.elf
+----------------End of Script----------------
+
+00:29:48 INFO  : Memory regions updated for context MicroBlaze #0
+00:29:48 INFO  : Memory regions updated for context MicroBlaze Debug Module at USER2
+00:29:48 INFO  : Context for processor 'microblaze_0' is selected.
+00:29:48 INFO  : 'con' command is executed.
+00:29:48 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent Nexys4 210274674840A"} -index 0
+con
+----------------End of Script----------------
+
+00:29:48 INFO  : Launch script is exported to file 'D:\Universidade\cr\SHA2\SHA2.sdk\.sdk\launch_scripts\xilinx_c-c++_application_(system_debugger)\system_debugger_using_debug_sha2.elf_on_local.tcl'
+00:30:15 INFO  : Disconnected from the channel tcfchan#15.
+00:30:16 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Nexys4 210274674840A" && level==0} -index 0' command is executed.
+00:30:16 INFO  : 'fpga -state' command is executed.
+00:30:16 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+00:30:16 INFO  : Jtag cable 'Digilent Nexys4 210274674840A' is selected.
+00:30:16 INFO  : 'jtag frequency' command is executed.
+00:30:16 INFO  : Context for processor 'microblaze_0' is selected.
+00:30:17 INFO  : Processor reset is completed for 'microblaze_0'.
+00:30:17 INFO  : Context for processor 'microblaze_0' is selected.
+00:30:17 INFO  : The application 'D:/Universidade/cr/SHA2/SHA2.sdk/SHA2/Debug/SHA2.elf' is downloaded to processor 'microblaze_0'.
+00:30:17 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -nocase -filter {name =~ "microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent Nexys4 210274674840A"} -index 0
+rst -processor
+targets -set -nocase -filter {name =~ "microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent Nexys4 210274674840A"} -index 0
+dow D:/Universidade/cr/SHA2/SHA2.sdk/SHA2/Debug/SHA2.elf
+----------------End of Script----------------
+
+00:30:17 INFO  : Memory regions updated for context MicroBlaze #0
+00:30:17 INFO  : Memory regions updated for context MicroBlaze Debug Module at USER2
+00:30:17 INFO  : Context for processor 'microblaze_0' is selected.
+00:30:17 INFO  : 'con' command is executed.
+00:30:17 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent Nexys4 210274674840A"} -index 0
+con
+----------------End of Script----------------
+
+00:30:17 INFO  : Launch script is exported to file 'D:\Universidade\cr\SHA2\SHA2.sdk\.sdk\launch_scripts\xilinx_c-c++_application_(system_debugger)\system_debugger_using_debug_sha2.elf_on_local.tcl'
+00:44:02 INFO  : SDK has detected change in the last modified timestamps for source hardware specification file Source:1525995821959,  Project:1525994814020
+00:44:02 INFO  : Project design_1_wrapper_hw_platform_0's source hardware specification located at D:/Universidade/cr/SHA2/SHA2.sdk/design_1_wrapper.hdf is now different from the local copy.
+		 The local copy will be replaced with the source specification and your workspace will be updated.
+00:44:07 INFO  : Copied contents of D:/Universidade/cr/SHA2/SHA2.sdk/design_1_wrapper.hdf into \design_1_wrapper_hw_platform_0\system.hdf.
+00:44:07 INFO  : Synchronizing projects in the workspace with the hardware platform specification changes.
+00:44:10 INFO  : 
+00:44:11 INFO  : Updating hardware inferred compiler options for SHA2.
+00:44:11 INFO  : Clearing existing target manager status.
+00:44:11 INFO  : Workspace synchronized with the new hardware specification file. Cleaning dependent projects...
+00:44:12 WARN  : Linker script will not be updated automatically. Users need to update it manually.
+00:46:11 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+00:46:11 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Nexys4 210274674840A" && level==0} -index 0' command is executed.
+00:46:14 INFO  : FPGA configured successfully with bitstream "D:/Universidade/cr/SHA2/SHA2.sdk/design_1_wrapper_hw_platform_0/download.bit"
+00:46:42 INFO  : Disconnected from the channel tcfchan#16.
+00:46:43 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Nexys4 210274674840A" && level==0} -index 0' command is executed.
+00:46:43 INFO  : 'fpga -state' command is executed.
+00:46:43 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+00:46:43 INFO  : Jtag cable 'Digilent Nexys4 210274674840A' is selected.
+00:46:43 INFO  : 'jtag frequency' command is executed.
+00:46:43 INFO  : Context for processor 'microblaze_0' is selected.
+00:46:43 INFO  : Processor reset is completed for 'microblaze_0'.
+00:46:44 INFO  : Context for processor 'microblaze_0' is selected.
+00:46:44 INFO  : The application 'D:/Universidade/cr/SHA2/SHA2.sdk/SHA2/Debug/SHA2.elf' is downloaded to processor 'microblaze_0'.
+00:46:44 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -nocase -filter {name =~ "microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent Nexys4 210274674840A"} -index 0
+rst -processor
+targets -set -nocase -filter {name =~ "microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent Nexys4 210274674840A"} -index 0
+dow D:/Universidade/cr/SHA2/SHA2.sdk/SHA2/Debug/SHA2.elf
+----------------End of Script----------------
+
+00:46:44 INFO  : Memory regions updated for context MicroBlaze #0
+00:46:44 INFO  : Memory regions updated for context MicroBlaze Debug Module at USER2
+00:46:44 INFO  : Context for processor 'microblaze_0' is selected.
+00:46:44 INFO  : 'con' command is executed.
+00:46:44 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent Nexys4 210274674840A"} -index 0
+con
+----------------End of Script----------------
+
+00:46:44 INFO  : Launch script is exported to file 'D:\Universidade\cr\SHA2\SHA2.sdk\.sdk\launch_scripts\xilinx_c-c++_application_(system_debugger)\system_debugger_using_debug_sha2.elf_on_local.tcl'
+00:47:26 INFO  : Disconnected from the channel tcfchan#17.
+00:47:28 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Nexys4 210274674840A" && level==0} -index 0' command is executed.
+00:47:28 INFO  : 'fpga -state' command is executed.
+00:47:28 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+00:47:28 INFO  : Jtag cable 'Digilent Nexys4 210274674840A' is selected.
+00:47:28 INFO  : 'jtag frequency' command is executed.
+00:47:28 INFO  : Context for processor 'microblaze_0' is selected.
+00:47:28 INFO  : Processor reset is completed for 'microblaze_0'.
+00:47:28 INFO  : Context for processor 'microblaze_0' is selected.
+00:47:28 INFO  : The application 'D:/Universidade/cr/SHA2/SHA2.sdk/SHA2/Debug/SHA2.elf' is downloaded to processor 'microblaze_0'.
+00:47:28 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -nocase -filter {name =~ "microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent Nexys4 210274674840A"} -index 0
+rst -processor
+targets -set -nocase -filter {name =~ "microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent Nexys4 210274674840A"} -index 0
+dow D:/Universidade/cr/SHA2/SHA2.sdk/SHA2/Debug/SHA2.elf
+----------------End of Script----------------
+
+00:47:28 INFO  : Memory regions updated for context MicroBlaze #0
+00:47:28 INFO  : Memory regions updated for context MicroBlaze Debug Module at USER2
+00:47:28 INFO  : Context for processor 'microblaze_0' is selected.
+00:47:28 INFO  : 'con' command is executed.
+00:47:28 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent Nexys4 210274674840A"} -index 0
+con
+----------------End of Script----------------
+
+00:47:28 INFO  : Launch script is exported to file 'D:\Universidade\cr\SHA2\SHA2.sdk\.sdk\launch_scripts\xilinx_c-c++_application_(system_debugger)\system_debugger_using_debug_sha2.elf_on_local.tcl'
+00:48:28 INFO  : Disconnected from the channel tcfchan#18.
+00:48:29 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Nexys4 210274674840A" && level==0} -index 0' command is executed.
+00:48:29 INFO  : 'fpga -state' command is executed.
+00:48:29 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+00:48:29 INFO  : Jtag cable 'Digilent Nexys4 210274674840A' is selected.
+00:48:29 INFO  : 'jtag frequency' command is executed.
+00:48:29 INFO  : Context for processor 'microblaze_0' is selected.
+00:48:29 INFO  : Processor reset is completed for 'microblaze_0'.
+00:48:29 INFO  : Context for processor 'microblaze_0' is selected.
+00:48:29 INFO  : The application 'D:/Universidade/cr/SHA2/SHA2.sdk/SHA2/Debug/SHA2.elf' is downloaded to processor 'microblaze_0'.
+00:48:29 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -nocase -filter {name =~ "microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent Nexys4 210274674840A"} -index 0
+rst -processor
+targets -set -nocase -filter {name =~ "microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent Nexys4 210274674840A"} -index 0
+dow D:/Universidade/cr/SHA2/SHA2.sdk/SHA2/Debug/SHA2.elf
+----------------End of Script----------------
+
+00:48:29 INFO  : Memory regions updated for context MicroBlaze #0
+00:48:29 INFO  : Memory regions updated for context MicroBlaze Debug Module at USER2
+00:48:29 INFO  : Context for processor 'microblaze_0' is selected.
+00:48:29 INFO  : 'con' command is executed.
+00:48:29 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent Nexys4 210274674840A"} -index 0
+con
+----------------End of Script----------------
+
+00:48:29 INFO  : Launch script is exported to file 'D:\Universidade\cr\SHA2\SHA2.sdk\.sdk\launch_scripts\xilinx_c-c++_application_(system_debugger)\system_debugger_using_debug_sha2.elf_on_local.tcl'
+00:49:23 INFO  : Disconnected from the channel tcfchan#19.
+00:49:24 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Nexys4 210274674840A" && level==0} -index 0' command is executed.
+00:49:24 INFO  : 'fpga -state' command is executed.
+00:49:24 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+00:49:24 INFO  : Jtag cable 'Digilent Nexys4 210274674840A' is selected.
+00:49:24 INFO  : 'jtag frequency' command is executed.
+00:49:24 INFO  : Context for processor 'microblaze_0' is selected.
+00:49:24 INFO  : Processor reset is completed for 'microblaze_0'.
+00:49:24 INFO  : Context for processor 'microblaze_0' is selected.
+00:49:24 INFO  : The application 'D:/Universidade/cr/SHA2/SHA2.sdk/SHA2/Debug/SHA2.elf' is downloaded to processor 'microblaze_0'.
+00:49:24 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -nocase -filter {name =~ "microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent Nexys4 210274674840A"} -index 0
+rst -processor
+targets -set -nocase -filter {name =~ "microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent Nexys4 210274674840A"} -index 0
+dow D:/Universidade/cr/SHA2/SHA2.sdk/SHA2/Debug/SHA2.elf
+----------------End of Script----------------
+
+00:49:24 INFO  : Memory regions updated for context MicroBlaze #0
+00:49:24 INFO  : Memory regions updated for context MicroBlaze Debug Module at USER2
+00:49:24 INFO  : Context for processor 'microblaze_0' is selected.
+00:49:24 INFO  : 'con' command is executed.
+00:49:24 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent Nexys4 210274674840A"} -index 0
+con
+----------------End of Script----------------
+
+00:49:24 INFO  : Launch script is exported to file 'D:\Universidade\cr\SHA2\SHA2.sdk\.sdk\launch_scripts\xilinx_c-c++_application_(system_debugger)\system_debugger_using_debug_sha2.elf_on_local.tcl'
+01:03:49 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+01:03:49 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Nexys4 210274674840A" && level==0} -index 0' command is executed.
+01:03:51 INFO  : FPGA configured successfully with bitstream "D:/Universidade/cr/SHA2/SHA2.sdk/design_1_wrapper_hw_platform_0/download.bit"
+01:03:59 INFO  : Disconnected from the channel tcfchan#20.
+01:04:00 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Nexys4 210274674840A" && level==0} -index 0' command is executed.
+01:04:00 INFO  : 'fpga -state' command is executed.
+01:04:00 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+01:04:00 INFO  : Jtag cable 'Digilent Nexys4 210274674840A' is selected.
+01:04:00 INFO  : 'jtag frequency' command is executed.
+01:04:00 INFO  : Context for processor 'microblaze_0' is selected.
+01:04:00 INFO  : Processor reset is completed for 'microblaze_0'.
+01:04:01 INFO  : Context for processor 'microblaze_0' is selected.
+01:04:01 INFO  : The application 'D:/Universidade/cr/SHA2/SHA2.sdk/SHA2/Debug/SHA2.elf' is downloaded to processor 'microblaze_0'.
+01:04:01 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -nocase -filter {name =~ "microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent Nexys4 210274674840A"} -index 0
+rst -processor
+targets -set -nocase -filter {name =~ "microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent Nexys4 210274674840A"} -index 0
+dow D:/Universidade/cr/SHA2/SHA2.sdk/SHA2/Debug/SHA2.elf
+----------------End of Script----------------
+
+01:04:01 INFO  : Memory regions updated for context MicroBlaze #0
+01:04:01 INFO  : Memory regions updated for context MicroBlaze Debug Module at USER2
+01:04:01 INFO  : Context for processor 'microblaze_0' is selected.
+01:04:01 INFO  : 'con' command is executed.
+01:04:01 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent Nexys4 210274674840A"} -index 0
+con
+----------------End of Script----------------
+
+01:04:01 INFO  : Launch script is exported to file 'D:\Universidade\cr\SHA2\SHA2.sdk\.sdk\launch_scripts\xilinx_c-c++_application_(system_debugger)\system_debugger_using_debug_sha2.elf_on_local.tcl'
+01:05:58 INFO  : Disconnected from the channel tcfchan#21.
+01:05:59 ERROR : Unexpected error while parsing XMD response ?: com.google.gson.JsonSyntaxException: com.google.gson.stream.MalformedJsonException: invalid number or unquoted string near 
+12:12:01 INFO  : Registering command handlers for SDK TCF services
+12:12:02 INFO  : Launching XSCT server: xsct.bat -interactive D:\Universidade\cr\SHA2\SHA2.sdk\temp_xsdb_launch_script.tcl
+12:12:10 INFO  : XSCT server has started successfully.
+12:12:10 INFO  : Successfully done setting XSCT server connection channel  
+12:12:16 INFO  : Successfully done setting SDK workspace  
+12:12:16 INFO  : Processing command line option -hwspec D:/Universidade/cr/SHA2/SHA2.sdk/design_1_wrapper.hdf.
+12:12:24 INFO  : Checking for hwspec changes in the project design_1_wrapper_hw_platform_0.
+12:12:24 INFO  : SDK has detected change in the last modified timestamps for source hardware specification file Source:1526037011020,  Project:1525995821959
+12:12:24 INFO  : The hardware specification for project 'design_1_wrapper_hw_platform_0' is different from D:/Universidade/cr/SHA2/SHA2.sdk/design_1_wrapper.hdf.
+12:12:25 INFO  : Copied contents of D:/Universidade/cr/SHA2/SHA2.sdk/design_1_wrapper.hdf into \design_1_wrapper_hw_platform_0\system.hdf.
+12:12:25 INFO  : Synchronizing projects in the workspace with the hardware platform specification changes.
+12:12:30 INFO  : 
+12:12:31 INFO  : Updating hardware inferred compiler options for SHA2.
+12:12:31 INFO  : Clearing existing target manager status.
+12:12:32 WARN  : Given IPC port value is invalid. Using default port 2350
+12:12:32 WARN  : Given XMD timeout value is invalid. Using default value of 50000
+12:12:34 WARN  : Given XMD transaction timeout value is invalid. Using default value of 60000 milli seconds
+12:12:34 INFO  : Workspace synchronized with the new hardware specification file. Cleaning dependent projects...
+12:12:35 WARN  : Linker script will not be updated automatically. Users need to update it manually.
+12:13:00 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+12:13:03 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Nexys4 210274674840A" && level==0} -index 0' command is executed.
+12:13:05 INFO  : FPGA configured successfully with bitstream "D:/Universidade/cr/SHA2/SHA2.sdk/design_1_wrapper_hw_platform_0/download.bit"
+12:13:48 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Nexys4 210274674840A" && level==0} -index 0' command is executed.
+12:13:48 INFO  : 'fpga -state' command is executed.
+12:13:48 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+12:13:58 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+----------------End of Script----------------
+
+12:14:13 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Nexys4 210274674840A" && level==0} -index 0' command is executed.
+12:14:13 INFO  : 'fpga -state' command is executed.
+12:14:13 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+12:14:13 INFO  : Jtag cable 'Digilent Nexys4 210274674840A' is selected.
+12:14:13 INFO  : 'jtag frequency' command is executed.
+12:14:13 INFO  : Context for processor 'microblaze_0' is selected.
+12:14:13 INFO  : Processor reset is completed for 'microblaze_0'.
+12:14:14 INFO  : Context for processor 'microblaze_0' is selected.
+12:14:14 INFO  : The application 'D:/Universidade/cr/SHA2/SHA2.sdk/SHA2/Debug/SHA2.elf' is downloaded to processor 'microblaze_0'.
+12:14:14 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -nocase -filter {name =~ "microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent Nexys4 210274674840A"} -index 0
+rst -processor
+targets -set -nocase -filter {name =~ "microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent Nexys4 210274674840A"} -index 0
+dow D:/Universidade/cr/SHA2/SHA2.sdk/SHA2/Debug/SHA2.elf
+----------------End of Script----------------
+
+12:14:14 INFO  : Memory regions updated for context MicroBlaze #0
+12:14:14 INFO  : Memory regions updated for context MicroBlaze Debug Module at USER2
+12:14:14 INFO  : Context for processor 'microblaze_0' is selected.
+12:14:14 INFO  : 'con' command is executed.
+12:14:14 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent Nexys4 210274674840A"} -index 0
+con
+----------------End of Script----------------
+
+12:14:14 INFO  : Launch script is exported to file 'D:\Universidade\cr\SHA2\SHA2.sdk\.sdk\launch_scripts\xilinx_c-c++_application_(system_debugger)\system_debugger_using_debug_sha2.elf_on_local.tcl'
+13:29:18 INFO  : SDK has detected change in the last modified timestamps for source hardware specification file Source:1526041656869,  Project:1526037011020
+13:29:18 INFO  : Project design_1_wrapper_hw_platform_0's source hardware specification located at D:/Universidade/cr/SHA2/SHA2.sdk/design_1_wrapper.hdf is now different from the local copy.
+		 The local copy will be replaced with the source specification and your workspace will be updated.
+13:29:19 INFO  : Copied contents of D:/Universidade/cr/SHA2/SHA2.sdk/design_1_wrapper.hdf into \design_1_wrapper_hw_platform_0\system.hdf.
+13:29:20 INFO  : Synchronizing projects in the workspace with the hardware platform specification changes.
+13:29:24 INFO  : 
+13:29:25 INFO  : Updating hardware inferred compiler options for SHA2.
+13:29:25 INFO  : Clearing existing target manager status.
+13:29:25 INFO  : Workspace synchronized with the new hardware specification file. Cleaning dependent projects...
+13:29:26 WARN  : Linker script will not be updated automatically. Users need to update it manually.
+13:29:48 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+13:29:49 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Nexys4 210274674840A" && level==0} -index 0' command is executed.
+13:29:51 INFO  : FPGA configured successfully with bitstream "D:/Universidade/cr/SHA2/SHA2.sdk/design_1_wrapper_hw_platform_0/download.bit"
+13:42:32 INFO  : Disconnected from the channel tcfchan#1.
+13:42:33 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Nexys4 210274674840A" && level==0} -index 0' command is executed.
+13:42:33 INFO  : 'fpga -state' command is executed.
+13:42:33 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+13:42:34 INFO  : Jtag cable 'Digilent Nexys4 210274674840A' is selected.
+13:42:34 INFO  : 'jtag frequency' command is executed.
+13:42:34 INFO  : Context for processor 'microblaze_0' is selected.
+13:42:34 INFO  : Processor reset is completed for 'microblaze_0'.
+13:42:34 INFO  : Context for processor 'microblaze_0' is selected.
+13:42:34 INFO  : The application 'D:/Universidade/cr/SHA2/SHA2.sdk/SHA2/Debug/SHA2.elf' is downloaded to processor 'microblaze_0'.
+13:42:34 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -nocase -filter {name =~ "microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent Nexys4 210274674840A"} -index 0
+rst -processor
+targets -set -nocase -filter {name =~ "microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent Nexys4 210274674840A"} -index 0
+dow D:/Universidade/cr/SHA2/SHA2.sdk/SHA2/Debug/SHA2.elf
+----------------End of Script----------------
+
+13:42:34 INFO  : Memory regions updated for context MicroBlaze #0
+13:42:34 INFO  : Memory regions updated for context MicroBlaze Debug Module at USER2
+13:42:34 INFO  : Context for processor 'microblaze_0' is selected.
+13:42:34 INFO  : 'con' command is executed.
+13:42:34 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent Nexys4 210274674840A"} -index 0
+con
+----------------End of Script----------------
+
+13:42:34 INFO  : Launch script is exported to file 'D:\Universidade\cr\SHA2\SHA2.sdk\.sdk\launch_scripts\xilinx_c-c++_application_(system_debugger)\system_debugger_using_debug_sha2.elf_on_local.tcl'
+13:42:58 INFO  : Disconnected from the channel tcfchan#2.
+13:43:00 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Nexys4 210274674840A" && level==0} -index 0' command is executed.
+13:43:00 INFO  : 'fpga -state' command is executed.
+13:43:00 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+13:43:00 INFO  : Jtag cable 'Digilent Nexys4 210274674840A' is selected.
+13:43:00 INFO  : 'jtag frequency' command is executed.
+13:43:00 INFO  : Context for processor 'microblaze_0' is selected.
+13:43:00 INFO  : Processor reset is completed for 'microblaze_0'.
+13:43:00 INFO  : Context for processor 'microblaze_0' is selected.
+13:43:00 INFO  : The application 'D:/Universidade/cr/SHA2/SHA2.sdk/SHA2/Debug/SHA2.elf' is downloaded to processor 'microblaze_0'.
+13:43:00 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -nocase -filter {name =~ "microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent Nexys4 210274674840A"} -index 0
+rst -processor
+targets -set -nocase -filter {name =~ "microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent Nexys4 210274674840A"} -index 0
+dow D:/Universidade/cr/SHA2/SHA2.sdk/SHA2/Debug/SHA2.elf
+----------------End of Script----------------
+
+13:43:00 INFO  : Memory regions updated for context MicroBlaze #0
+13:43:00 INFO  : Memory regions updated for context MicroBlaze Debug Module at USER2
+13:43:00 INFO  : Context for processor 'microblaze_0' is selected.
+13:43:00 INFO  : 'con' command is executed.
+13:43:00 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent Nexys4 210274674840A"} -index 0
+con
+----------------End of Script----------------
+
+13:43:00 INFO  : Launch script is exported to file 'D:\Universidade\cr\SHA2\SHA2.sdk\.sdk\launch_scripts\xilinx_c-c++_application_(system_debugger)\system_debugger_using_debug_sha2.elf_on_local.tcl'
+15:20:04 INFO  : SDK has detected change in the last modified timestamps for source hardware specification file Source:1526048358321,  Project:1526041656869
+15:20:04 INFO  : Project design_1_wrapper_hw_platform_0's source hardware specification located at D:/Universidade/cr/SHA2/SHA2.sdk/design_1_wrapper.hdf is now different from the local copy.
+		 The local copy will be replaced with the source specification and your workspace will be updated.
+15:20:07 INFO  : Copied contents of D:/Universidade/cr/SHA2/SHA2.sdk/design_1_wrapper.hdf into \design_1_wrapper_hw_platform_0\system.hdf.
+15:20:07 INFO  : Synchronizing projects in the workspace with the hardware platform specification changes.
+15:20:17 INFO  : 
+15:20:19 INFO  : Updating hardware inferred compiler options for SHA2.
+15:20:19 INFO  : Clearing existing target manager status.
+15:20:19 INFO  : Workspace synchronized with the new hardware specification file. Cleaning dependent projects...
+15:20:22 WARN  : Linker script will not be updated automatically. Users need to update it manually.
+15:21:42 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+15:25:54 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+15:26:55 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+15:29:50 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+15:29:50 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Nexys4 210274674840A" && level==0} -index 0' command is executed.
+15:29:52 INFO  : FPGA configured successfully with bitstream "D:/Universidade/cr/SHA2/SHA2.sdk/design_1_wrapper_hw_platform_0/download.bit"
+15:31:21 INFO  : Disconnected from the channel tcfchan#3.
+15:31:23 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Nexys4 210274674840A" && level==0} -index 0' command is executed.
+15:31:23 INFO  : 'fpga -state' command is executed.
+15:31:23 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+15:31:23 INFO  : Jtag cable 'Digilent Nexys4 210274674840A' is selected.
+15:31:23 INFO  : 'jtag frequency' command is executed.
+15:31:23 INFO  : Context for processor 'microblaze_0' is selected.
+15:31:23 INFO  : Processor reset is completed for 'microblaze_0'.
+15:31:23 INFO  : Context for processor 'microblaze_0' is selected.
+15:31:23 INFO  : The application 'D:/Universidade/cr/SHA2/SHA2.sdk/SHA2/Debug/SHA2.elf' is downloaded to processor 'microblaze_0'.
+15:31:23 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -nocase -filter {name =~ "microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent Nexys4 210274674840A"} -index 0
+rst -processor
+targets -set -nocase -filter {name =~ "microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent Nexys4 210274674840A"} -index 0
+dow D:/Universidade/cr/SHA2/SHA2.sdk/SHA2/Debug/SHA2.elf
+----------------End of Script----------------
+
+15:31:23 INFO  : Memory regions updated for context MicroBlaze #0
+15:31:23 INFO  : Memory regions updated for context MicroBlaze Debug Module at USER2
+15:31:23 INFO  : Context for processor 'microblaze_0' is selected.
+15:31:23 INFO  : 'con' command is executed.
+15:31:23 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent Nexys4 210274674840A"} -index 0
+con
+----------------End of Script----------------
+
+15:31:23 INFO  : Launch script is exported to file 'D:\Universidade\cr\SHA2\SHA2.sdk\.sdk\launch_scripts\xilinx_c-c++_application_(system_debugger)\system_debugger_using_debug_sha2.elf_on_local.tcl'
+15:32:10 INFO  : Disconnected from the channel tcfchan#4.
+15:32:11 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Nexys4 210274674840A" && level==0} -index 0' command is executed.
+15:32:11 INFO  : 'fpga -state' command is executed.
+15:32:11 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+15:32:11 INFO  : Jtag cable 'Digilent Nexys4 210274674840A' is selected.
+15:32:11 INFO  : 'jtag frequency' command is executed.
+15:32:11 INFO  : Context for processor 'microblaze_0' is selected.
+15:32:11 INFO  : Processor reset is completed for 'microblaze_0'.
+15:32:11 INFO  : Context for processor 'microblaze_0' is selected.
+15:32:11 INFO  : The application 'D:/Universidade/cr/SHA2/SHA2.sdk/SHA2/Debug/SHA2.elf' is downloaded to processor 'microblaze_0'.
+15:32:11 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -nocase -filter {name =~ "microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent Nexys4 210274674840A"} -index 0
+rst -processor
+targets -set -nocase -filter {name =~ "microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent Nexys4 210274674840A"} -index 0
+dow D:/Universidade/cr/SHA2/SHA2.sdk/SHA2/Debug/SHA2.elf
+----------------End of Script----------------
+
+15:32:11 INFO  : Memory regions updated for context MicroBlaze #0
+15:32:11 INFO  : Memory regions updated for context MicroBlaze Debug Module at USER2
+15:32:11 INFO  : Context for processor 'microblaze_0' is selected.
+15:32:11 INFO  : 'con' command is executed.
+15:32:11 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent Nexys4 210274674840A"} -index 0
+con
+----------------End of Script----------------
+
+15:32:11 INFO  : Launch script is exported to file 'D:\Universidade\cr\SHA2\SHA2.sdk\.sdk\launch_scripts\xilinx_c-c++_application_(system_debugger)\system_debugger_using_debug_sha2.elf_on_local.tcl'
+15:55:04 INFO  : SDK has detected change in the last modified timestamps for source hardware specification file Source:1526050407422,  Project:1526048358321
+15:55:04 INFO  : Project design_1_wrapper_hw_platform_0's source hardware specification located at D:/Universidade/cr/SHA2/SHA2.sdk/design_1_wrapper.hdf is now different from the local copy.
+		 The local copy will be replaced with the source specification and your workspace will be updated.
+15:55:05 INFO  : Copied contents of D:/Universidade/cr/SHA2/SHA2.sdk/design_1_wrapper.hdf into \design_1_wrapper_hw_platform_0\system.hdf.
+15:55:05 INFO  : Synchronizing projects in the workspace with the hardware platform specification changes.
+15:55:10 INFO  : 
+15:55:11 INFO  : Updating hardware inferred compiler options for SHA2.
+15:55:11 INFO  : Clearing existing target manager status.
+15:55:11 INFO  : Workspace synchronized with the new hardware specification file. Cleaning dependent projects...
+15:55:12 WARN  : Linker script will not be updated automatically. Users need to update it manually.
+15:55:48 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+15:55:48 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Nexys4 210274674840A" && level==0} -index 0' command is executed.
+15:55:50 INFO  : FPGA configured successfully with bitstream "D:/Universidade/cr/SHA2/SHA2.sdk/design_1_wrapper_hw_platform_0/download.bit"
+15:56:19 INFO  : Disconnected from the channel tcfchan#5.
+15:56:20 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Nexys4 210274674840A" && level==0} -index 0' command is executed.
+15:56:20 INFO  : 'fpga -state' command is executed.
+15:56:20 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+15:56:21 INFO  : Jtag cable 'Digilent Nexys4 210274674840A' is selected.
+15:56:21 INFO  : 'jtag frequency' command is executed.
+15:56:21 INFO  : Context for processor 'microblaze_0' is selected.
+15:56:21 INFO  : Processor reset is completed for 'microblaze_0'.
+15:56:21 INFO  : Context for processor 'microblaze_0' is selected.
+15:56:21 INFO  : The application 'D:/Universidade/cr/SHA2/SHA2.sdk/SHA2/Debug/SHA2.elf' is downloaded to processor 'microblaze_0'.
+15:56:21 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -nocase -filter {name =~ "microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent Nexys4 210274674840A"} -index 0
+rst -processor
+targets -set -nocase -filter {name =~ "microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent Nexys4 210274674840A"} -index 0
+dow D:/Universidade/cr/SHA2/SHA2.sdk/SHA2/Debug/SHA2.elf
+----------------End of Script----------------
+
+15:56:21 INFO  : Memory regions updated for context MicroBlaze #0
+15:56:21 INFO  : Memory regions updated for context MicroBlaze Debug Module at USER2
+15:56:21 INFO  : Context for processor 'microblaze_0' is selected.
+15:56:21 INFO  : 'con' command is executed.
+15:56:21 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent Nexys4 210274674840A"} -index 0
+con
+----------------End of Script----------------
+
+15:56:21 INFO  : Launch script is exported to file 'D:\Universidade\cr\SHA2\SHA2.sdk\.sdk\launch_scripts\xilinx_c-c++_application_(system_debugger)\system_debugger_using_debug_sha2.elf_on_local.tcl'
