@@ -1,7 +1,7 @@
 // Copyright 1986-2017 Xilinx, Inc. All Rights Reserved.
 // --------------------------------------------------------------------------------
 // Tool Version: Vivado v.2017.4 (win64) Build 2086221 Fri Dec 15 20:55:39 MST 2017
-// Date        : Fri May 11 15:48:10 2018
+// Date        : Fri May 11 23:08:38 2018
 // Host        : DESKTOP-1UKU17Q running 64-bit major release  (build 9200)
 // Command     : write_verilog -force -mode synth_stub
 //               D:/Universidade/cr/SHA2/SHA2.srcs/sources_1/bd/design_1/ip/design_1_sha256IPCoProcessor_0_0/design_1_sha256IPCoProcessor_0_0_stub.v

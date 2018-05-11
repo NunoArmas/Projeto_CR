@@ -1,0 +1,10 @@
+
+
+OPTION psf_version = 2.1;
+
+BEGIN DRIVER sha256IPCoProcessor
+	OPTION supported_peripherals = (sha256IPCoProcessor);
+	OPTION copyfiles = all;
+	OPTION VERSION = 1.0;
+	OPTION NAME = sha256IPCoProcessor;
+END DRIVER

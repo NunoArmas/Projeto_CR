@@ -54,7 +54,8 @@
 #include "sha256IPCoProcessor.h"
 
  int digest[8];
- int state, iter0, iter1, slave_15;
+ int state, iter0, iter1;
+ int w1, w2, w3, w4, w5;
 int main()
 {
     init_platform();
@@ -62,7 +63,7 @@ int main()
     print("\n\n\n\n\nHello World\n\r");
 
     int i;
-    for(i = 0; i< 100 ; i++){
+    for(i = 0; i< 5 ; i++){
         digest[0] = SHA256IPCOPROCESSOR_mReadReg(XPAR_SHA256IPCOPROCESSOR_0_S00_AXI_BASEADDR, 0);
         digest[1] = SHA256IPCOPROCESSOR_mReadReg(XPAR_SHA256IPCOPROCESSOR_0_S00_AXI_BASEADDR, 4);
         digest[2] = SHA256IPCOPROCESSOR_mReadReg(XPAR_SHA256IPCOPROCESSOR_0_S00_AXI_BASEADDR, 8);
@@ -74,21 +75,32 @@ int main()
         state = SHA256IPCOPROCESSOR_mReadReg(XPAR_SHA256IPCOPROCESSOR_0_S00_AXI_BASEADDR, 32);
         iter0 = SHA256IPCOPROCESSOR_mReadReg(XPAR_SHA256IPCOPROCESSOR_0_S00_AXI_BASEADDR, 36);
         iter1 = SHA256IPCOPROCESSOR_mReadReg(XPAR_SHA256IPCOPROCESSOR_0_S00_AXI_BASEADDR, 40);
-        slave_15 = SHA256IPCOPROCESSOR_mReadReg(XPAR_SHA256IPCOPROCESSOR_0_S00_AXI_BASEADDR, 60);
+        /*w1 = SHA256IPCOPROCESSOR_mReadReg(XPAR_SHA256IPCOPROCESSOR_0_S00_AXI_BASEADDR, 44);
+        w2 = SHA256IPCOPROCESSOR_mReadReg(XPAR_SHA256IPCOPROCESSOR_0_S00_AXI_BASEADDR, 48);
+        w3 = SHA256IPCOPROCESSOR_mReadReg(XPAR_SHA256IPCOPROCESSOR_0_S00_AXI_BASEADDR, 52);
+        w4 = SHA256IPCOPROCESSOR_mReadReg(XPAR_SHA256IPCOPROCESSOR_0_S00_AXI_BASEADDR, 56);
+        w5 = SHA256IPCOPROCESSOR_mReadReg(XPAR_SHA256IPCOPROCESSOR_0_S00_AXI_BASEADDR, 60);*/
 
-        xil_printf("%08x ", digest[0]);
-        xil_printf("%08x ", digest[1]);
-        xil_printf("%08x ", digest[2]);
-        xil_printf("%08x ", digest[3]);
-        xil_printf("%08x ", digest[4]);
-        xil_printf("%08x ", digest[5]);
+        xil_printf("%08x ", digest[7]);
         xil_printf("%08x ", digest[6]);
-        xil_printf("%08x\r\n", digest[7]);
+        xil_printf("%08x ", digest[5]);
+        xil_printf("%08x ", digest[4]);
+        xil_printf("%08x ", digest[3]);
+        xil_printf("%08x ", digest[2]);
+        xil_printf("%08x ", digest[1]);
+        xil_printf("%08x\r\n", digest[0]);
 
         xil_printf("STATE: %08x\r\n", state);
         xil_printf("ITER0: %d\r\n", iter0);
-        xil_printf("ITER1: %d\r\n", iter0);
-        xil_printf("slave: %08x\r\n", slave_15);
+        xil_printf("ITER1: %d\r\n", iter1);
+
+        int j;
+        for (j = 0; j< 64; j++){
+        	SHA256IPCOPROCESSOR_mWriteReg(XPAR_SHA256IPCOPROCESSOR_0_S00_AXI_BASEADDR, 60, j);
+            w1 = SHA256IPCOPROCESSOR_mReadReg(XPAR_SHA256IPCOPROCESSOR_0_S00_AXI_BASEADDR, 60);
+        	xil_printf("W(%d): %08x\r\n", j, w1);
+        }
+
     }
     cleanup_platform();
     return 0;

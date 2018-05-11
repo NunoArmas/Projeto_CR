@@ -130,7 +130,7 @@ architecture arch_imp of sha256IPCoProcessor_v1_0_S00_AXI is
 	signal byte_index	: integer;
 	signal aw_en	: std_logic;
 	
-    signal s_chunk : std_logic_vector(511 downto 0) := (others => '0');
+    signal s_chunk : std_logic_vector(511 downto 0) := X"70617373776F72648000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000040";
     signal s_digest : std_logic_vector(255 downto 0);
     signal s_state : std_logic_vector(31 downto 0) := (others => '0');
     signal s_iter0: std_logic_vector(31 downto 0) := (others => '0');
@@ -187,7 +187,7 @@ architecture arch_imp of sha256IPCoProcessor_v1_0_S00_AXI is
     signal s_tmp1 : unsigned  (31 downto 0);
 
 
-    type TState is ( PROCESS_CHUNK, EXTEND_WORDS, COMPRESS, ADD_COMPRESSED, FINAL);
+    type TState is ( PROCESS_CHUNK, EXTEND_WORDS, COMPRESS, SAVE, ADD_COMPRESSED, FINAL);
     signal CS, NS : TState;
     
     --
@@ -567,15 +567,15 @@ begin
 	      when b"1010" =>
 	        reg_data_out <= s_iter1;
 	      when b"1011" =>
-	        reg_data_out <= slv_reg11;
+	        reg_data_out <= std_logic_vector( W(to_integer(unsigned(slv_reg11))));
 	      when b"1100" =>
-	        reg_data_out <= slv_reg12;
+	        reg_data_out <= std_logic_vector( W(to_integer(unsigned(slv_reg12))));
 	      when b"1101" =>
-	        reg_data_out <= slv_reg13;
+	        reg_data_out <= std_logic_vector( W(to_integer(unsigned(slv_reg13))));
 	      when b"1110" =>
-	        reg_data_out <= slv_reg14;
+	        reg_data_out <= std_logic_vector( W(to_integer(unsigned(slv_reg14))));
 	      when b"1111" =>
-	        reg_data_out <= slv_reg15;
+	        reg_data_out <= std_logic_vector( W(to_integer(unsigned(slv_reg15))));
 	      when others =>
 	        reg_data_out  <= (others => '0');
 	    end case;
@@ -607,136 +607,150 @@ begin
     begin
         if(rising_edge(S_AXI_ACLK)) then
             S_TICK <= not S_TICK;
-            if(S_AXI_ARESETN = '0') then
-                CS <= PROCESS_CHUNK;
-            else
-                CS <= NS;
-            end if;
+--            if(S_AXI_ARESETN = '0') then
+--                CS <= PROCESS_CHUNK;
+--            else
+--                CS <= NS;
+--            end if;
         end if;
     end process;
     
     
     -- functions
-    s_ch <= (s_e and s_f) xor ((not s_e) and s_f);
-    s_ma <= (s_a and s_b) xor (s_a and s_c) xor (s_b and s_c);
-    s_e0 <= rotate_right(s_a,2) xor (rotate_right(s_a,13)) xor (rotate_right(s_a,22));
-    s_e1 <= rotate_right(s_e,6) xor (rotate_right(s_e,11)) xor (rotate_right(s_e,25));
 
-    process(CS) is
+    process(S_AXI_ACLK) is
     begin
-        case CS is
-            when PROCESS_CHUNK => 
-                s_state <= X"11111111";
-                s_h0 <= X"6a09e667";
-                s_h1 <= X"bb67ae85";
-                s_h2 <= X"3c6ef372";
-                s_h3 <= X"a54ff53a";
-                s_h4 <= X"510e527f";
-                s_h5 <= X"9b05688c";
-                s_h6 <= X"1f83d9ab";
-                s_h7 <= X"5be0cd19";
-                W <= (others => X"00000000");
-                s_digest <= (others => '0');
-                --s_state <= (others => '1');
-                s_iter0 <= (others => '0');
-                s_iter1 <= (others => '0');
-                -- Copy the first 16 words
-                W(0) <= unsigned(s_chunk(31 downto 0));
-                W(1) <= unsigned(s_chunk(63 downto 32));
-                W(2) <= unsigned(s_chunk(95 downto 64));
-                W(3) <= unsigned(s_chunk(127 downto 96));
-                W(4) <= unsigned(s_chunk(159 downto 128));
-                W(5) <= unsigned(s_chunk(191 downto 160));
-                W(6) <= unsigned(s_chunk(223 downto 192));
-                W(7) <= unsigned(s_chunk(255 downto 224));
-                W(8) <= unsigned(s_chunk(287 downto 256));
-                W(9) <= unsigned(s_chunk(319 downto 288));
-                W(10) <= unsigned(s_chunk(351 downto 320));
-                W(11) <= unsigned(s_chunk(383 downto 352));
-                W(12) <= unsigned(s_chunk(415 downto 384));
-                W(13) <= unsigned(s_chunk(447 downto 416));
-                W(14) <= unsigned(s_chunk(479 downto 448));
-                W(15) <= unsigned(s_chunk(511 downto 480));
-            
-                s_extendI <= 16;
-                s_compressionI <= 0;
-                NS <= EXTEND_WORDS;
-            when EXTEND_WORDS =>
-                s_state <= X"22222222";
-                s_iter0 <= std_logic_vector(to_unsigned(s_extendI, 32));
-                -- Increment iterator
-                s_extendI <= s_extendI + 2;
+    if(rising_edge(S_AXI_ACLK)) then
+        if(S_AXI_ARESETN = '0') then
+            CS <= PROCESS_CHUNK;
+            s_state <= X"00000000";
+            s_h0 <= X"6a09e667";
+            s_h1 <= X"bb67ae85";
+            s_h2 <= X"3c6ef372";
+            s_h3 <= X"a54ff53a";
+            s_h4 <= X"510e527f";
+            s_h5 <= X"9b05688c";
+            s_h6 <= X"1f83d9ab";
+            s_h7 <= X"5be0cd19";
+            W <= (others => X"00000000");
+            s_digest <= (others => '0');
+            s_iter0 <= (others => '0');
+            s_iter1 <= (others => '0');
+        else
+            case CS is
+                when PROCESS_CHUNK => 
+                    s_state <= X"11111111";
+                    -- Copy the first 16 words
+                    W(15) <= unsigned(s_chunk(31 downto 0));
+                    W(14) <= unsigned(s_chunk(63 downto 32));
+                    W(13) <= unsigned(s_chunk(95 downto 64));
+                    W(12) <= unsigned(s_chunk(127 downto 96));
+                    W(11) <= unsigned(s_chunk(159 downto 128));
+                    W(10) <= unsigned(s_chunk(191 downto 160));
+                    W(9) <= unsigned(s_chunk(223 downto 192));
+                    W(8) <= unsigned(s_chunk(255 downto 224));
+                    W(7) <= unsigned(s_chunk(287 downto 256));
+                    W(6) <= unsigned(s_chunk(319 downto 288));
+                    W(5) <= unsigned(s_chunk(351 downto 320));
+                    W(4) <= unsigned(s_chunk(383 downto 352));
+                    W(3) <= unsigned(s_chunk(415 downto 384));
+                    W(2) <= unsigned(s_chunk(447 downto 416));
+                    W(1) <= unsigned(s_chunk(479 downto 448));
+                    W(0) <= unsigned(s_chunk(511 downto 480));
                 
-                -- word I
-                s_entend_s0_0 <= rotate_right(W(s_extendI - 15),7) xor (rotate_right(W(s_extendI - 15),18)) xor (rotate_right(W(s_extendI - 15),3));
-                s_entend_s1_0 <= rotate_right(W(s_extendI - 2),17) xor (rotate_right(W(s_extendI - 2),19)) xor (rotate_right(W(s_extendI - 2),10));
-                -- word I+1
-                s_entend_s0_1 <= rotate_right(W(s_extendI - 14),7) xor (rotate_right(W(s_extendI - 14),18)) xor (rotate_right(W(s_extendI - 14),3));
-                s_entend_s1_1 <= rotate_right(W(s_extendI - 1),17) xor (rotate_right(W(s_extendI - 1),19)) xor (rotate_right(W(s_extendI - 1),10));
-            
-                -- save the values on the next clock cicle
-                if(s_extendI > 16) then
-                    W(s_extendI -2) <=  W(s_extendI-18) + s_entend_s0_0 + W(s_extendI-9) + s_entend_s1_0;
-                    W(s_extendI -1) <=  W(s_extendI-17) + s_entend_s0_1 + W(s_extendI-8) + s_entend_s1_1;
-                end if;
-                
-                -- Change state when all words are generated
-                if(s_extendI = 64 ) then                 
-                    -- Initialize working variables to current hash value
-                    s_a <= s_h0;
-                    s_b <= s_h1;
-                    s_c <= s_h2;
-                    s_d <= s_h3;
-                    s_e <= s_h4;
-                    s_f <= s_h5;
-                    s_g <= s_h6;
-                    s_h <= s_h7;
+                    s_extendI <= 16;
+                    s_compressionI <= 0;
+                    CS <= EXTEND_WORDS;
+                when EXTEND_WORDS =>
+                    s_state <= X"22222222";
+                    s_iter0 <= std_logic_vector(to_unsigned(s_extendI, 32));
+                    -- Increment iterator
+                    s_extendI <= s_extendI + 1;
                     
-                    NS <= COMPRESS;          
-                end if;
-            when COMPRESS =>
-                s_state <= X"33333333";
-                s_iter1 <= std_logic_vector(to_unsigned(s_compressionI, 32));
-                -- Increment iterator 
-                s_compressionI <= s_compressionI +1;
+                    -- word I
+                    s_entend_s0_0 <= rotate_right(W(s_extendI - 15),7) xor (rotate_right(W(s_extendI - 15),18)) xor (shift_right(W(s_extendI - 15),3));
+                    s_entend_s1_0 <= rotate_right(W(s_extendI - 2),17) xor (rotate_right(W(s_extendI - 2),19)) xor (shift_right(W(s_extendI - 2),10));
+                    -- word I+1
+                    --s_entend_s0_1 <= rotate_right(W(s_extendI - 14),7) xor (rotate_right(W(s_extendI - 14),18)) xor (rotate_right(W(s_extendI - 14),3));
+                    --s_entend_s1_1 <= rotate_right(W(s_extendI - 1),17) xor (rotate_right(W(s_extendI - 1),19)) xor (rotate_right(W(s_extendI - 1),10));
                 
-                s_tmp0 <= s_h + s_e1 + s_ch + K(s_compressionI) + W(s_compressionI);
-                s_tmp1 <= s_e0 + s_ma;
+                    -- save the values on the next clock cicle
+                    if(s_extendI > 16) then
+                        --W(s_extendI -2) <=  W(s_extendI-18) + s_entend_s0_0 + W(s_extendI-9) + s_entend_s1_0;
+                        --W(s_extendI -1) <=  W(s_extendI-17) + s_entend_s0_1 + W(s_extendI-8) + s_entend_s1_1;
+                        W(s_extendI -1) <=  W(s_extendI-17) + s_entend_s0_0 + W(s_extendI-8) + s_entend_s1_0;
+                    end if;
+                    
+                    -- Change state when all words are generated
+                    if(s_extendI = 64 ) then                 
+                        -- Initialize working variables to current hash value
+                        s_a <= s_h0;
+                        s_b <= s_h1;
+                        s_c <= s_h2;
+                        s_d <= s_h3;
+                        s_e <= s_h4;
+                        s_f <= s_h5;
+                        s_g <= s_h6;
+                        s_h <= s_h7;
+                        
+                        CS <= COMPRESS;          
+                    end if;
+                when COMPRESS =>
                 
+                    s_state <= X"33333333";
+                    s_iter1 <= std_logic_vector(to_unsigned(s_compressionI, 32));
+                    
+                    s_ch <= (s_e and s_f) xor ((not s_e) and s_g);
+                    s_ma <= (s_a and s_b) xor (s_a and s_c) xor (s_b and s_c);
+                    s_e0 <= rotate_right(s_a,2) xor (rotate_right(s_a,13)) xor (rotate_right(s_a,22));
+                    s_e1 <= rotate_right(s_e,6) xor (rotate_right(s_e,11)) xor (rotate_right(s_e,25));
+                    
+                    CS <= SAVE;
+                    --s_tmp0 <= s_h + s_e1 + s_ch + K(s_compressionI-1) + W(s_compressionI-1);
+                    --s_tmp1 <= s_e0 + s_ma;
+                    
+                when SAVE =>
                 
-                if(s_compressionI > 0) then
-                   s_a <= s_tmp0 + s_tmp1;
+                    -- Increment iterator 
+                    s_compressionI <= s_compressionI +1;
+                
+                   s_a <= s_h + s_e1 + s_ch + K(s_compressionI) + W(s_compressionI) + s_e0 + s_ma;
                    s_b <= s_a;
                    s_c <= s_b;
                    s_d <= s_c;
-                   s_e <= s_d + s_tmp0;
+                   s_e <= s_d + s_h + s_e1 + s_ch + K(s_compressionI) + W(s_compressionI);
                    s_f <= s_e;
                    s_g <= s_f;
                    s_h <= s_g;
-                end if;
-                
-                if(s_compressionI = 64) then
-                    NS <= ADD_COMPRESSED;
-                end if;
-    
-            when ADD_COMPRESSED =>
-                s_state <= X"44444444";
-                s_h0 <= s_h0 + s_a;
-                s_h1 <= s_h1 + s_b;
-                s_h2 <= s_h2 + s_c;
-                s_h3 <= s_h3 + s_d;
-                s_h4 <= s_h4 + s_e;
-                s_h5 <= s_h5 + s_f;
-                s_h6 <= s_h6 + s_g;
-                s_h7 <= s_h7 + s_h;
-                
-                NS <= FINAL;
-            when FINAL =>
-                s_digest <= std_logic_vector(s_h0) & std_logic_vector(s_h1) & std_logic_vector(s_h2) & 
-                            std_logic_vector(s_h3) & std_logic_vector(s_h4) & std_logic_vector(s_h5) & 
-                            std_logic_vector(s_h6) & std_logic_vector(s_h7);
-                s_state <= X"55555555";
-        end case;
+                    
+                    if(s_compressionI = 63) then
+                        CS <= ADD_COMPRESSED;
+                    else
+                        CS <= COMPRESS;
+                    end if;
+        
+                when ADD_COMPRESSED =>
+                    s_state <= X"44444444";
+                    s_h0 <= s_h0 + s_a;
+                    s_h1 <= s_h1 + s_b;
+                    s_h2 <= s_h2 + s_c;
+                    s_h3 <= s_h3 + s_d;
+                    s_h4 <= s_h4 + s_e;
+                    s_h5 <= s_h5 + s_f;
+                    s_h6 <= s_h6 + s_g;
+                    s_h7 <= s_h7 + s_h;
+                    
+                    
+                    
+                    CS <= FINAL;
+                when FINAL =>
+                    s_digest <= std_logic_vector(s_h0) & std_logic_vector(s_h1) & std_logic_vector(s_h2) & 
+                                std_logic_vector(s_h3) & std_logic_vector(s_h4) & std_logic_vector(s_h5) & 
+                                std_logic_vector(s_h6) & std_logic_vector(s_h7);
+                    s_state <= X"55555555";
+            end case;
+            end if;
+        end if;
     end process;
 
 --    slv_reg0 <= s_digest(31 downto 0);

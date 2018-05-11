@@ -1,6 +1,258 @@
 Copyright 1986-2017 Xilinx, Inc. All Rights Reserved.
 ------------------------------------------------------------------------------------
 | Tool Version : Vivado v.2017.4 (win64) Build 2086221 Fri Dec 15 20:55:39 MST 2017
+| Date         : Fri May 11 23:05:17 2018
+| Host         : DESKTOP-1UKU17Q running 64-bit major release  (build 9200)
+| Command      : upgrade_ip
+| Device       : xc7a100tcsg324-1
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'design_1_sha256IPCoProcessor_0_0'
+
+1. Summary
+----------
+
+SUCCESS in the upgrade of design_1_sha256IPCoProcessor_0_0 (xilinx.com:user:sha256IPCoProcessor:1.0) from (Rev. 33) to (Rev. 34)
+
+
+
+
+
+
+Copyright 1986-2017 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2017.4 (win64) Build 2086221 Fri Dec 15 20:55:39 MST 2017
+| Date         : Fri May 11 21:56:15 2018
+| Host         : DESKTOP-1UKU17Q running 64-bit major release  (build 9200)
+| Command      : upgrade_ip
+| Device       : xc7a100tcsg324-1
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'design_1_sha256IPCoProcessor_0_0'
+
+1. Summary
+----------
+
+SUCCESS in the upgrade of design_1_sha256IPCoProcessor_0_0 (xilinx.com:user:sha256IPCoProcessor:1.0) from (Rev. 32) to (Rev. 33)
+
+
+
+
+
+
+Copyright 1986-2017 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2017.4 (win64) Build 2086221 Fri Dec 15 20:55:39 MST 2017
+| Date         : Fri May 11 21:31:59 2018
+| Host         : DESKTOP-1UKU17Q running 64-bit major release  (build 9200)
+| Command      : upgrade_ip
+| Device       : xc7a100tcsg324-1
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'design_1_sha256IPCoProcessor_0_0'
+
+1. Summary
+----------
+
+SUCCESS in the upgrade of design_1_sha256IPCoProcessor_0_0 (xilinx.com:user:sha256IPCoProcessor:1.0) from (Rev. 31) to (Rev. 32)
+
+
+
+
+
+
+Copyright 1986-2017 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2017.4 (win64) Build 2086221 Fri Dec 15 20:55:39 MST 2017
+| Date         : Fri May 11 20:50:52 2018
+| Host         : DESKTOP-1UKU17Q running 64-bit major release  (build 9200)
+| Command      : upgrade_ip
+| Device       : xc7a100tcsg324-1
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'design_1_sha256IPCoProcessor_0_0'
+
+1. Summary
+----------
+
+SUCCESS in the upgrade of design_1_sha256IPCoProcessor_0_0 (xilinx.com:user:sha256IPCoProcessor:1.0) from (Rev. 30) to (Rev. 31)
+
+
+
+
+
+
+Copyright 1986-2017 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2017.4 (win64) Build 2086221 Fri Dec 15 20:55:39 MST 2017
+| Date         : Fri May 11 20:15:19 2018
+| Host         : DESKTOP-1UKU17Q running 64-bit major release  (build 9200)
+| Command      : upgrade_ip
+| Device       : xc7a100tcsg324-1
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'design_1_sha256IPCoProcessor_0_0'
+
+1. Summary
+----------
+
+SUCCESS in the upgrade of design_1_sha256IPCoProcessor_0_0 (xilinx.com:user:sha256IPCoProcessor:1.0) from (Rev. 29) to (Rev. 30)
+
+
+
+
+
+
+Copyright 1986-2017 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2017.4 (win64) Build 2086221 Fri Dec 15 20:55:39 MST 2017
+| Date         : Fri May 11 20:08:32 2018
+| Host         : DESKTOP-1UKU17Q running 64-bit major release  (build 9200)
+| Command      : upgrade_ip
+| Device       : xc7a100tcsg324-1
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'design_1_sha256IPCoProcessor_0_0'
+
+1. Summary
+----------
+
+SUCCESS in the upgrade of design_1_sha256IPCoProcessor_0_0 (xilinx.com:user:sha256IPCoProcessor:1.0) from (Rev. 28) to (Rev. 29)
+
+
+
+
+
+
+Copyright 1986-2017 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2017.4 (win64) Build 2086221 Fri Dec 15 20:55:39 MST 2017
+| Date         : Fri May 11 19:40:38 2018
+| Host         : DESKTOP-1UKU17Q running 64-bit major release  (build 9200)
+| Command      : upgrade_ip
+| Device       : xc7a100tcsg324-1
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'design_1_sha256IPCoProcessor_0_0'
+
+1. Summary
+----------
+
+SUCCESS in the upgrade of design_1_sha256IPCoProcessor_0_0 (xilinx.com:user:sha256IPCoProcessor:1.0) from (Rev. 27) to (Rev. 28)
+
+
+
+
+
+
+Copyright 1986-2017 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2017.4 (win64) Build 2086221 Fri Dec 15 20:55:39 MST 2017
+| Date         : Fri May 11 19:04:30 2018
+| Host         : DESKTOP-1UKU17Q running 64-bit major release  (build 9200)
+| Command      : upgrade_ip
+| Device       : xc7a100tcsg324-1
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'design_1_sha256IPCoProcessor_0_0'
+
+1. Summary
+----------
+
+SUCCESS in the upgrade of design_1_sha256IPCoProcessor_0_0 (xilinx.com:user:sha256IPCoProcessor:1.0) from (Rev. 26) to (Rev. 27)
+
+
+
+
+
+
+Copyright 1986-2017 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2017.4 (win64) Build 2086221 Fri Dec 15 20:55:39 MST 2017
+| Date         : Fri May 11 18:46:19 2018
+| Host         : DESKTOP-1UKU17Q running 64-bit major release  (build 9200)
+| Command      : upgrade_ip
+| Device       : xc7a100tcsg324-1
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'design_1_sha256IPCoProcessor_0_0'
+
+1. Summary
+----------
+
+SUCCESS in the upgrade of design_1_sha256IPCoProcessor_0_0 (xilinx.com:user:sha256IPCoProcessor:1.0) from (Rev. 25) to (Rev. 26)
+
+
+
+
+
+
+Copyright 1986-2017 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2017.4 (win64) Build 2086221 Fri Dec 15 20:55:39 MST 2017
+| Date         : Fri May 11 18:06:45 2018
+| Host         : DESKTOP-1UKU17Q running 64-bit major release  (build 9200)
+| Command      : upgrade_ip
+| Device       : xc7a100tcsg324-1
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'design_1_sha256IPCoProcessor_0_0'
+
+1. Summary
+----------
+
+SUCCESS in the upgrade of design_1_sha256IPCoProcessor_0_0 (xilinx.com:user:sha256IPCoProcessor:1.0) from (Rev. 24) to (Rev. 25)
+
+
+
+
+
+
+Copyright 1986-2017 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2017.4 (win64) Build 2086221 Fri Dec 15 20:55:39 MST 2017
+| Date         : Fri May 11 17:41:16 2018
+| Host         : DESKTOP-1UKU17Q running 64-bit major release  (build 9200)
+| Command      : upgrade_ip
+| Device       : xc7a100tcsg324-1
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'design_1_sha256IPCoProcessor_0_0'
+
+1. Summary
+----------
+
+SUCCESS in the upgrade of design_1_sha256IPCoProcessor_0_0 (xilinx.com:user:sha256IPCoProcessor:1.0) from (Rev. 23) to (Rev. 24)
+
+
+
+
+
+
+Copyright 1986-2017 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2017.4 (win64) Build 2086221 Fri Dec 15 20:55:39 MST 2017
+| Date         : Fri May 11 17:14:32 2018
+| Host         : DESKTOP-1UKU17Q running 64-bit major release  (build 9200)
+| Command      : upgrade_ip
+| Device       : xc7a100tcsg324-1
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'design_1_sha256IPCoProcessor_0_0'
+
+1. Summary
+----------
+
+SUCCESS in the conversion of design_1_sha256IPCoProcessor_0_0 (xilinx.com:user:sha256IPCoProcessor:1.0 (Rev. 23)) to Vivado generation flows.
+
+
+
+
+
+
+Copyright 1986-2017 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2017.4 (win64) Build 2086221 Fri Dec 15 20:55:39 MST 2017
 | Date         : Fri May 11 15:45:18 2018
 | Host         : DESKTOP-1UKU17Q running 64-bit major release  (build 9200)
 | Command      : upgrade_ip
