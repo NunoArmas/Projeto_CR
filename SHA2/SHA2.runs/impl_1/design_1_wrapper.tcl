@@ -72,6 +72,7 @@ set rc [catch {
   set_property webtalk.parent_dir D:/Universidade/cr/SHA2/SHA2.cache/wt [current_project]
   set_property parent.project_path D:/Universidade/cr/SHA2/SHA2.xpr [current_project]
   set_property ip_repo_paths {
+  D:/Universidade/cr/ip_repo/SHA256CoProcessorStream_1.0
   D:/Universidade/cr/ip_repo/sha256IPCoProcessor_1.0
   D:/Universidade/cr/ip_repo/sha256IPCoProcessor_1.0
 } [current_project]

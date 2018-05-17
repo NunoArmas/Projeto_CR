@@ -1,7 +1,7 @@
 Copyright 1986-2017 Xilinx, Inc. All Rights Reserved.
 --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 | Tool Version : Vivado v.2017.4 (win64) Build 2086221 Fri Dec 15 20:55:39 MST 2017
-| Date         : Fri May 11 23:16:27 2018
+| Date         : Thu May 17 20:42:09 2018
 | Host         : DESKTOP-1UKU17Q running 64-bit major release  (build 9200)
 | Command      : report_methodology -file design_1_wrapper_methodology_drc_routed.rpt -pb design_1_wrapper_methodology_drc_routed.pb -rpx design_1_wrapper_methodology_drc_routed.rpx
 | Design       : design_1_wrapper
@@ -23,12 +23,11 @@ Table of Contents
           Floorplan: design_1
       Design limits: <entire design considered>
              Max violations: <unlimited>
-             Violations found: 17
+             Violations found: 4
 +-----------+----------+-------------------------------+------------+
 | Rule      | Severity | Description                   | Violations |
 +-----------+----------+-------------------------------+------------+
 | TIMING-9  | Warning  | Unknown CDC Logic             | 1          |
-| TIMING-16 | Warning  | Large setup violation         | 13         |
 | TIMING-18 | Warning  | Missing input or output delay | 3          |
 +-----------+----------+-------------------------------+------------+
 
@@ -37,71 +36,6 @@ Table of Contents
 TIMING-9#1 Warning
 Unknown CDC Logic  
 One or more asynchronous Clock Domain Crossing has been detected between 2 clock domains through a set_false_path or a set_clock_groups or set_max_delay -datapath_only constraint but no double-registers logic synchronizer has been found on the side of the capture clock. It is recommended to run report_cdc for a complete and detailed CDC coverage. Please consider using XPM_CDC to avoid Critical severities
-Related violations: <none>
-
-TIMING-16#1 Warning
-Large setup violation  
-There is a large setup violation of -1.013 ns between design_1_i/sha256IPCoProcessor_0/U0/sha256IPCoProcessor_v1_0_S00_AXI_inst/W_reg[41][8]/C (clocked by clk_out1_design_1_clk_wiz_1_0) and design_1_i/sha256IPCoProcessor_0/U0/sha256IPCoProcessor_v1_0_S00_AXI_inst/s_a_reg[22]/D (clocked by clk_out1_design_1_clk_wiz_1_0). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
-Related violations: <none>
-
-TIMING-16#2 Warning
-Large setup violation  
-There is a large setup violation of -1.017 ns between design_1_i/sha256IPCoProcessor_0/U0/sha256IPCoProcessor_v1_0_S00_AXI_inst/W_reg[41][8]/C (clocked by clk_out1_design_1_clk_wiz_1_0) and design_1_i/sha256IPCoProcessor_0/U0/sha256IPCoProcessor_v1_0_S00_AXI_inst/s_e_reg[31]/D (clocked by clk_out1_design_1_clk_wiz_1_0). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
-Related violations: <none>
-
-TIMING-16#3 Warning
-Large setup violation  
-There is a large setup violation of -1.035 ns between design_1_i/sha256IPCoProcessor_0/U0/sha256IPCoProcessor_v1_0_S00_AXI_inst/W_reg[41][8]/C (clocked by clk_out1_design_1_clk_wiz_1_0) and design_1_i/sha256IPCoProcessor_0/U0/sha256IPCoProcessor_v1_0_S00_AXI_inst/s_e_reg[29]/D (clocked by clk_out1_design_1_clk_wiz_1_0). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
-Related violations: <none>
-
-TIMING-16#4 Warning
-Large setup violation  
-There is a large setup violation of -1.051 ns between design_1_i/sha256IPCoProcessor_0/U0/sha256IPCoProcessor_v1_0_S00_AXI_inst/W_reg[41][8]/C (clocked by clk_out1_design_1_clk_wiz_1_0) and design_1_i/sha256IPCoProcessor_0/U0/sha256IPCoProcessor_v1_0_S00_AXI_inst/s_a_reg[20]/D (clocked by clk_out1_design_1_clk_wiz_1_0). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
-Related violations: <none>
-
-TIMING-16#5 Warning
-Large setup violation  
-There is a large setup violation of -1.058 ns between design_1_i/sha256IPCoProcessor_0/U0/sha256IPCoProcessor_v1_0_S00_AXI_inst/W_reg[41][8]/C (clocked by clk_out1_design_1_clk_wiz_1_0) and design_1_i/sha256IPCoProcessor_0/U0/sha256IPCoProcessor_v1_0_S00_AXI_inst/s_a_reg[21]/D (clocked by clk_out1_design_1_clk_wiz_1_0). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
-Related violations: <none>
-
-TIMING-16#6 Warning
-Large setup violation  
-There is a large setup violation of -1.082 ns between design_1_i/sha256IPCoProcessor_0/U0/sha256IPCoProcessor_v1_0_S00_AXI_inst/W_reg[41][8]/C (clocked by clk_out1_design_1_clk_wiz_1_0) and design_1_i/sha256IPCoProcessor_0/U0/sha256IPCoProcessor_v1_0_S00_AXI_inst/s_a_reg[28]/D (clocked by clk_out1_design_1_clk_wiz_1_0). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
-Related violations: <none>
-
-TIMING-16#7 Warning
-Large setup violation  
-There is a large setup violation of -1.101 ns between design_1_i/sha256IPCoProcessor_0/U0/sha256IPCoProcessor_v1_0_S00_AXI_inst/W_reg[41][8]/C (clocked by clk_out1_design_1_clk_wiz_1_0) and design_1_i/sha256IPCoProcessor_0/U0/sha256IPCoProcessor_v1_0_S00_AXI_inst/s_a_reg[23]/D (clocked by clk_out1_design_1_clk_wiz_1_0). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
-Related violations: <none>
-
-TIMING-16#8 Warning
-Large setup violation  
-There is a large setup violation of -1.141 ns between design_1_i/sha256IPCoProcessor_0/U0/sha256IPCoProcessor_v1_0_S00_AXI_inst/W_reg[41][8]/C (clocked by clk_out1_design_1_clk_wiz_1_0) and design_1_i/sha256IPCoProcessor_0/U0/sha256IPCoProcessor_v1_0_S00_AXI_inst/s_a_reg[26]/D (clocked by clk_out1_design_1_clk_wiz_1_0). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
-Related violations: <none>
-
-TIMING-16#9 Warning
-Large setup violation  
-There is a large setup violation of -1.180 ns between design_1_i/sha256IPCoProcessor_0/U0/sha256IPCoProcessor_v1_0_S00_AXI_inst/W_reg[41][8]/C (clocked by clk_out1_design_1_clk_wiz_1_0) and design_1_i/sha256IPCoProcessor_0/U0/sha256IPCoProcessor_v1_0_S00_AXI_inst/s_a_reg[31]/D (clocked by clk_out1_design_1_clk_wiz_1_0). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
-Related violations: <none>
-
-TIMING-16#10 Warning
-Large setup violation  
-There is a large setup violation of -1.204 ns between design_1_i/sha256IPCoProcessor_0/U0/sha256IPCoProcessor_v1_0_S00_AXI_inst/W_reg[41][8]/C (clocked by clk_out1_design_1_clk_wiz_1_0) and design_1_i/sha256IPCoProcessor_0/U0/sha256IPCoProcessor_v1_0_S00_AXI_inst/s_a_reg[27]/D (clocked by clk_out1_design_1_clk_wiz_1_0). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
-Related violations: <none>
-
-TIMING-16#11 Warning
-Large setup violation  
-There is a large setup violation of -1.223 ns between design_1_i/sha256IPCoProcessor_0/U0/sha256IPCoProcessor_v1_0_S00_AXI_inst/W_reg[41][8]/C (clocked by clk_out1_design_1_clk_wiz_1_0) and design_1_i/sha256IPCoProcessor_0/U0/sha256IPCoProcessor_v1_0_S00_AXI_inst/s_a_reg[25]/D (clocked by clk_out1_design_1_clk_wiz_1_0). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
-Related violations: <none>
-
-TIMING-16#12 Warning
-Large setup violation  
-There is a large setup violation of -1.239 ns between design_1_i/sha256IPCoProcessor_0/U0/sha256IPCoProcessor_v1_0_S00_AXI_inst/W_reg[41][8]/C (clocked by clk_out1_design_1_clk_wiz_1_0) and design_1_i/sha256IPCoProcessor_0/U0/sha256IPCoProcessor_v1_0_S00_AXI_inst/s_a_reg[30]/D (clocked by clk_out1_design_1_clk_wiz_1_0). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
-Related violations: <none>
-
-TIMING-16#13 Warning
-Large setup violation  
-There is a large setup violation of -1.308 ns between design_1_i/sha256IPCoProcessor_0/U0/sha256IPCoProcessor_v1_0_S00_AXI_inst/W_reg[41][8]/C (clocked by clk_out1_design_1_clk_wiz_1_0) and design_1_i/sha256IPCoProcessor_0/U0/sha256IPCoProcessor_v1_0_S00_AXI_inst/s_a_reg[29]/D (clocked by clk_out1_design_1_clk_wiz_1_0). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
 Related violations: <none>
 
 TIMING-18#1 Warning
